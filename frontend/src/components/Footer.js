@@ -45,12 +45,14 @@ const Footer = () => {
                 </a>
               </li>
               <li>
+                {false && (
                 <a 
                   href="#contact" 
                   className="text-white/60 hover:text-[#C18C5D] transition-colors"
                 >
                   {t.nav.contact}
                 </a>
+                )}
               </li>
             </ul>
           </div>
@@ -77,6 +79,7 @@ const Footer = () => {
               >
                 <Linkedin className="w-5 h-5" />
               </a>
+              {false && (
               <a 
                 href="#contact"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#C18C5D] transition-colors"
@@ -84,6 +87,7 @@ const Footer = () => {
               >
                 <Mail className="w-5 h-5" />
               </a>
+              )}
             </div>
           </div>
         </div>
