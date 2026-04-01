@@ -17,7 +17,7 @@ function App() {
           <Hero />
           <BooksSection />
           <AboutSection />
-          <ContactSection />
+          {false && <ContactSection />}
         </main>
         <Footer />
         <Toaster />
