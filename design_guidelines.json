@@ -1,0 +1,115 @@
+{
+  "theme": "light",
+  "archetype": "Organic & Earthy / Pastel Elegance",
+  "design_philosophy": "Elegant and minimalist design tailored for a multilingual children's book author. It targets parents as buyers, using tactile paper textures, soft pastel backgrounds, and sophisticated serif typography to convey quality, while remaining approachable and whimsical for the 'Piccoli Grandi Eroi' collection.",
+  "colors": {
+    "background": "#FAF9F6",
+    "surface": "#F2EFE9",
+    "surface_glass": "rgba(250, 249, 246, 0.7)",
+    "primary": "#C18C5D",
+    "primary_hover": "#A6754B",
+    "secondary": "#8A9A86",
+    "text": "#2C2A29",
+    "text_muted": "#75736E",
+    "border": "#E8E4DB"
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Cormorant Garamond, ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif",
+      "body": "Outfit, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      "accent": "Caveat, cursive"
+    },
+    "hierarchy": {
+      "h1": "text-5xl sm:text-6xl lg:text-7xl tracking-tighter leading-tight font-medium text-[#2C2A29]",
+      "h2": "text-3xl sm:text-4xl lg:text-5xl tracking-tight font-medium text-[#2C2A29]",
+      "h3": "text-xl sm:text-2xl lg:text-3xl tracking-tight font-medium text-[#2C2A29]",
+      "body": "text-base md:text-lg leading-relaxed text-[#75736E]",
+      "overline": "text-xs md:text-sm uppercase tracking-[0.2em] font-bold text-[#C18C5D]"
+    },
+    "setup_instruction": "Install Google Fonts for Cormorant Garamond (Heading), Outfit (Body), and Caveat (Accent) in the project."
+  },
+  "layout_and_spacing": {
+    "philosophy": "Generous Spacing (p-12 to p-24 for sections). The Swiss Grid but with organic, offset touches.",
+    "container_padding": "py-20 md:py-32 px-6 md:px-12 max-w-7xl mx-auto",
+    "grid_system": "Bento Grid Mode A for features, horizontal masonry or Swiper carousel for the 15 books.",
+    "border_radius": "rounded-2xl for main cards, rounded-full for buttons and pills."
+  },
+  "components": {
+    "buttons": {
+      "primary": "rounded-full bg-[#C18C5D] text-white px-8 py-3 font-medium hover:bg-[#A6754B] hover:scale-105 transition-all duration-300 shadow-sm",
+      "secondary": "rounded-full bg-transparent border border-[#C18C5D] text-[#C18C5D] px-8 py-3 font-medium hover:bg-[#C18C5D]/10 transition-all duration-300"
+    },
+    "cards": "Subtle rounded-2xl bg-[#F2EFE9] border border-[#E8E4DB] shadow-sm hover:shadow-md transition-shadow duration-300. Padding p-8.",
+    "header": "Crystal glassmorphism: sticky top-0 z-50 backdrop-blur-xl bg-[#FAF9F6]/80 border-b border-[#E8E4DB]. Must include Logo (Gipi Visconti), Nav Links, Language Switcher, and Contact CTA.",
+    "language_switcher": "A clean, pill-shaped toggle (IT | EN | ES) with active state bolded/highlighted and an elegant slide animation. This state must drive the multilingual content of the site.",
+    "forms": "Use Shadcn customized components. Inputs: rounded-xl bg-white border-[#E8E4DB] focus:ring-[#C18C5D]/20 focus:border-[#C18C5D]. No generic Vercel look."
+  },
+  "pages": {
+    "home": {
+      "hero": "Split/Asymmetric layout: Left side elegant typography 'Gipi Visconti', 'Author & Illustrator', and a short trilingual intro. Right side author portrait overlapping the hero illustration background.",
+      "books_showcase": "Section title: 'Piccoli Grandi Eroi' / 'Little Great Heroes'. A beautifully mapped grid or carousel of all 15 books. Each book card needs a vibrant placeholder cover, title, and a 'Buy on Amazon' CTA. Hover effect: slight lift.",
+      "author_bio": "Wide text columns for readability. Use the artist painting photo or author portrait here. Include a soft textured background.",
+      "blog_news": "Minimalist list of articles/events. Date in accent font (Caveat), title in serif (Cormorant Garamond).",
+      "contact": "Clean elegant form on a surface background. 'Get in touch' heading."
+    }
+  },
+  "media": {
+    "images": [
+      {
+        "category": "hero_background",
+        "url": "https://static.prod-images.emergentagent.com/jobs/df0db533-f3e3-4a37-9dc6-c73021533fb7/images/d15bf4731993ab164b321691d62463b7075f4b4b696283288ed36e4a81478298.png",
+        "description": "Elegant minimal watercolor wash background, soft warm beige and pastel peach",
+        "usage": "Use as a full-bleed background layer in the hero section or behind the books showcase with low opacity."
+      },
+      {
+        "category": "hero_illustration",
+        "url": "https://static.prod-images.emergentagent.com/jobs/df0db533-f3e3-4a37-9dc6-c73021533fb7/images/a23fd592e5d2b780ba67b862c0670902db4e7a03a0f28a986a2c363c431f574c.png",
+        "description": "Whimsical children's book illustration",
+        "usage": "Floating decorative element in the hero section or about section."
+      },
+      {
+        "category": "author_portrait",
+        "url": "https://static.prod-images.emergentagent.com/jobs/df0db533-f3e3-4a37-9dc6-c73021533fb7/images/7d44d9d6125f967c09d232b7bb099884f0e85ea48e974bb9bd201b3da4ba1e41.png",
+        "description": "Portrait of Gipi Visconti",
+        "usage": "Use in the 'About the Author' section with a soft border radius."
+      },
+      {
+        "category": "book_stack",
+        "url": "https://static.prod-images.emergentagent.com/jobs/df0db533-f3e3-4a37-9dc6-c73021533fb7/images/f3f0003e8eed491c399a79ef8e06ad3a2be86497606c558604fc533d2a2552d5.png",
+        "description": "Elegant row of colorful hardcover children's books",
+        "usage": "Use as a section divider or banner image for the Books Showcase section."
+      },
+      {
+        "category": "blog_placeholder_1",
+        "url": "https://images.pexels.com/photos/6146645/pexels-photo-6146645.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Top view watercolor painting with vibrant palette",
+        "usage": "Use as a thumbnail for blog/news articles."
+      },
+      {
+        "category": "blog_placeholder_2",
+        "url": "https://images.pexels.com/photos/1767016/pexels-photo-1767016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Artist painting with watercolors",
+        "usage": "Use as a thumbnail for blog/news articles."
+      }
+    ]
+  },
+  "content_requirements": {
+    "books_collection": "Piccoli Grandi Eroi",
+    "book_titles": [
+      "Kathrine Switzer", "Valentina Tereshkova", "Alfred Nobel", "Nelson Mandela", 
+      "Hedy Lamarr", "Coco Chanel", "Artemisia Gentileschi", "Michael Phelps", 
+      "Ayrton Senna", "Nadia Comăneci", "Rafael Nadal", "Pablo Picasso", 
+      "Luka Modrić", "Bebe Vio", "Yayoi Kusama"
+    ],
+    "languages": ["IT", "EN", "ES"]
+  },
+  "instructions_to_main_agent": [
+    "Use pure HTML/Tailwind for the layout structure, bringing in customized Shadcn components for forms, inputs, and interactive tabs if needed.",
+    "Use framer-motion for smooth entrance animations (e.g., staggered fade-up for the book grid).",
+    "Build a state-driven Language Switcher in the Header (IT, EN, ES) and mock up the copy switching (e.g., 'Chi sono' / 'About Me' / 'Sobre mi'). The books have different covers for each language, so simulate this by changing a tag or color on the book card based on language state.",
+    "For the books list, map through the 15 specific titles. Since you don't have the real covers, generate beautiful pastel gradient placeholders using the book title as the center text, and add a clear 'Buy on Amazon' CTA.",
+    "Avoid using pure white (#FFFFFF); strictly use the provided #FAF9F6 for the base background to keep the elegant, tactile paper feel.",
+    "Implement Lucide React icons where appropriate, especially for the Amazon links and contact form.",
+    "CRITICAL: Add `data-testid` to all interactive elements (Language switcher, Amazon buttons, Contact submit, Nav links)."
+  ]
+}
