@@ -50,6 +50,7 @@ const Header = () => {
             >
               {t.nav.about}
             </button>
+            {false && (
             <button
               onClick={() => scrollToSection('contact')}
               className="nav-link text-[#75736E] hover:text-[#2C2A29] transition-colors"
@@ -57,6 +58,7 @@ const Header = () => {
             >
               {t.nav.contact}
             </button>
+            )}
           </nav>
 
           {/* Desktop Language Switcher */}
