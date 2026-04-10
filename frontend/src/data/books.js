@@ -333,7 +333,7 @@ export const books = [
     id: 16,
     title: "Madre Teresa di Calcutta",
     category: "activism",
-    gradient: "book-gradient-3",
+    gradient: "book-gradient-16",
     color: "#D4E2D4",
     coverImages: {
       IT: "/images/madre teresa ita 1.jpg",
@@ -355,7 +355,7 @@ export const books = [
     id: 17,
     title: "Valentino Rossi",
     category: "sport",
-    gradient: "book-gradient-9",
+    gradient: "book-gradient-17",
     color: "#FDE68A",
     coverImages: {
       IT: "/images/vale rossi ita 1.jpg",
@@ -377,7 +377,7 @@ export const books = [
     id: 18,
     title: "Séraphine de Senlis",
     category: "art",
-    gradient: "book-gradient-6",
+    gradient: "book-gradient-18",
     color: "#FFE4E1",
     coverImages: {
       IT: "/images/seraphine ita 1.jpg",
@@ -393,6 +393,28 @@ export const books = [
       IT: "La pittrice dei fiori mistici",
       EN: "The painter of mystic flowers",
       ES: "La pintora de las flores místicas",
+    },
+  },
+  {
+    id: 19,
+    title: "Leonardo Da Vinci",
+    category: "art",
+    gradient: "book-gradient-19",
+    color: "#FFE4E1",
+    coverImages: {
+      IT: "/images/leonardo ita 1.jpg",
+      EN: "/images/leonardo eng 1.jpg",
+      ES: "/images/leonardo esp 1.jpg",
+    },
+    amazonLinks: {
+      IT: "https://www.amazon.it/s?k=leonardo+davinci+Gipi+Visconti",
+      EN: "https://www.amazon.com/s?k=leonardo+davinci+Gipi+Visconti",
+      ES: "https://www.amazon.es/s?k=leonardo+davinci+Gipi+Visconti",
+    },
+    description: {
+      IT: "Il bambino che immaginava il futuro",
+      EN: "The boy who imagined the future",
+      ES: "El ñino que imaginaba el futuro",
     },
   },
 ];
