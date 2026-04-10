@@ -7,6 +7,7 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const languages = ['IT', 'EN', 'ES'];
+  const showContactNav = false;
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -43,6 +44,7 @@ const Header = () => {
             >
               {t.nav.books}
             </button>
+
             <button
               onClick={() => scrollToSection('about')}
               className="nav-link text-[#75736E] hover:text-[#2C2A29] transition-colors"
@@ -50,20 +52,24 @@ const Header = () => {
             >
               {t.nav.about}
             </button>
-            {false && (
-            <button
-              onClick={() => scrollToSection('contact')}
-              className="nav-link text-[#75736E] hover:text-[#2C2A29] transition-colors"
-              data-testid="nav-contact"
-            >
-              {t.nav.contact}
-            </button>
+
+            {showContactNav && (
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="nav-link text-[#75736E] hover:text-[#2C2A29] transition-colors"
+                data-testid="nav-contact"
+              >
+                {t.nav.contact}
+              </button>
             )}
           </nav>
 
           {/* Desktop Language Switcher */}
           <div className="hidden md:flex items-center">
-            <div className="flex items-center bg-[#F2EFE9] rounded-full p-1" data-testid="language-switcher">
+            <div
+              className="flex items-center bg-[#F2EFE9] rounded-full p-1"
+              data-testid="language-switcher"
+            >
               {languages.map((lang) => (
                 <button
                   key={lang}
@@ -106,6 +112,7 @@ const Header = () => {
               >
                 {t.nav.books}
               </button>
+
               <button
                 onClick={() => scrollToSection('about')}
                 className="text-left text-[#75736E] hover:text-[#2C2A29] transition-colors py-2"
@@ -113,13 +120,16 @@ const Header = () => {
               >
                 {t.nav.about}
               </button>
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="text-left text-[#75736E] hover:text-[#2C2A29] transition-colors py-2"
-                data-testid="mobile-nav-contact"
-              >
-                {t.nav.contact}
-              </button>
+
+              {showContactNav && (
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="text-left text-[#75736E] hover:text-[#2C2A29] transition-colors py-2"
+                  data-testid="mobile-nav-contact"
+                >
+                  {t.nav.contact}
+                </button>
+              )}
             </nav>
 
             {/* Mobile Language Switcher */}
