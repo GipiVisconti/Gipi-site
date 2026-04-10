@@ -21,6 +21,10 @@ const ContactSection = () => {
   const [status, setStatus] = useState(null); // 'success', 'error', or null
   const [loading, setLoading] = useState(false);
 
+  const showContactSection = false;
+
+  if (!showContactSection) return null;
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
