@@ -52,6 +52,13 @@ const Header = () => {
             >
               {t.nav.about}
             </button>
+            <button
+              onClick={() => scrollToSection('faq')}
+              className="nav-link text-[#75736E] hover:text-[#2C2A29] transition-colors"
+              data-testid="nav-faq"
+            >
+              {t.nav.faq}
+            </button>
 
             {showContactNav && (
               <button
@@ -119,6 +126,13 @@ const Header = () => {
                 data-testid="mobile-nav-about"
               >
                 {t.nav.about}
+              </button>
+              <button
+                onClick={() => scrollToSection('faq')}
+                className="text-left text-[#75736E] hover:text-[#2C2A29] transition-colors py-2"
+                data-testid="mobile-nav-faq"
+              >
+                {t.nav.faq}
               </button>
 
               {showContactNav && (

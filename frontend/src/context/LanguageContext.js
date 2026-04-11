@@ -8,6 +8,7 @@ export const translations = {
       home: 'Home',
       books: 'Libri',
       about: 'Chi Sono',
+      faq: 'FAQ',
       blog: 'Blog',
       contact: 'Regalo',
     },
@@ -39,6 +40,54 @@ Lavoro sulla composizione, sul ritmo e sull'uso dello spazio, creando pagine cal
 
 Piccoli Grandi Eroi è un progetto aperto e in continua crescita: un piccolo ponte tra storie vere e nuovi lettori.`,
     },
+   faq: {
+  eyebrow: "Domande frequenti",
+  title: "Tutto quello che può essere utile sapere",
+  subtitle: "Una guida semplice per genitori, insegnanti e piccoli lettori curiosi.",
+  highlights: ["3–8 anni", "IT · EN · ES", "prime letture"],
+  items: [
+    {
+      q: "Per chi sono pensati questi libri?",
+      a: "Questi libri nascono per bambine e bambini che stanno iniziando a leggere, ma anche per quei momenti belli in cui un adulto legge accanto a loro. Sono pensati per accompagnare i primi passi nella lettura con semplicità, senza fretta e senza far sentire il bambino in difficoltà."
+    },
+    {
+      q: "Cosa significa \"prime letture\"?",
+      a: "Significa offrire ai bambini storie che possano davvero affrontare. Frasi brevi, parole chiare, pagine ordinate, un ritmo tranquillo. Quando un libro è costruito bene, leggere non diventa una prova da superare, ma un’esperienza che può dare fiducia e piacere."
+    },
+    {
+      q: "In quali lingue posso trovare i libri?",
+      a: "I libri sono disponibili in italiano, inglese e spagnolo. Questa scelta è molto importante per me, perché credo che la lettura debba poter entrare nella vita dei bambini anche attraverso la lingua che sentono più vicina, più familiare, più loro."
+    },
+    {
+      q: "Che tipo di storie raccontano?",
+      a: "Racconto biografie semplici di persone reali: figure che hanno fatto qualcosa di importante, che hanno immaginato, costruito, lottato, creato, aiutato. Mi interessa mostrare ai bambini che dietro ogni grande storia c’è sempre un inizio piccolo, umano, vicino a loro."
+    },
+    {
+      q: "Perché proprio delle biografie per bambini?",
+      a: "Perché le biografie possono accendere domande profonde in modo semplice. Un bambino scopre che anche una persona straordinaria è stata, prima di tutto, un bambino curioso, timido, coraggioso o pieno di sogni. E forse, leggendo, può sentire che anche il suo cammino conta."
+    },
+    {
+      q: "Sono libri adatti anche a famiglie bilingui o multilingui?",
+      a: "Sì, molto. Per molte famiglie la lingua non è una sola, e leggere nella lingua di casa può fare una grande differenza. Può rassicurare, avvicinare, far sentire il bambino accolto. Per questo per me è importante che questi libri possano vivere in più lingue."
+    },
+    {
+      q: "Possono essere usati anche a scuola?",
+      a: "Sì, possono trovare spazio anche a scuola, nelle biblioteche, nei percorsi educativi e nei momenti di lettura condivisa. Sono pensati per essere accessibili, chiari e adatti a creare un incontro sereno con la lettura e con storie vere che possono lasciare qualcosa."
+    },
+    {
+      q: "Come sono costruiti i libri?",
+      a: "Ogni libro segue un ritmo riconoscibile, perché i bambini si sentono più sicuri quando una storia ha una struttura chiara e familiare. Anche per questo amano ritrovare sempre certi passaggi. Il formato orizzontale è pensato per essere più comodo da tenere in mano, il testo è scritto in nero su sfondo chiaro con un carattere scelto per accompagnare la lettura, e le immagini stanno accanto alle parole per sostenerle senza invaderle."
+    },
+    {
+      q: "Dove posso acquistare i libri?",
+      a: "I libri sono disponibili su Amazon. Sul sito puoi conoscere meglio il progetto, scoprire i titoli della collana e trovare i riferimenti per scegliere il libro e la lingua che senti più adatti al tuo bambino o al tuo percorso di lettura."
+    },
+    {
+      q: "Cosa rende speciale questo progetto?",
+      a: "Questo progetto nasce da un’idea molto semplice: offrire ai bambini libri che siano davvero leggibili, chiari e accoglienti, senza rinunciare alla forza delle storie vere. Vorrei che ogni libro fosse un piccolo incontro: con una vita straordinaria, con una lingua familiare, con il desiderio di continuare a leggere."
+    }
+  ]
+},
     blog: {
       title: 'News & Aggiornamenti',
       subtitle: 'Scopri le ultime novità sui miei libri e progetti',
@@ -70,6 +119,7 @@ Piccoli Grandi Eroi è un progetto aperto e in continua crescita: un piccolo pon
       home: 'Home',
       books: 'Books',
       about: 'About Me',
+      faq: 'FAQ',
       blog: 'Blog',
       contact: 'Gift',
     },
@@ -101,6 +151,54 @@ I work carefully on composition, rhythm and the use of space, creating pages tha
 
 Little Great Heroes is an open project, constantly growing: a small bridge between true stories and new readers.`,
     },
+    faq: {
+  eyebrow: "Frequently Asked Questions",
+  title: "Everything that may be helpful to know",
+  subtitle: "A simple guide for parents, teachers and curious young readers.",
+  highlights: ["Ages 3–8", "IT · EN · ES", "first readers"],
+  items: [
+    {
+      q: "Who are these books for?",
+      a: "These books are created for girls and boys who are beginning to read, but also for those lovely moments when an adult reads beside them. They are designed to accompany the first steps into reading with simplicity, without pressure and without making the child feel uneasy."
+    },
+    {
+      q: "What does \"first reading\" mean?",
+      a: "It means offering children stories they can genuinely manage. Short sentences, clear words, well-ordered pages and a calm rhythm. When a book is well made, reading does not become a test to pass, but an experience that can bring confidence and pleasure."
+    },
+    {
+      q: "In which languages can I find the books?",
+      a: "The books are available in Italian, English and Spanish. This choice is very important to me, because I believe reading should be able to enter children’s lives through the language that feels closest to them, most familiar and most truly theirs."
+    },
+    {
+      q: "What kind of stories do they tell?",
+      a: "I write simple biographies of real people: figures who did something meaningful, who imagined, built, struggled, created or helped. What matters to me is showing children that behind every great story there is always a small, human beginning that feels close to them."
+    },
+    {
+      q: "Why biographies for children in particular?",
+      a: "Because biographies can spark deep questions in a simple way. A child discovers that even an extraordinary person was, first of all, a curious, shy, brave child or one full of dreams. And perhaps, through reading, they can feel that their own path matters too."
+    },
+    {
+      q: "Are these books also suitable for bilingual or multilingual families?",
+      a: "Yes, very much so. For many families, there is not just one language, and reading in the language of home can make a real difference. It can reassure, bring people closer and help the child feel welcomed. That is why it matters to me that these books can live in more than one language."
+    },
+    {
+      q: "Can they also be used at school?",
+      a: "Yes, they can also find a place in schools, libraries, educational pathways and shared reading moments. They are designed to be accessible, clear and suitable for creating a calm encounter with reading and with true stories that can leave something behind."
+    },
+    {
+      q: "How are the books structured?",
+      a: "Each book follows a familiar rhythm, because children feel more secure when a story has a clear and recognisable structure. That is also why they enjoy finding certain patterns again and again. The landscape format is designed to be easier for little hands to hold, the text is printed in black on a light background using a typeface chosen to support reading, and the illustrations sit beside the words to support them without taking over."
+    },
+    {
+      q: "Where can I buy the books?",
+      a: "The books are available on Amazon. On the website you can learn more about the project, discover the titles in the collection and find the information you need to choose the book and language that feel most suitable for your child or for your reading journey."
+    },
+    {
+      q: "What makes this project special?",
+      a: "This project comes from a very simple idea: to offer children books that are genuinely readable, clear and welcoming, without giving up the strength of true stories. I would like each book to be a small encounter: with an extraordinary life, with a familiar language and with the desire to keep reading."
+    }
+  ]
+},
     blog: {
       title: 'News & Updates',
       subtitle: 'Discover the latest news about my books and projects',
@@ -132,6 +230,7 @@ Little Great Heroes is an open project, constantly growing: a small bridge betwe
       home: 'Inicio',
       books: 'Libros',
       about: 'Sobre Mí',
+      faq: 'FAQ',
       blog: 'Blog',
       contact: 'Regalito',
     },
@@ -163,6 +262,54 @@ Trabajo con cuidado la composición, el ritmo y el uso del espacio, creando pág
 
 Pequeños Grandes Valientes es un proyecto abierto y en constante crecimiento: un pequeño puente entre historias reales y nuevos lectores.`,
     },
+    faq: {
+  eyebrow: "Preguntas frecuentes",
+  title: "Todo lo que puede ser útil saber",
+  subtitle: "Una guía sencilla para familias, docentes y pequeños lectores curiosos.",
+  highlights: ["3–8 años", "IT · EN · ES", "primeras lecturas"],
+  items: [
+    {
+      q: "¿Para quién están pensados estos libros?",
+      a: "Estos libros nacen para niñas y niños que están empezando a leer, pero también para esos momentos bonitos en los que un adulto lee a su lado. Están pensados para acompañar los primeros pasos en la lectura con sencillez, sin prisa y sin hacer que el niño se sienta en dificultad."
+    },
+    {
+      q: "¿Qué significa \"primeras lecturas\"?",
+      a: "Significa ofrecer a los niños historias que realmente puedan afrontar. Frases cortas, palabras claras, páginas ordenadas y un ritmo tranquilo. Cuando un libro está bien construido, leer no se convierte en una prueba que hay que superar, sino en una experiencia que puede dar confianza y placer."
+    },
+    {
+      q: "¿En qué idiomas puedo encontrar los libros?",
+      a: "Los libros están disponibles en italiano, inglés y español. Esta elección es muy importante para mí, porque creo que la lectura debe poder entrar en la vida de los niños también a través de la lengua que sienten más cercana, más familiar, más suya."
+    },
+    {
+      q: "¿Qué tipo de historias cuentan?",
+      a: "Cuento biografías sencillas de personas reales: figuras que hicieron algo importante, que imaginaron, construyeron, lucharon, crearon o ayudaron. Me interesa mostrar a los niños que detrás de cada gran historia siempre hay un comienzo pequeño, humano y cercano a ellos."
+    },
+    {
+      q: "¿Por qué precisamente biografías para niños?",
+      a: "Porque las biografías pueden despertar preguntas profundas de una manera sencilla. Un niño descubre que incluso una persona extraordinaria fue, antes que nada, un niño curioso, tímido, valiente o lleno de sueños. Y quizá, al leer, pueda sentir que también su propio camino cuenta."
+    },
+    {
+      q: "¿Son libros adecuados también para familias bilingües o multilingües?",
+      a: "Sí, mucho. Para muchas familias la lengua no es solo una, y leer en la lengua de casa puede marcar una gran diferencia. Puede tranquilizar, acercar y hacer que el niño se sienta acogido. Por eso para mí es importante que estos libros puedan vivir en varias lenguas."
+    },
+    {
+      q: "¿También pueden usarse en la escuela?",
+      a: "Sí, también pueden tener espacio en la escuela, en bibliotecas, en itinerarios educativos y en momentos de lectura compartida. Están pensados para ser accesibles, claros y adecuados para crear un encuentro sereno con la lectura y con historias reales que pueden dejar algo."
+    },
+    {
+      q: "¿Cómo están construidos los libros?",
+      a: "Cada libro sigue un ritmo reconocible, porque los niños se sienten más seguros cuando una historia tiene una estructura clara y familiar. También por eso les gusta volver a encontrar ciertos pasos una y otra vez. El formato horizontal está pensado para que sea más fácil de sujetar con sus manos, el texto está escrito en negro sobre un fondo claro con una tipografía elegida para acompañar la lectura, y las imágenes se sitúan al lado de las palabras para sostenerlas sin invadirlas."
+    },
+    {
+      q: "¿Dónde puedo comprar los libros?",
+      a: "Los libros están disponibles en Amazon. En la web puedes conocer mejor el proyecto, descubrir los títulos de la colección y encontrar la información necesaria para elegir el libro y la lengua que sientas más adecuados para tu hijo o para tu recorrido de lectura."
+    },
+    {
+      q: "¿Qué hace especial este proyecto?",
+      a: "Este proyecto nace de una idea muy sencilla: ofrecer a los niños libros que sean de verdad legibles, claros y acogedores, sin renunciar a la fuerza de las historias reales. Me gustaría que cada libro fuera un pequeño encuentro: con una vida extraordinaria, con una lengua familiar y con el deseo de seguir leyendo."
+    }
+  ]
+},
     blog: {
       title: 'Noticias y Novedades',
       subtitle: 'Descubre las últimas novedades sobre mis libros y proyectos',

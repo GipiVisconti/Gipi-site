@@ -44,7 +44,15 @@ const Footer = () => {
                   {t.nav.about}
                 </a>
               </li>
-              <li>
+             <li>
+                <a
+                  href="#faq"
+                  className="text-white/60 hover:text-[#C18C5D] transition-colors"
+                >
+                  {t.nav.faq}
+               </a>
+              </li> 
+             <li>
                 {false && (
                 <a 
                   href="#contact" 
