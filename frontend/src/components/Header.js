@@ -1,20 +1,43 @@
 import { useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { Menu, X, BookOpen } from 'lucide-react';
 
 const Header = () => {
   const { language, setLanguage, t } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const languages = ['IT', 'EN', 'ES'];
   const showContactNav = false;
 
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+  const goToSection = (sectionId) => {
+    if (location.pathname === '/') {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      navigate(`/#${sectionId}`);
     }
+
     setMobileMenuOpen(false);
+  };
+
+  const handleLogoClick = (e) => {
+    setMobileMenuOpen(false);
+
+    if (location.pathname === '/') {
+      e.preventDefault();
+      const hero = document.getElementById('hero');
+
+      if (hero) {
+        hero.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
   };
 
   return (
@@ -22,8 +45,9 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <button
-            onClick={() => scrollToSection('hero')}
+          <Link
+            to="/"
+            onClick={handleLogoClick}
             className="flex items-center gap-3 group"
             data-testid="logo-button"
           >
@@ -33,12 +57,12 @@ const Header = () => {
             <span className="font-heading text-2xl font-medium text-[#2C2A29]">
               Gipi Visconti
             </span>
-          </button>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <button
-              onClick={() => scrollToSection('books')}
+              onClick={() => goToSection('books')}
               className="nav-link text-[#75736E] hover:text-[#2C2A29] transition-colors"
               data-testid="nav-books"
             >
@@ -46,23 +70,25 @@ const Header = () => {
             </button>
 
             <button
-              onClick={() => scrollToSection('about')}
+              onClick={() => goToSection('about')}
               className="nav-link text-[#75736E] hover:text-[#2C2A29] transition-colors"
               data-testid="nav-about"
             >
               {t.nav.about}
             </button>
-            <button
-              onClick={() => scrollToSection('faq')}
+
+            <Link
+              to="/faq"
+              onClick={() => setMobileMenuOpen(false)}
               className="nav-link text-[#75736E] hover:text-[#2C2A29] transition-colors"
               data-testid="nav-faq"
             >
               {t.nav.faq}
-            </button>
+            </Link>
 
             {showContactNav && (
               <button
-                onClick={() => scrollToSection('contact')}
+                onClick={() => goToSection('contact')}
                 className="nav-link text-[#75736E] hover:text-[#2C2A29] transition-colors"
                 data-testid="nav-contact"
               >
@@ -113,7 +139,7 @@ const Header = () => {
           <div className="md:hidden py-6 border-t border-[#E8E4DB] animate-fade-in">
             <nav className="flex flex-col gap-4 mb-6">
               <button
-                onClick={() => scrollToSection('books')}
+                onClick={() => goToSection('books')}
                 className="text-left text-[#75736E] hover:text-[#2C2A29] transition-colors py-2"
                 data-testid="mobile-nav-books"
               >
@@ -121,23 +147,25 @@ const Header = () => {
               </button>
 
               <button
-                onClick={() => scrollToSection('about')}
+                onClick={() => goToSection('about')}
                 className="text-left text-[#75736E] hover:text-[#2C2A29] transition-colors py-2"
                 data-testid="mobile-nav-about"
               >
                 {t.nav.about}
               </button>
-              <button
-                onClick={() => scrollToSection('faq')}
+
+              <Link
+                to="/faq"
+                onClick={() => setMobileMenuOpen(false)}
                 className="text-left text-[#75736E] hover:text-[#2C2A29] transition-colors py-2"
                 data-testid="mobile-nav-faq"
               >
                 {t.nav.faq}
-              </button>
+              </Link>
 
               {showContactNav && (
                 <button
-                  onClick={() => scrollToSection('contact')}
+                  onClick={() => goToSection('contact')}
                   className="text-left text-[#75736E] hover:text-[#2C2A29] transition-colors py-2"
                   data-testid="mobile-nav-contact"
                 >

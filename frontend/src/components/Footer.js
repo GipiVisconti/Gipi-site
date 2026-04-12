@@ -30,7 +30,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a 
-                  href="#books" 
+                  href="/#books" 
                   className="text-white/60 hover:text-[#C18C5D] transition-colors"
                 >
                   {t.books.title}
@@ -38,7 +38,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="#about" 
+                  href="/#about" 
                   className="text-white/60 hover:text-[#C18C5D] transition-colors"
                 >
                   {t.nav.about}
@@ -46,7 +46,7 @@ const Footer = () => {
               </li>
              <li>
                 <a
-                  href="#faq"
+                  href="/#faq"
                   className="text-white/60 hover:text-[#C18C5D] transition-colors"
                 >
                   {t.nav.faq}
