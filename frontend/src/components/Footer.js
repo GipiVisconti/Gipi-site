@@ -29,37 +29,37 @@ const Footer = () => {
             <h4 className="font-heading text-lg font-medium">{t.nav.books}</h4>
             <ul className="space-y-2">
               <li>
-                <a 
-                  href="/#books" 
+                <a
+                  href="/#books"
                   className="text-white/60 hover:text-[#C18C5D] transition-colors"
                 >
                   {t.books.title}
                 </a>
               </li>
               <li>
-                <a 
-                  href="/#about" 
+                <a
+                  href="/#about"
                   className="text-white/60 hover:text-[#C18C5D] transition-colors"
                 >
                   {t.nav.about}
                 </a>
               </li>
-             <li>
+              <li>
                 <a
                   href="/#faq"
                   className="text-white/60 hover:text-[#C18C5D] transition-colors"
                 >
                   {t.nav.faq}
-               </a>
-              </li> 
-             <li>
-                {false && (
-                <a 
-                  href="#contact" 
-                  className="text-white/60 hover:text-[#C18C5D] transition-colors"
-                >
-                  {t.nav.contact}
                 </a>
+              </li>
+              <li>
+                {false && (
+                  <a
+                    href="#contact"
+                    className="text-white/60 hover:text-[#C18C5D] transition-colors"
+                  >
+                    {t.nav.contact}
+                  </a>
                 )}
               </li>
             </ul>
@@ -69,33 +69,34 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-heading text-lg font-medium">Social</h4>
             <div className="flex gap-4">
-              <a 
-                href="https://www.instagram.com/gipi_visconti?igsh=ZGJ0azFnOTUzbXJn&utm_source=qr" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com/gipi_visconti?igsh=ZGJ0azFnOTUzbXJn&utm_source=qr"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#C18C5D] transition-colors"
                 data-testid="footer-instagram-link"
               >
                 <Instagram className="w-5 h-5" />
               </a>
-              <a 
-                href="https://www.linkedin.com/in/gipi-visconti" 
-                target="_blank" 
+
+              <a
+                href="https://www.linkedin.com/in/gipi-visconti"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#C18C5D] transition-colors"
                 data-testid="footer-linkedin-link"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
-              {false && (
-              <a 
-                href="#contact"
+
+              <a
+                href="mailto:info@gipivisconti.com"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#C18C5D] transition-colors"
                 data-testid="footer-email-link"
+                aria-label="Email"
               >
                 <Mail className="w-5 h-5" />
               </a>
-              )}
             </div>
           </div>
         </div>

@@ -12,6 +12,12 @@ const Header = () => {
   const languages = ['IT', 'EN', 'ES'];
   const showContactNav = false;
 
+  const bookRouteMap = {
+    IT: { lang: 'it', section: 'libri' },
+    EN: { lang: 'en', section: 'books' },
+    ES: { lang: 'es', section: 'libros' },
+  };
+
   const goToSection = (sectionId) => {
     if (location.pathname === '/') {
       const element = document.getElementById(sectionId);
@@ -40,11 +46,28 @@ const Header = () => {
     }
   };
 
+  const handleLanguageChange = (nextLanguage) => {
+    const bookMatch = location.pathname.match(
+      /^\/(it|en|es)\/(libri|books|libros)\/([^/]+)$/
+    );
+
+    if (bookMatch) {
+      const slug = bookMatch[3];
+      const nextRoute = bookRouteMap[nextLanguage];
+
+      if (nextRoute) {
+        navigate(`/${nextRoute.lang}/${nextRoute.section}/${slug}`);
+      }
+    }
+
+    setLanguage(nextLanguage);
+    setMobileMenuOpen(false);
+  };
+
   return (
     <header className="sticky top-0 z-50 backdrop-blur-xl bg-[#FAF9F6]/80 border-b border-[#E8E4DB]">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
           <Link
             to="/"
             onClick={handleLogoClick}
@@ -59,7 +82,6 @@ const Header = () => {
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <button
               onClick={() => goToSection('books')}
@@ -97,7 +119,6 @@ const Header = () => {
             )}
           </nav>
 
-          {/* Desktop Language Switcher */}
           <div className="hidden md:flex items-center">
             <div
               className="flex items-center bg-[#F2EFE9] rounded-full p-1"
@@ -106,7 +127,7 @@ const Header = () => {
               {languages.map((lang) => (
                 <button
                   key={lang}
-                  onClick={() => setLanguage(lang)}
+                  onClick={() => handleLanguageChange(lang)}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                     language === lang
                       ? 'bg-[#C18C5D] text-white'
@@ -120,7 +141,6 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -134,7 +154,6 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden py-6 border-t border-[#E8E4DB] animate-fade-in">
             <nav className="flex flex-col gap-4 mb-6">
@@ -174,17 +193,11 @@ const Header = () => {
               )}
             </nav>
 
-            {/* Mobile Language Switcher */}
             <div className="flex items-center gap-2 mb-4">
               {languages.map((lang) => (
                 <button
                   key={lang}
-                  onClick={() => {
-                    setLanguage(lang);
-                    requestAnimationFrame(() => {
-                      setMobileMenuOpen(false);
-                    });
-                  }}
+                  onClick={() => handleLanguageChange(lang)}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                     language === lang
                       ? 'bg-[#C18C5D] text-white'
