@@ -21,7 +21,7 @@ const ContactSection = () => {
   const [status, setStatus] = useState(null); // 'success', 'error', or null
   const [loading, setLoading] = useState(false);
 
-  const showContactSection = false;
+  const showContactSection = true;
 
   if (!showContactSection) return null;
 

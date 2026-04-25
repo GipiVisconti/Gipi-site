@@ -10,7 +10,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   const languages = ['IT', 'EN', 'ES'];
-  const showContactNav = false;
+  const showContactNav = true;
 
   const bookRouteMap = {
     IT: { lang: 'it', section: 'libri' },

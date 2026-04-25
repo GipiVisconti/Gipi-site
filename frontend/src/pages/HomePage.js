@@ -57,7 +57,7 @@ const HomePage = () => {
       <Hero />
       <BooksSection />
       <AboutSection />
-      {false && <ContactSection />}
+      <ContactSection />
     </>
   );
 };
