@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
-import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ExternalLink, FileDown } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { getBookBySlug } from '../data/books';
 
@@ -118,6 +118,8 @@ const BookDetailPage = () => {
   };
 
   const amazonLink = book.amazonLinks?.[language];
+  const langCode = language.toUpperCase();
+  const worksheet = book.worksheetLinks?.[language];
 
   return (
     <section className="py-16 md:py-20 bg-[#FAF9F6] min-h-[70vh]">
@@ -201,6 +203,22 @@ const BookDetailPage = () => {
                 <ExternalLink className="w-4 h-4" />
               </a>
             )}
+            {worksheet && (
+  <div className="mt-4">
+    <a
+      href={worksheet.url}
+      download={worksheet.name}
+      className="inline-flex items-center justify-center gap-2 text-[#C18C5D] text-sm font-medium hover:text-[#A6754B] transition-colors"
+    >
+      <FileDown className="w-5 h-5" />
+      {language === 'IT'
+        ? 'Scheda didattica'
+        : language === 'EN'
+          ? 'Educational worksheet'
+          : 'Ficha didáctica'}
+    </a>
+  </div>
+)}
           </div>
         </div>
       </div>

@@ -9,6 +9,20 @@ const buildPages = (slug, extension = "jpg") => ({
   EN: [1, 2, 3, 4].map((page) => `/images/books/${slug}/en/${page}.${extension}`),
   ES: [1, 2, 3, 4].map((page) => `/images/books/${slug}/es/${page}.${extension}`),
 });
+const buildWorksheets = (slug, downloadName) => ({
+  IT: {
+    url: `/downloads/books/${slug}/it/${slug}.pdf`,
+    name: `${downloadName}.pdf`,
+  },
+  EN: {
+    url: `/downloads/books/${slug}/en/${slug}.pdf`,
+    name: `${downloadName}.pdf`,
+  },
+  ES: {
+    url: `/downloads/books/${slug}/es/${slug}.pdf`,
+    name: `${downloadName}.pdf`,
+  },
+});
 
 const buildMetaTitle = (title) => ({
   IT: `${title} | Gipi Visconti`,
@@ -31,6 +45,7 @@ export const books = [
     gradient: "book-gradient-1",
     color: "#F7D1BA",
     pages: buildPages("kathrine-switzer"),
+    worksheetLinks: buildWorksheets("switzer", "Kathrine Switzer"),
     amazonLinks: {
       IT: "https://www.amazon.it/s?k=Kathrine+Switzer+Gipi+Visconti",
       EN: "https://www.amazon.com/s?k=Kathrine+Switzer+Gipi+Visconti",
@@ -56,6 +71,7 @@ export const books = [
     gradient: "book-gradient-2",
     color: "#B8D4E3",
     pages: buildPages("valentina-tereshkova"),
+    worksheetLinks: buildWorksheets("tereshkova", "Valentina Tereshkova"),
     amazonLinks: {
       IT: "https://www.amazon.it/s?k=Valentina+Tereshkova+Gipi+Visconti",
       EN: "https://www.amazon.com/s?k=Valentina+Tereshkova+Gipi+Visconti",
@@ -81,6 +97,7 @@ export const books = [
     gradient: "book-gradient-3",
     color: "#D4E2D4",
     pages: buildPages("alfred-nobel"),
+    worksheetLinks: buildWorksheets("nobel", "Alfred Nobel"),
     amazonLinks: {
       IT: "https://www.amazon.it/s?k=Alfred+Nobel+Gipi+Visconti",
       EN: "https://www.amazon.com/s?k=Alfred+Nobel+Gipi+Visconti",
@@ -106,6 +123,7 @@ export const books = [
     gradient: "book-gradient-4",
     color: "#E8D4E8",
     pages: buildPages("nelson-mandela"),
+    worksheetLinks: buildWorksheets("mandela", "Nelson Mandela"),
     amazonLinks: {
       IT: "https://www.amazon.it/s?k=Nelson+Mandela+Gipi+Visconti",
       EN: "https://www.amazon.com/s?k=Nelson+Mandela+Gipi+Visconti",
@@ -131,6 +149,7 @@ export const books = [
     gradient: "book-gradient-5",
     color: "#F5E6CC",
     pages: buildPages("hedy-lamarr"),
+    worksheetLinks: buildWorksheets("lamarr", "Hedy Lamarr"),
     amazonLinks: {
       IT: "https://www.amazon.it/s?k=Hedy+Lamarr+Gipi+Visconti",
       EN: "https://www.amazon.com/s?k=Hedy+Lamarr+Gipi+Visconti",
@@ -156,6 +175,7 @@ export const books = [
     gradient: "book-gradient-6",
     color: "#FFE4E1",
     pages: buildPages("coco-chanel"),
+    worksheetLinks: buildWorksheets("coco", "Coco Chanel"),
     amazonLinks: {
       IT: "https://www.amazon.it/s?k=Coco+Chanel+Gipi+Visconti",
       EN: "https://www.amazon.com/s?k=Coco+Chanel+Gipi+Visconti",
@@ -181,6 +201,7 @@ export const books = [
     gradient: "book-gradient-7",
     color: "#E0E7FF",
     pages: buildPages("artemisia-gentileschi"),
+    worksheetLinks: buildWorksheets("gentileschi", "Artemisia Gentileschi"),
     amazonLinks: {
       IT: "https://www.amazon.it/s?k=Artemisia+Gentileschi+Gipi+Visconti",
       EN: "https://www.amazon.com/s?k=Artemisia+Gentileschi+Gipi+Visconti",
@@ -206,6 +227,7 @@ export const books = [
     gradient: "book-gradient-8",
     color: "#FECDD3",
     pages: buildPages("michael-phelps"),
+    worksheetLinks: buildWorksheets("phelps", "Michael Phelps"),
     amazonLinks: {
       IT: "https://www.amazon.it/s?k=Michael+Phelps+Gipi+Visconti",
       EN: "https://www.amazon.com/s?k=Michael+Phelps+Gipi+Visconti",
@@ -231,6 +253,7 @@ export const books = [
     gradient: "book-gradient-9",
     color: "#A7F3D0",
     pages: buildPages("ayrton-senna"),
+    worksheetLinks: buildWorksheets("SENNA", "Ayrton Senna"),
     amazonLinks: {
       IT: "https://www.amazon.it/s?k=Ayrton+Senna+Gipi+Visconti",
       EN: "https://www.amazon.com/s?k=Ayrton+Senna+Gipi+Visconti",
@@ -256,6 +279,7 @@ export const books = [
     gradient: "book-gradient-10",
     color: "#FDE68A",
     pages: buildPages("nadia-comaneci"),
+    worksheetLinks: buildWorksheets("comaneci", "Nadia Comaneci"),
     amazonLinks: {
       IT: "https://www.amazon.it/s?k=Nadia+Comaneci+Gipi+Visconti",
       EN: "https://www.amazon.com/s?k=Nadia+Comaneci+Gipi+Visconti",
@@ -281,6 +305,7 @@ export const books = [
     gradient: "book-gradient-11",
     color: "#C4B5FD",
     pages: buildPages("rafael-nadal"),
+    worksheetLinks: buildWorksheets("NADAL", "Rafa Nadal"),
     amazonLinks: {
       IT: "https://www.amazon.it/s?k=Rafael+Nadal+Gipi+Visconti",
       EN: "https://www.amazon.com/s?k=Rafael+Nadal+Gipi+Visconti",
@@ -306,6 +331,7 @@ export const books = [
     gradient: "book-gradient-12",
     color: "#F9A8D4",
     pages: buildPages("pablo-picasso"),
+    worksheetLinks: buildWorksheets("picasso", "Pablo Picasso"),
     amazonLinks: {
       IT: "https://www.amazon.it/s?k=Pablo+Picasso+Gipi+Visconti",
       EN: "https://www.amazon.com/s?k=Pablo+Picasso+Gipi+Visconti",
@@ -331,6 +357,7 @@ export const books = [
     gradient: "book-gradient-13",
     color: "#67E8F9",
     pages: buildPages("luka-modric"),
+    worksheetLinks: buildWorksheets("MODRIC", "Luka Modric"),
     amazonLinks: {
       IT: "https://www.amazon.it/s?k=Luka+Modric+Gipi+Visconti",
       EN: "https://www.amazon.com/s?k=Luka+Modric+Gipi+Visconti",
@@ -356,6 +383,7 @@ export const books = [
     gradient: "book-gradient-14",
     color: "#FDBA74",
     pages: buildPages("bebe-vio"),
+    worksheetLinks: buildWorksheets("bebe", "Bebe Vio"),
     amazonLinks: {
       IT: "https://www.amazon.it/s?k=Bebe+Vio+Gipi+Visconti",
       EN: "https://www.amazon.com/s?k=Bebe+Vio+Gipi+Visconti",
@@ -381,6 +409,7 @@ export const books = [
     gradient: "book-gradient-15",
     color: "#86EFAC",
     pages: buildPages("yayoi-kusama"),
+    worksheetLinks: buildWorksheets("kusama", "Yayoi Kusama"),
     amazonLinks: {
       IT: "https://www.amazon.it/s?k=Yayoi+Kusama+Gipi+Visconti",
       EN: "https://www.amazon.com/s?k=Yayoi+Kusama+Gipi+Visconti",
@@ -406,6 +435,7 @@ export const books = [
     gradient: "book-gradient-16",
     color: "#D4E2D4",
     pages: buildPages("madre-teresa-di-calcutta"),
+    worksheetLinks: buildWorksheets("madre", "Madre Teresa Di Calcutta"),
     amazonLinks: {
       IT: "https://www.amazon.it/s?k=Madre+Teresa+Gipi+Visconti",
       EN: "https://www.amazon.com/s?k=Mother+Teresa+Gipi+Visconti",
@@ -431,6 +461,7 @@ export const books = [
     gradient: "book-gradient-17",
     color: "#FDE68A",
     pages: buildPages("valentino-rossi"),
+    worksheetLinks: buildWorksheets("ROSSI", "Valentino Rossi"),
     amazonLinks: {
       IT: "https://www.amazon.it/s?k=Valentino+Rossi+Gipi+Visconti",
       EN: "https://www.amazon.com/s?k=Valentino+Rossi+Gipi+Visconti",
@@ -456,6 +487,7 @@ export const books = [
     gradient: "book-gradient-18",
     color: "#FFE4E1",
     pages: buildPages("seraphine-de-senlis"),
+    worksheetLinks: buildWorksheets("desenlis", "Seraphine de Senlis"),
     amazonLinks: {
       IT: "https://www.amazon.it/s?k=Seraphine+Senlis+Gipi+Visconti",
       EN: "https://www.amazon.com/s?k=Seraphine+Senlis+Gipi+Visconti",
@@ -481,6 +513,7 @@ export const books = [
     gradient: "book-gradient-19",
     color: "#FFE4E1",
     pages: buildPages("leonardo-da-vinci"),
+    worksheetLinks: buildWorksheets("leonardo-da-vinci", "Leonardo Da Vinci"),
     amazonLinks: {
       IT: "https://www.amazon.it/s?k=Leonardo+Da+Vinci+Gipi+Visconti",
       EN: "https://www.amazon.com/s?k=Leonardo+Da+Vinci+Gipi+Visconti",

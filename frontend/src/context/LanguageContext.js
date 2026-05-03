@@ -79,6 +79,14 @@ Piccoli Grandi Eroi è un progetto aperto e in continua crescita: un piccolo pon
       a: "Ogni libro segue un ritmo riconoscibile, perché i bambini si sentono più sicuri quando una storia ha una struttura chiara e familiare. Anche per questo amano ritrovare sempre certi passaggi. Il formato orizzontale è pensato per essere più comodo da tenere in mano, il testo è scritto in nero su sfondo chiaro con un carattere scelto per accompagnare la lettura, e le immagini stanno accanto alle parole per sostenerle senza invaderle."
     },
     {
+      q: "Cos’è la scheda didattica?",
+      a: "La scheda didattica è un piccolo materiale pensato per accompagnare la lettura in modo semplice. Include un’immagine in bianco e nero da colorare e tre brevi domande che aiutano il bambino a ricordare ciò che ha letto."
+    },
+    {
+      q: "A chi è rivolta la scheda didattica?",
+      a: "È pensata per genitori, educatori e insegnanti. Può essere usata dopo la lettura per colorare, leggere ad alta voce le domande e lasciare che il bambino risponda, a voce o per iscritto, secondo la sua età."
+    },
+    {
       q: "Dove posso acquistare i libri?",
       a: "I libri sono disponibili su Amazon. Sul sito puoi conoscere meglio il progetto, scoprire i titoli della collana e trovare i riferimenti per scegliere il libro e la lingua che senti più adatti al tuo bambino o al tuo percorso di lettura."
     },
@@ -190,6 +198,14 @@ Little Great Heroes is an open project, constantly growing: a small bridge betwe
       a: "Each book follows a familiar rhythm, because children feel more secure when a story has a clear and recognisable structure. That is also why they enjoy finding certain patterns again and again. The landscape format is designed to be easier for little hands to hold, the text is printed in black on a light background using a typeface chosen to support reading, and the illustrations sit beside the words to support them without taking over."
     },
     {
+      q: "What is the educational worksheet?",
+      a: "The educational worksheet is a small resource designed to accompany reading in a simple way. It includes a black-and-white picture to colour in and three short questions that help the child remember what they have read."    
+    },
+    {
+      q: "Who is the educational worksheet for?",
+      a: "It is designed for parents, educators and teachers. It can be used after reading to colour in, read the questions aloud and allow the child to answer, either orally or in writing, according to their age."
+    },
+    {
       q: "Where can I buy the books?",
       a: "The books are available on Amazon. On the website you can learn more about the project, discover the titles in the collection and find the information you need to choose the book and language that feel most suitable for your child or for your reading journey."
     },
@@ -299,6 +315,14 @@ Pequeños Grandes Valientes es un proyecto abierto y en constante crecimiento: u
     {
       q: "¿Cómo están construidos los libros?",
       a: "Cada libro sigue un ritmo reconocible, porque los niños se sienten más seguros cuando una historia tiene una estructura clara y familiar. También por eso les gusta volver a encontrar ciertos pasos una y otra vez. El formato horizontal está pensado para que sea más fácil de sujetar con sus manos, el texto está escrito en negro sobre un fondo claro con una tipografía elegida para acompañar la lectura, y las imágenes se sitúan al lado de las palabras para sostenerlas sin invadirlas."
+    },
+    {
+      q: "¿Qué es la ficha didáctica?",
+      a: "La ficha didáctica es un pequeño material pensado para acompañar la lectura de forma sencilla. Incluye una imagen en blanco y negro para colorear y tres preguntas breves que ayudan al niño a recordar lo que ha leído."
+    },
+    {
+      q: "¿A quién va dirigida la ficha didáctica?",
+      a: "Está pensada para padres, educadores y docentes. Puede utilizarse después de la lectura para colorear, leer las preguntas en voz alta y dejar que el niño responda, de forma oral o por escrito, según su edad."
     },
     {
       q: "¿Dónde puedo comprar los libros?",
