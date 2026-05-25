@@ -8,6 +8,35 @@ const FAQPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
 
+    const existingScript = document.querySelector('script[data-schema="faq"]');
+    if (existingScript) existingScript.remove();
+
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": t.faq.items.map((item) => ({
+        "@type": "Question",
+        "name": item.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.a,
+        },
+      })),
+    };
+
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.setAttribute('data-schema', 'faq');
+    script.textContent = JSON.stringify(schema);
+    document.head.appendChild(script);
+
+    return () => {
+      const s = document.querySelector('script[data-schema="faq"]');
+      if (s) s.remove();
+    };
+  }, [language, t.faq.items]);
+
+  useEffect(() => {
     document.title =
       language === 'IT'
         ? 'FAQ | Gipi Visconti'

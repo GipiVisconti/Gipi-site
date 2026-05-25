@@ -23,8 +23,8 @@ const AboutSection = () => {
             <div className="sticky top-32">
               <div className="relative">
                 <img 
-                  src="https://images.pexels.com/photos/1767016/pexels-photo-1767016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                  alt="Gipi Visconti at work"
+                  src="/images/gipi.jpeg"
+                  alt="Gipi Visconti, autrice e illustratrice"
                   className="w-full rounded-2xl shadow-xl"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-[#C18C5D] text-white p-6 rounded-2xl shadow-lg">
@@ -71,7 +71,7 @@ const AboutSection = () => {
             {/* Signature */}
             <div className="mt-10 flex justify-end">
               <img 
-                src="/images/firma gipi visconti .png"
+                src="/images/firma-gipi-visconti.webp"
                 alt="Gipi Visconti Signature"
                 className="h-32 md:h-40 lg:h-48 w-auto"
                 style={{ filter: 'invert(64%) sepia(30%) saturate(600%) hue-rotate(350deg) brightness(90%) contrast(90%)' }}

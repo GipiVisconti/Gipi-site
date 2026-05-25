@@ -5,6 +5,6 @@ User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: GPTBot
-Disallow: /
+allow: /
 
 Sitemap: https://www.gipivisconti.com/sitemap.xml

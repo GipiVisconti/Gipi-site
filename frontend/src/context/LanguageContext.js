@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState, useEffect } from 'react';
 
 const LanguageContext = createContext();
 
@@ -366,6 +366,11 @@ export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState('IT');
   
   const t = translations[language];
+
+  useEffect(() => {
+    const langMap = { IT: 'it', EN: 'en', ES: 'es' };
+    document.documentElement.lang = langMap[language] || 'it';
+  }, [language]);
   
   return (
     <LanguageContext.Provider value={{ language, setLanguage, t }}>

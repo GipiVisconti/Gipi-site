@@ -53,14 +53,14 @@ const BookDetailPage = () => {
 
   useEffect(() => {
     if (!routeInfo) return;
-
     if (language !== routeInfo.langCode) {
       setLanguage(routeInfo.langCode);
     }
   }, [lang, routeInfo, language, setLanguage]);
+
   useEffect(() => {
-  window.scrollTo(0, 0);
-}, [location.pathname]);
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   useEffect(() => {
     setCurrentPage(0);
@@ -76,6 +76,42 @@ const BookDetailPage = () => {
       navigate('/', { replace: true });
     }
   }, [isValidRoute, navigate]);
+
+  useEffect(() => {
+    if (!book) return;
+
+    const existingScript = document.querySelector('script[data-schema="book"]');
+    if (existingScript) existingScript.remove();
+
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": book.title,
+      "author": {
+        "@type": "Person",
+        "name": "Gipi Visconti",
+        "url": "https://www.gipivisconti.com/"
+      },
+      "inLanguage": language === 'IT' ? 'it' : language === 'EN' ? 'en' : 'es',
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "children"
+      },
+      "description": book.description?.[language] || '',
+      "url": `https://www.gipivisconti.com${location.pathname}`
+    };
+
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.setAttribute('data-schema', 'book');
+    script.textContent = JSON.stringify(schema);
+    document.head.appendChild(script);
+
+    return () => {
+      const s = document.querySelector('script[data-schema="book"]');
+      if (s) s.remove();
+    };
+  }, [book, language, location.pathname]);
 
   useEffect(() => {
     if (!book) return;
@@ -204,21 +240,21 @@ const BookDetailPage = () => {
               </a>
             )}
             {worksheet && (
-  <div className="mt-4">
-    <a
-      href={worksheet.url}
-      download={worksheet.name}
-      className="inline-flex items-center justify-center gap-2 text-[#C18C5D] text-sm font-medium hover:text-[#A6754B] transition-colors"
-    >
-      <FileDown className="w-5 h-5" />
-      {language === 'IT'
-        ? 'Scheda didattica'
-        : language === 'EN'
-          ? 'Educational worksheet'
-          : 'Ficha didáctica'}
-    </a>
-  </div>
-)}
+              <div className="mt-4">
+                <a
+                  href={worksheet.url}
+                  download={worksheet.name}
+                  className="inline-flex items-center justify-center gap-2 text-[#C18C5D] text-sm font-medium hover:text-[#A6754B] transition-colors"
+                >
+                  <FileDown className="w-5 h-5" />
+                  {language === 'IT'
+                    ? 'Scheda didattica'
+                    : language === 'EN'
+                      ? 'Educational worksheet'
+                      : 'Ficha didáctica'}
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </div>
