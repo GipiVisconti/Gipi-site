@@ -73,7 +73,7 @@ const BookDetailPage = () => {
 
   useEffect(() => {
     if (!isValidRoute) {
-      navigate('/', { replace: true });
+      navigate(`/${lang || 'it'}`, { replace: true });
     }
   }, [isValidRoute, navigate]);
 
@@ -161,12 +161,12 @@ const BookDetailPage = () => {
     <section className="py-16 md:py-20 bg-[#FAF9F6] min-h-[70vh]">
       <div className="max-w-5xl mx-auto px-6 md:px-12">
         <div className="mb-8">
-          <Link
-            to="/#books"
+          <button
+            onClick={() => navigate(`/${lang}`, { state: { scrollTo: 'books' } })}
             className="inline-flex items-center text-sm text-[#C18C5D] hover:text-[#A6754B] transition-colors"
           >
             ← {t.nav.books}
-          </Link>
+          </button>
         </div>
 
         <h1 className="font-heading text-3xl md:text-5xl text-[#2C2A29] text-center mb-10">

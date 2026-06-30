@@ -18,14 +18,18 @@ const Header = () => {
     ES: { lang: 'es', section: 'libros' },
   };
 
+  const langMap = { IT: 'it', EN: 'en', ES: 'es' };
+  const currentLang = langMap[language] || 'it';
+  const isHomePage = location.pathname === `/${currentLang}`;
+
   const goToSection = (sectionId) => {
-    if (location.pathname === '/') {
+    if (isHomePage) {
       const element = document.getElementById(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     } else {
-      navigate(`/#${sectionId}`);
+      navigate(`/${currentLang}`, { state: { scrollTo: sectionId } });
     }
 
     setMobileMenuOpen(false);
@@ -34,7 +38,7 @@ const Header = () => {
   const handleLogoClick = (e) => {
     setMobileMenuOpen(false);
 
-    if (location.pathname === '/') {
+    if (isHomePage) {
       e.preventDefault();
       const hero = document.getElementById('hero');
 
@@ -50,14 +54,22 @@ const Header = () => {
     const bookMatch = location.pathname.match(
       /^\/(it|en|es)\/(libri|books|libros)\/([^/]+)$/
     );
+    const faqMatch = location.pathname.match(/^\/(it|en|es)\/faq$/);
+    const blogListMatch = location.pathname.match(/^\/(it|en|es)\/blog$/);
+    const blogDetailMatch = location.pathname.match(/^\/(it|en|es)\/blog\/([^/]+)$/);
+    const nextRoute = bookRouteMap[nextLanguage];
+    const nextLang = bookRouteMap[nextLanguage]?.lang || 'it';
 
-    if (bookMatch) {
-      const slug = bookMatch[3];
-      const nextRoute = bookRouteMap[nextLanguage];
-
-      if (nextRoute) {
-        navigate(`/${nextRoute.lang}/${nextRoute.section}/${slug}`);
-      }
+    if (bookMatch && nextRoute) {
+      navigate(`/${nextRoute.lang}/${nextRoute.section}/${bookMatch[3]}`);
+    } else if (faqMatch) {
+      navigate(`/${nextLang}/faq`);
+    } else if (blogDetailMatch) {
+      navigate(`/${nextLang}/blog/${blogDetailMatch[2]}`);
+    } else if (blogListMatch) {
+      navigate(`/${nextLang}/blog`);
+    } else {
+      navigate(`/${nextLang}`);
     }
 
     setLanguage(nextLanguage);
@@ -69,7 +81,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex items-center justify-between h-20">
           <Link
-            to="/"
+            to={`/${currentLang}`}
             onClick={handleLogoClick}
             className="flex items-center gap-3 group"
             data-testid="logo-button"
@@ -100,12 +112,21 @@ const Header = () => {
             </button>
 
             <Link
-              to="/faq"
+              to={`/${currentLang}/faq`}
               onClick={() => setMobileMenuOpen(false)}
               className="nav-link text-[#75736E] hover:text-[#2C2A29] transition-colors"
               data-testid="nav-faq"
             >
               {t.nav.faq}
+            </Link>
+
+            <Link
+              to={`/${currentLang}/blog`}
+              onClick={() => setMobileMenuOpen(false)}
+              className="nav-link text-[#75736E] hover:text-[#2C2A29] transition-colors"
+              data-testid="nav-blog"
+            >
+              {t.nav.blog}
             </Link>
 
             {showContactNav && (
@@ -174,12 +195,21 @@ const Header = () => {
               </button>
 
               <Link
-                to="/faq"
+                to={`/${currentLang}/faq`}
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-left text-[#75736E] hover:text-[#2C2A29] transition-colors py-2"
                 data-testid="mobile-nav-faq"
               >
                 {t.nav.faq}
+              </Link>
+
+              <Link
+                to={`/${currentLang}/blog`}
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-left text-[#75736E] hover:text-[#2C2A29] transition-colors py-2"
+                data-testid="mobile-nav-blog"
+              >
+                {t.nav.blog}
               </Link>
 
               {showContactNav && (

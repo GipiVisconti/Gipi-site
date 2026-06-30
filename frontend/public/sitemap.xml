@@ -1,16 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage IT -->
   <url>
-    <loc>https://www.gipivisconti.com/</loc>
+    <loc>https://www.gipivisconti.com/it</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it"/>
     <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Homepage EN -->
   <url>
-    <loc>https://www.gipivisconti.com/faq</loc>
+    <loc>https://www.gipivisconti.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it"/>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Homepage ES -->
+  <url>
+    <loc>https://www.gipivisconti.com/es</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it"/>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- FAQ IT -->
+  <url>
+    <loc>https://www.gipivisconti.com/it/faq</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/faq"/>
     <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- FAQ EN -->
+  <url>
+    <loc>https://www.gipivisconti.com/en/faq</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/faq"/>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- FAQ ES -->
+  <url>
+    <loc>https://www.gipivisconti.com/es/faq</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/faq"/>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog IT -->
+  <url>
+    <loc>https://www.gipivisconti.com/it/blog</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog"/>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog EN -->
+  <url>
+    <loc>https://www.gipivisconti.com/en/blog</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog"/>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog ES -->
+  <url>
+    <loc>https://www.gipivisconti.com/es/blog</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog"/>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog post: Valentina Tereshkova IT -->
+  <url>
+    <loc>https://www.gipivisconti.com/it/blog/valentina-tereshkova</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/valentina-tereshkova"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/valentina-tereshkova"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/valentina-tereshkova"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/valentina-tereshkova"/>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Valentina Tereshkova EN -->
+  <url>
+    <loc>https://www.gipivisconti.com/en/blog/valentina-tereshkova</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/valentina-tereshkova"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/valentina-tereshkova"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/valentina-tereshkova"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/valentina-tereshkova"/>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Valentina Tereshkova ES -->
+  <url>
+    <loc>https://www.gipivisconti.com/es/blog/valentina-tereshkova</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/valentina-tereshkova"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/valentina-tereshkova"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/valentina-tereshkova"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/valentina-tereshkova"/>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Come sono fatti i libri di Piccoli Grandi Eroi IT -->
+  <url>
+    <loc>https://www.gipivisconti.com/it/blog/come-sono-fatti-i-libri-piccoli-grandi-eroi</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/come-sono-fatti-i-libri-piccoli-grandi-eroi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/come-sono-fatti-i-libri-piccoli-grandi-eroi"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/come-sono-fatti-i-libri-piccoli-grandi-eroi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/come-sono-fatti-i-libri-piccoli-grandi-eroi"/>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Come sono fatti i libri di Piccoli Grandi Eroi EN -->
+  <url>
+    <loc>https://www.gipivisconti.com/en/blog/come-sono-fatti-i-libri-piccoli-grandi-eroi</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/come-sono-fatti-i-libri-piccoli-grandi-eroi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/come-sono-fatti-i-libri-piccoli-grandi-eroi"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/come-sono-fatti-i-libri-piccoli-grandi-eroi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/come-sono-fatti-i-libri-piccoli-grandi-eroi"/>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Come sono fatti i libri di Piccoli Grandi Eroi ES -->
+  <url>
+    <loc>https://www.gipivisconti.com/es/blog/come-sono-fatti-i-libri-piccoli-grandi-eroi</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/come-sono-fatti-i-libri-piccoli-grandi-eroi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/come-sono-fatti-i-libri-piccoli-grandi-eroi"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/come-sono-fatti-i-libri-piccoli-grandi-eroi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/come-sono-fatti-i-libri-piccoli-grandi-eroi"/>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <url>

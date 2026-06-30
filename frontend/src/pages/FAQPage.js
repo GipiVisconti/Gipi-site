@@ -56,9 +56,10 @@ const FAQPage = () => {
       );
     }
 
+    const langSlug = language === 'IT' ? 'it' : language === 'EN' ? 'en' : 'es';
     const canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) {
-      canonical.setAttribute('href', 'https://www.gipivisconti.com/faq');
+      canonical.setAttribute('href', `https://www.gipivisconti.com/${langSlug}/faq`);
     }
   }, [language]);
 

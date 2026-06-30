@@ -1,4 +1,5 @@
 import { createContext, useContext, useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const LanguageContext = createContext();
 
@@ -101,6 +102,11 @@ Piccoli Grandi Eroi è un progetto aperto e in continua crescita: un piccolo pon
       subtitle: 'Scopri le ultime novità sui miei libri e progetti',
       readMore: 'Leggi di più',
       noArticles: 'Nessun articolo ancora. Torna presto!',
+      types: {
+        character: 'Personaggio',
+        advice: 'Consigli',
+        project: 'Il Progetto',
+      },
     },
     contact: {
       title: 'Prova un libro',
@@ -220,6 +226,11 @@ Little Great Heroes is an open project, constantly growing: a small bridge betwe
       subtitle: 'Discover the latest news about my books and projects',
       readMore: 'Read more',
       noArticles: 'No articles yet. Come back soon!',
+      types: {
+        character: 'Character',
+        advice: 'Advice',
+        project: 'The Project',
+      },
     },
     contact: {
       title: 'Try a book',
@@ -339,6 +350,11 @@ Pequeños Grandes Valientes es un proyecto abierto y en constante crecimiento: u
       subtitle: 'Descubre las últimas novedades sobre mis libros y proyectos',
       readMore: 'Leer más',
       noArticles: 'Aún no hay artículos. ¡Vuelve pronto!',
+      types: {
+        character: 'Personaje',
+        advice: 'Consejos',
+        project: 'El Proyecto',
+      },
     },
     contact: {
       title: 'Prueba un libro',
@@ -362,9 +378,20 @@ Pequeños Grandes Valientes es un proyecto abierto y en constante crecimiento: u
   },
 };
 
+const urlToLang = { it: 'IT', en: 'EN', es: 'ES' };
+
 export const LanguageProvider = ({ children }) => {
+  const location = useLocation();
   const [language, setLanguage] = useState('IT');
-  
+
+  useEffect(() => {
+    const match = location.pathname.match(/^\/(it|en|es)(\/|$)/);
+    if (match) {
+      const detected = urlToLang[match[1]];
+      if (detected) setLanguage(detected);
+    }
+  }, [location.pathname]);
+
   const t = translations[language];
 
   useEffect(() => {

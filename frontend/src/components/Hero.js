@@ -22,11 +22,11 @@ const Hero = () => {
     <section 
    key={language}
    id="hero" 
-   className="min-h-[90vh] relative overflow-hidden bg-white"
+   className="relative overflow-hidden bg-white"
    data-testid="hero-section"
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-32 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center min-h-[70vh]">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-6 md:py-10 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Content */}
           <div className="order-2 lg:order-1 space-y-8">
             <div className="space-y-6">

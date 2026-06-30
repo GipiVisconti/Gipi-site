@@ -31,26 +31,26 @@ const HomePage = () => {
       );
     }
 
+    const langSlug = language === 'IT' ? 'it' : language === 'EN' ? 'en' : 'es';
     const canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) {
-      canonical.setAttribute('href', 'https://www.gipivisconti.com/');
+      canonical.setAttribute('href', `https://www.gipivisconti.com/${langSlug}`);
     }
   }, [language]);
 
   useEffect(() => {
-    if (!location.hash) return;
-
-    const sectionId = location.hash.replace('#', '');
+    const scrollTo = location.state?.scrollTo;
+    if (!scrollTo) return;
 
     const timer = setTimeout(() => {
-      const element = document.getElementById(sectionId);
+      const element = document.getElementById(scrollTo);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
-    }, 120);
+    }, 100);
 
     return () => clearTimeout(timer);
-  }, [location.hash]);
+  }, [location.state]);
 
   return (
     <>

@@ -1,9 +1,18 @@
+import { useNavigate, Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { Heart, BookOpen, Instagram, Mail, Linkedin } from 'lucide-react';
 
 const Footer = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const navigate = useNavigate();
   const currentYear = new Date().getFullYear();
+
+  const langMap = { IT: 'it', EN: 'en', ES: 'es' };
+  const currentLang = langMap[language] || 'it';
+
+  const goToSection = (sectionId) => {
+    navigate(`/${currentLang}`, { state: { scrollTo: sectionId } });
+  };
 
   return (
     <footer className="bg-[#2C2A29] text-white py-16" data-testid="footer">
@@ -29,28 +38,28 @@ const Footer = () => {
             <h4 className="font-heading text-lg font-medium">{t.nav.books}</h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="/#books"
+                <button
+                  onClick={() => goToSection('books')}
                   className="text-white/60 hover:text-[#C18C5D] transition-colors"
                 >
                   {t.books.title}
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="/#about"
+                <button
+                  onClick={() => goToSection('about')}
                   className="text-white/60 hover:text-[#C18C5D] transition-colors"
                 >
                   {t.nav.about}
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="/#faq"
+                <Link
+                  to={`/${currentLang}/faq`}
                   className="text-white/60 hover:text-[#C18C5D] transition-colors"
                 >
                   {t.nav.faq}
-                </a>
+                </Link>
               </li>
               <li>
                 {false && (
