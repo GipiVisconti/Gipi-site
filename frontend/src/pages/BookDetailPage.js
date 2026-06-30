@@ -75,7 +75,7 @@ const BookDetailPage = () => {
     if (!isValidRoute) {
       navigate(`/${lang || 'it'}`, { replace: true });
     }
-  }, [isValidRoute, navigate]);
+  }, [isValidRoute, navigate, lang]);
 
   useEffect(() => {
     if (!book) return;
