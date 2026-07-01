@@ -111,6 +111,74 @@ const posts = [
       },
     },
   },
+  {
+    id: 3,
+    slug: 'chi-era-madre-teresa-di-calcutta',
+    date: '2026-07-01',
+    type: 'character',
+    content: {
+      IT: {
+        title: 'Chi era Madre Teresa di Calcutta e perché raccontarla ai bambini',
+        excerpt:
+          'Si chiamava Anjezë Gonxhe Bojaxhiu, e prima di diventare Madre Teresa era una bambina cresciuta senza padre, in una casa dove il cibo scarseggiava ma non l\'abitudine a condividerlo. La sua storia parte da lì, molto prima di Calcutta.',
+        body: `<p>Si chiamava Anjezë Gonxhe Bojaxhiu, e nacque a Skopje il 26 agosto 1910, in una famiglia albanese cattolica. Il nome Gonxhe, scelto dalla madre, significa bocciolo di fiore. Il padre Nikollë era un imprenditore e uno dei consiglieri comunali della città; morì improvvisamente quando lei aveva otto anni, e da quel momento la madre crebbe lei e i suoi fratelli lavorando come ricamatrice, insegnando loro a condividere quel poco che avevano con chi ne aveva ancora meno.</p>
+
+<p>E crebbe in una famiglia profondamente religiosa, tra i canti e le attività della parrocchia. A dodici anni sentì per la prima volta il desiderio di dedicare la vita alla religione, ascoltando i racconti dei missionari che partivano per il Bengala. Ci vollero altri sei anni prima che quel pensiero diventasse una decisione: nel 1928 lasciò casa per entrare nelle Suore di Loreto, un ordine religioso irlandese con missioni in India. Non rivide più sua madre.</p>
+
+<p>Dopo la formazione a Dublino e a Darjeeling, arrivò in India nel gennaio del 1929. Prese i voti e il nome di Teresa, in onore di Teresa di Lisieux, e insegnò per diciassette anni al Saint Mary's High School di Calcutta, diventandone alla fine la direttrice, dietro le mura di un convento che la separava dalla povertà fuori.</p>
+
+<p>Il 10 settembre 1946, in treno verso Darjeeling per il ritiro spirituale annuale, ebbe quella che lei stessa chiamò la chiamata dentro la chiamata: la certezza di dover lasciare il convento per vivere in mezzo ai più poveri, curandoli e stando al loro fianco. Ci vollero due anni per ottenere il permesso della Chiesa. Nel 1948 uscì per la prima volta indossando un sari bianco bordato di blu, che sarebbe diventato il suo abito per il resto della vita.</p>
+
+<p>Nel 1950 fondò le Missionarie della Carità insieme a dodici consorelle, una congregazione dedicata a chi non aveva nessun altro. Nel 1952 aprì a Calcutta la Nirmal Hriday, che significa casa dal cuore puro, un luogo dove le persone trovate morenti per strada potevano essere curate e accompagnate con dignità. La congregazione crebbe negli anni fino a contare migliaia di suore attive in decine di paesi, e oggi le Missionarie della Carità continuano lo stesso lavoro nato quel giorno a Calcutta.</p>
+
+<p>E nel 1979 ricevette il Premio Nobel per la Pace, devolvendo l'intera somma ai poveri di Calcutta e rifiutando il tradizionale banchetto di gala riservato ai vincitori. Morì nella stessa città il 5 settembre 1997. Papa Giovanni Paolo II la proclamò beata il 19 ottobre 2003, e Papa Francesco la canonizzò il 4 settembre 2016, in una cerimonia a cui parteciparono anche millecinquecento persone senza casa, arrivate da tutta Italia.</p>
+
+<p>A questa figura è dedicato uno dei libri della collana Piccoli Grandi Eroi, disponibile in italiano, inglese e spagnolo. Racconta ai bambini la vita di Anjezë fin da quando era una bambina in una casa dove il cibo scarseggiava e l'amore no.</p>
+
+<p>Cosa succederebbe se un bambino iniziasse a guardare, ogni giorno, chi nessuno guarda?</p>`,
+      },
+      EN: {
+        title: 'Who Was Mother Teresa of Calcutta, and Why Tell Her Story to Children',
+        excerpt:
+          'Her name was Anjezë Gonxhe Bojaxhiu, and before becoming Mother Teresa she was a child growing up without a father, in a home where food was scarce but the habit of sharing it never was. Her story starts there, long before Calcutta.',
+        body: `<p>Her name was Anjezë Gonxhe Bojaxhiu, and she was born in Skopje on 26 August 1910, into a Catholic Albanian family. Her mother chose the name Gonxhe, which means flower bud in Albanian. Her father, Nikollë, was a businessman and one of the city's councillors; he died suddenly when she was eight, and from then on her mother raised the children alone, working as an embroiderer and teaching them to share what little they had with those who had even less.</p>
+
+<p>And she grew up in a deeply religious household, amid the hymns and activities of the local parish. At twelve, she first felt the desire to devote her life to religion, having listened to stories told by missionaries setting off for Bengal. It took another six years for that feeling to become a decision: in 1928 she left home to join the Sisters of Loreto, an Irish religious order with missions in India. She never saw her mother again.</p>
+
+<p>After training in Dublin and Darjeeling, she arrived in India in January 1929. She took her vows and the name Teresa, in honour of Thérèse of Lisieux, and taught for seventeen years at St Mary's High School in Calcutta, eventually becoming its headmistress, behind convent walls that kept her apart from the poverty outside.</p>
+
+<p>On 10 September 1946, travelling by train to Darjeeling for her annual retreat, she experienced what she herself called the call within the call: the certainty that she had to leave the convent to live among the poorest, caring for them and staying by their side. It took two years to obtain the Church's permission. In 1948 she stepped out for the first time wearing a plain white sari edged in blue, the habit she would wear for the rest of her life.</p>
+
+<p>In 1950 she founded the Missionaries of Charity together with twelve fellow sisters, a congregation devoted to those who had no one else. In 1952 she opened Nirmal Hriday in Calcutta, meaning home of the pure heart, a place where people found dying in the streets could be cared for and allowed to die with dignity. The congregation grew over the decades to thousands of sisters working in dozens of countries, and the Missionaries of Charity still carry on the same work today.</p>
+
+<p>And in 1979 she received the Nobel Peace Prize, giving the entire sum to the poor of Calcutta and turning down the traditional laureates' banquet. She died in the same city on 5 September 1997. Pope John Paul II beatified her on 19 October 2003, and Pope Francis canonised her on 4 September 2016, at a ceremony attended by fifteen hundred homeless people brought in from across Italy.</p>
+
+<p>One of the books in the Piccoli Grandi Eroi collection is dedicated to her, available in Italian, English and Spanish. It tells children the story of Anjezë's life from when she was a child herself, in a home where food was scarce and love was not.</p>
+
+<p>What might happen if a child started, every day, looking at the people no one else looks at?</p>`,
+      },
+      ES: {
+        title: 'Quién fue la Madre Teresa de Calcuta y por qué contársela a los niños',
+        excerpt:
+          'Se llamaba Anjezë Gonxhe Bojaxhiu, y antes de convertirse en la Madre Teresa fue una niña que creció sin padre, en una casa donde la comida escaseaba pero no la costumbre de compartirla. Su historia empieza ahí, mucho antes de Calcuta.',
+        body: `<p>Se llamaba Anjezë Gonxhe Bojaxhiu, y nació en Skopie el 26 de agosto de 1910, en una familia albanesa católica. Su madre eligió el nombre Gonxhe, que en albanés significa capullo de flor. Su padre, Nikollë, era empresario y uno de los concejales de la ciudad; murió de forma repentina cuando ella tenía ocho años, y desde entonces su madre crió a los hijos trabajando como bordadora, enseñándoles a compartir lo poco que tenían con quienes tenían aún menos.</p>
+
+<p>Y creció en una familia profundamente religiosa, entre los cantos y las actividades de la parroquia. A los doce años sintió por primera vez el deseo de dedicar su vida a la religión, al escuchar los relatos de los misioneros que partían hacia Bengala. Pasaron otros seis años antes de que ese pensamiento se convirtiera en una decisión: en 1928 dejó su casa para entrar en las Hermanas de Loreto, una orden religiosa irlandesa con misiones en la India. No volvió a ver a su madre.</p>
+
+<p>Tras su formación en Dublín y en Darjeeling, llegó a la India en enero de 1929. Tomó los votos y el nombre de Teresa, en honor a Teresa de Lisieux, y enseñó durante diecisiete años en el colegio Saint Mary's de Calcuta, del que llegó a ser directora, tras los muros de un convento que la separaba de la pobreza de fuera.</p>
+
+<p>El 10 de septiembre de 1946, en tren hacia Darjeeling para el retiro espiritual anual, tuvo lo que ella misma llamó la llamada dentro de la llamada: la certeza de que debía dejar el convento para vivir entre los más pobres, cuidándolos y estando a su lado. Pasaron dos años hasta obtener el permiso de la Iglesia. En 1948 salió por primera vez vestida con un sari blanco bordado de azul, el hábito que llevaría el resto de su vida.</p>
+
+<p>En 1950 fundó las Misioneras de la Caridad junto a doce hermanas, una congregación dedicada a quienes no tenían a nadie más. En 1952 abrió en Calcuta el Nirmal Hriday, que significa casa del corazón puro, un lugar donde las personas encontradas agonizando en la calle podían ser atendidas y acompañadas con dignidad. La congregación creció con los años hasta contar miles de hermanas activas en decenas de países, y hoy las Misioneras de la Caridad siguen con el mismo trabajo que nació aquel día en Calcuta.</p>
+
+<p>Y en 1979 recibió el Premio Nobel de la Paz, y donó toda la cantidad a los pobres de Calcuta, rechazando el banquete tradicional reservado a los premiados. Murió en la misma ciudad el 5 de septiembre de 1997. El papa Juan Pablo II la beatificó el 19 de octubre de 2003, y el papa Francisco la canonizó el 4 de septiembre de 2016, en una ceremonia a la que asistieron también mil quinientas personas sin hogar, llegadas de toda Italia.</p>
+
+<p>A esta figura está dedicado uno de los libros de la colección Piccoli Grandi Eroi, disponible en italiano, inglés y español. Cuenta a los niños la vida de Anjezë desde que era una niña, en una casa donde la comida escaseaba y el amor no.</p>
+
+<p>¿Qué pasaría si un niño empezara a mirar, cada día, a quien nadie mira?</p>`,
+      },
+    },
+  },
 ];
 
 export const getAllPosts = () =>
