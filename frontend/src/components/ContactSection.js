@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { Input } from './ui/input';
 import { Label } from './ui/label';
@@ -10,6 +11,9 @@ const API = `${BACKEND_URL}/api`;
 
 const ContactSection = () => {
   const { language, t } = useLanguage();
+
+  const langMap = { IT: 'it', EN: 'en', ES: 'es' };
+  const currentLang = langMap[language] || 'it';
 
   const [formData, setFormData] = useState({
     name: '',
@@ -164,7 +168,18 @@ const ContactSection = () => {
                 className="mt-1 h-4 w-4 shrink-0 accent-[#C18C5D]"
                 required
               />
-              <span>{t.contact.consent}</span>
+              <span>
+                {t.contact.consent.prefix}
+                <Link
+                  to={`/${currentLang}/privacy-policy`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-[#C18C5D] transition-colors"
+                >
+                  {t.contact.consent.linkText}
+                </Link>
+                {t.contact.consent.suffix}
+              </span>
             </label>
 
             <button

@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#2C2A29] text-white py-16" data-testid="footer">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
+        <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
@@ -33,7 +33,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Books */}
           <div className="space-y-4">
             <h4 className="font-heading text-lg font-medium">{t.nav.books}</h4>
             <ul className="space-y-2">
@@ -45,6 +45,13 @@ const Footer = () => {
                   {t.books.title}
                 </button>
               </li>
+            </ul>
+          </div>
+
+          {/* Site */}
+          <div className="space-y-4">
+            <h4 className="font-heading text-lg font-medium">{t.footer.siteTitle}</h4>
+            <ul className="space-y-2">
               <li>
                 <button
                   onClick={() => goToSection('about')}
@@ -55,21 +62,19 @@ const Footer = () => {
               </li>
               <li>
                 <Link
+                  to={`/${currentLang}/blog`}
+                  className="text-white/60 hover:text-[#C18C5D] transition-colors"
+                >
+                  {t.nav.blog}
+                </Link>
+              </li>
+              <li>
+                <Link
                   to={`/${currentLang}/faq`}
                   className="text-white/60 hover:text-[#C18C5D] transition-colors"
                 >
                   {t.nav.faq}
                 </Link>
-              </li>
-              <li>
-                {false && (
-                  <a
-                    href="#contact"
-                    className="text-white/60 hover:text-[#C18C5D] transition-colors"
-                  >
-                    {t.nav.contact}
-                  </a>
-                )}
               </li>
             </ul>
           </div>
@@ -112,8 +117,16 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-white/60 text-sm">
-            &copy; {currentYear} Gipi Visconti. {t.footer.rights}.
+          <p className="text-white/60 text-sm flex flex-wrap items-center justify-center gap-x-2">
+            <span>
+              &copy; {currentYear} Gipi Visconti. {t.footer.rights}.
+            </span>
+            <Link
+              to={`/${currentLang}/privacy-policy`}
+              className="underline hover:text-[#C18C5D] transition-colors"
+            >
+              {t.footer.privacyPolicy}
+            </Link>
           </p>
           <p className="text-white/60 text-sm flex items-center gap-1">
             {t.footer.madeWith} <Heart className="w-4 h-4 text-[#C18C5D]" /> {t.footer.forChildren}

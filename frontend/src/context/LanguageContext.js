@@ -120,12 +120,74 @@ Piccoli Grandi Eroi è un progetto aperto e in continua crescita: un piccolo pon
       namePlaceholder: 'Il tuo nome',
       emailPlaceholder: 'la.tua@email.com',
       birthdayPlaceholder: 'Data di nascita',
-      consent: 'Accetto le Condizioni Generali e di ricevere la newsletter. Puoi annullare l’iscrizione in qualsiasi momento tramite il link presente nelle email.',
+      consent: {
+        prefix: 'Accetto le ',
+        linkText: 'Condizioni Generali',
+        suffix: ' e di ricevere la newsletter. Puoi annullare l’iscrizione in qualsiasi momento tramite il link presente nelle email.',
+      },
       },
       footer: {
       rights: 'Tutti i diritti riservati',
       madeWith: 'Fatto con',
       forChildren: 'per i piccoli lettori',
+      siteTitle: 'Sito',
+      privacyPolicy: 'Privacy Policy',
+    },
+    privacy: {
+      eyebrow: 'Informativa legale',
+      title: 'Privacy Policy',
+      lastUpdated: 'Ultimo aggiornamento: 2 luglio 2026',
+      intro: 'La presente informativa descrive le modalità con cui vengono trattati i dati personali raccolti attraverso il sito gipivisconti.com, in particolare tramite il modulo di iscrizione alla newsletter disponibile nella sezione Regalo. Il trattamento avviene nel rispetto del Regolamento (UE) 2016/679 (GDPR) e della normativa applicabile in materia di protezione dei dati personali.',
+      sections: [
+        {
+          heading: '1. Titolare del trattamento',
+          body: 'Il Titolare del trattamento dei dati personali raccolti attraverso questo sito è Gipi Visconti, autrice e ideatrice della collana Piccoli Grandi Eroi. Per qualsiasi richiesta relativa al trattamento dei dati personali è possibile scrivere all\'indirizzo email info@gipivisconti.com.',
+        },
+        {
+          heading: '2. Dati raccolti',
+          body: 'Attraverso il modulo presente nella sezione Regalo vengono raccolti il nome del bambino o della bambina, l\'indirizzo email del genitore o del tutore che effettua l\'iscrizione e la data di nascita del bambino o della bambina. Questi dati vengono forniti volontariamente dal genitore o dal tutore al momento della compilazione del modulo. Il sito raccoglie inoltre, in forma automatica, alcuni dati tecnici di navigazione, come l\'indirizzo IP, il tipo di browser e le pagine visitate, attraverso i normali log di funzionamento del server e strumenti di terze parti eventualmente utilizzati.',
+        },
+        {
+          heading: '3. Finalità del trattamento',
+          body: 'I dati raccolti vengono utilizzati per inviare la biografia illustrata offerta gratuitamente e richiesta tramite il modulo, per iscrivere l\'indirizzo email alla newsletter di Gipi Visconti, attraverso la quale vengono comunicati aggiornamenti sui libri e sui progetti della collana Piccoli Grandi Eroi, e per personalizzare, dove previsto, i contenuti inviati in base all\'età del bambino o della bambina indicata in fase di iscrizione.',
+        },
+        {
+          heading: '4. Base giuridica',
+          body: 'Il trattamento dei dati è basato sul consenso esplicito prestato dal genitore o dal tutore al momento della compilazione del modulo, ai sensi dell\'articolo 6, paragrafo 1, lettera a) del GDPR. Il consenso può essere revocato in qualsiasi momento, senza pregiudicare la liceità del trattamento effettuato prima della revoca.',
+        },
+        {
+          heading: '5. Dati relativi ai minori',
+          body: 'Il modulo di iscrizione richiede la data di nascita del bambino o della bambina a cui è destinata la biografia illustrata offerta gratuitamente. Questo dato viene fornito e il relativo trattamento viene autorizzato esclusivamente dal genitore o dal tutore legale del minore, che dichiara di avere titolo per farlo al momento dell\'iscrizione. Gipi Visconti non raccoglie autonomamente dati relativi a minori né si rivolge direttamente a bambini attraverso il modulo di iscrizione.',
+        },
+        {
+          heading: '6. Conservazione dei dati',
+          body: 'I dati raccolti vengono conservati per tutta la durata dell\'iscrizione alla newsletter, fino a quando l\'interessato non richiede la cancellazione o revoca il proprio consenso. In assenza di revoca, i dati vengono comunque sottoposti a verifica periodica e cancellati qualora non risultino più necessari rispetto alle finalità per cui sono stati raccolti, salvi eventuali obblighi di conservazione previsti dalla legge.',
+        },
+        {
+          heading: '7. Modalità di trattamento e destinatari dei dati',
+          body: 'I dati personali vengono trattati con strumenti informatici e conservati su piattaforme di terze parti utilizzate per la gestione della newsletter e l\'invio delle comunicazioni via email, in qualità di responsabili del trattamento nominati ai sensi dell\'articolo 28 del GDPR. Tali piattaforme possono avere sede all\'interno dello Spazio Economico Europeo o garantire comunque un livello di protezione adeguato dei dati anche in caso di trasferimento verso paesi terzi, in conformità con quanto previsto dal GDPR. I dati non vengono venduti, ceduti o comunicati a terzi per finalità di marketing diverse da quelle indicate nella presente informativa.',
+        },
+        {
+          heading: '8. Cookie e tecnologie simili',
+          body: 'Al momento della pubblicazione, questo sito non utilizza cookie di profilazione né cookie di analisi di terze parti. Vengono utilizzati solo cookie tecnici strettamente necessari al funzionamento del sito. Qualora questa situazione dovesse cambiare in futuro, verranno introdotti un apposito banner e una specifica cookie policy.',
+        },
+        {
+          heading: '9. Diritti dell\'interessato',
+          body: 'In qualità di interessato, il genitore o il tutore che ha fornito i dati ha diritto di accedere ai dati personali che lo riguardano e a quelli del minore, richiederne la rettifica o l\'aggiornamento, richiederne la cancellazione, opporsi al trattamento o richiederne la limitazione, richiedere la portabilità dei dati quando applicabile, e revocare in qualsiasi momento il consenso prestato, senza che questo pregiudichi la liceità del trattamento svolto prima della revoca. Questi diritti possono essere esercitati in qualsiasi momento scrivendo all\'indirizzo email info@gipivisconti.com, oppure utilizzando il link di cancellazione presente in ciascuna email della newsletter. È inoltre possibile proporre reclamo all\'Autorità di controllo per la protezione dei dati personali del proprio paese di residenza.',
+        },
+        {
+          heading: '10. Sicurezza dei dati',
+          body: 'Vengono adottate misure tecniche e organizzative adeguate a proteggere i dati personali da accessi non autorizzati, perdita, distruzione o divulgazione non consentita, in conformità con quanto previsto dal GDPR.',
+        },
+        {
+          heading: '11. Modifiche alla presente informativa',
+          body: 'La presente informativa può essere aggiornata nel tempo, ad esempio in seguito a modifiche normative o a cambiamenti nelle modalità di trattamento dei dati. Eventuali modifiche saranno pubblicate su questa pagina, con indicazione della data di ultimo aggiornamento.',
+        },
+        {
+          heading: '12. Contatti',
+          body: 'Per qualsiasi domanda relativa alla presente informativa o al trattamento dei dati personali è possibile scrivere a info@gipivisconti.com.',
+        },
+      ],
     },
   },
   EN: {
@@ -244,12 +306,74 @@ Little Great Heroes is an open project, constantly growing: a small bridge betwe
       namePlaceholder: 'Your name',
       emailPlaceholder: 'your@email.com',
       birthdayPlaceholder: 'Date of birth',
-      consent: 'I accept the Terms and Conditions and agree to receive the newsletter. You can unsubscribe at any time through the link included in the emails.',
+      consent: {
+        prefix: 'I accept the ',
+        linkText: 'Terms and Conditions',
+        suffix: ' and agree to receive the newsletter. You can unsubscribe at any time through the link included in the emails.',
+      },
     },
     footer: {
       rights: 'All rights reserved',
       madeWith: 'Made with',
       forChildren: 'for little readers',
+      siteTitle: 'Site',
+      privacyPolicy: 'Privacy Policy',
+    },
+    privacy: {
+      eyebrow: 'Legal information',
+      title: 'Privacy Policy',
+      lastUpdated: 'Last updated: 2 July 2026',
+      intro: 'This Privacy Policy explains how personal data collected through the website gipivisconti.com is processed, in particular through the newsletter sign-up form available in the Gift section. Processing is carried out in compliance with Regulation (EU) 2016/679 (GDPR) and any other applicable data protection law.',
+      sections: [
+        {
+          heading: '1. Data Controller',
+          body: 'The Data Controller for the personal data collected through this website is Gipi Visconti, author and creator of the Little Great Heroes series. For any request concerning the processing of personal data, you can write to info@gipivisconti.com.',
+        },
+        {
+          heading: '2. Data collected',
+          body: 'Through the form available in the Gift section, the following data is collected: the child\'s name, the email address of the parent or legal guardian completing the form, and the child\'s date of birth. This data is provided voluntarily by the parent or legal guardian when filling in the form. The website also automatically collects some technical browsing data, such as the IP address, browser type and pages visited, through standard server logs and any third-party tools that may be used.',
+        },
+        {
+          heading: '3. Purpose of processing',
+          body: 'The data collected is used to send the illustrated biography offered free of charge and requested through the form, to subscribe the email address to the Gipi Visconti newsletter, through which updates on the books and on the Little Great Heroes series are shared, and to personalise, where applicable, the content sent based on the age of the child indicated at sign-up.',
+        },
+        {
+          heading: '4. Legal basis',
+          body: 'Processing is based on the explicit consent given by the parent or legal guardian when completing the form, pursuant to Article 6(1)(a) of the GDPR. Consent can be withdrawn at any time, without affecting the lawfulness of processing carried out before withdrawal.',
+        },
+        {
+          heading: '5. Data relating to minors',
+          body: 'The sign-up form requests the date of birth of the child for whom the free illustrated biography is intended. This data is provided, and its processing is authorised, exclusively by the parent or legal guardian of the child, who confirms having the authority to do so at the time of sign-up. Gipi Visconti does not independently collect data relating to minors, nor does it address children directly through the sign-up form.',
+        },
+        {
+          heading: '6. Data retention',
+          body: 'The data collected is kept for as long as the newsletter subscription remains active, until the data subject requests its deletion or withdraws consent. In the absence of a withdrawal request, the data is nonetheless reviewed periodically and deleted where no longer necessary for the purposes for which it was collected, subject to any retention obligations required by law.',
+        },
+        {
+          heading: '7. Processing methods and data recipients',
+          body: 'Personal data is processed using electronic tools and stored on third-party platforms used to manage the newsletter and send email communications, acting as data processors appointed pursuant to Article 28 of the GDPR. These platforms may be based within the European Economic Area or otherwise guarantee an adequate level of data protection in the event of transfer to third countries, in accordance with the GDPR. Data is not sold, shared or disclosed to third parties for marketing purposes other than those described in this Privacy Policy.',
+        },
+        {
+          heading: '8. Cookies and similar technologies',
+          body: 'At the time of publication, this website does not use profiling cookies or third-party analytics cookies. Only technical cookies strictly necessary for the website to function may be used. Should this change in the future, a dedicated cookie banner and a specific cookie policy will be introduced.',
+        },
+        {
+          heading: '9. Rights of the data subject',
+          body: 'As the data subject, the parent or legal guardian who provided the data has the right to access the personal data concerning them and the child, to request its rectification or update, to request its deletion, to object to processing or request its restriction, to request data portability where applicable, and to withdraw consent at any time, without affecting the lawfulness of processing carried out before withdrawal. These rights can be exercised at any time by writing to info@gipivisconti.com, or by using the unsubscribe link included in every newsletter email. A complaint can also be lodged with the data protection supervisory authority of your country of residence.',
+        },
+        {
+          heading: '10. Data security',
+          body: 'Appropriate technical and organisational measures are adopted to protect personal data from unauthorised access, loss, destruction or unlawful disclosure, in accordance with the GDPR.',
+        },
+        {
+          heading: '11. Changes to this Privacy Policy',
+          body: 'This Privacy Policy may be updated over time, for example following regulatory changes or changes in data processing practices. Any changes will be published on this page, along with the date of the last update.',
+        },
+        {
+          heading: '12. Contact',
+          body: 'For any question regarding this Privacy Policy or the processing of personal data, please write to info@gipivisconti.com.',
+        },
+      ],
     },
   },
   ES: {
@@ -368,12 +492,74 @@ Pequeños Grandes Valientes es un proyecto abierto y en constante crecimiento: u
       namePlaceholder: 'Tu nombre',
       emailPlaceholder: 'tu@email.com',
       birthdayPlaceholder: 'Fecha de nacimiento',
-      consent: 'Acepto las Condiciones Generales y recibir la newsletter. Puedes darte de baja en cualquier momento mediante el enlace presente en los correos electrónicos.',
+      consent: {
+        prefix: 'Acepto las ',
+        linkText: 'Condiciones Generales',
+        suffix: ' y recibir la newsletter. Puedes darte de baja en cualquier momento mediante el enlace presente en los correos electrónicos.',
+      },
     },
     footer: {
       rights: 'Todos los derechos reservados',
       madeWith: 'Hecho con',
       forChildren: 'para pequeños lectores',
+      siteTitle: 'Sitio',
+      privacyPolicy: 'Política de Privacidad',
+    },
+    privacy: {
+      eyebrow: 'Información legal',
+      title: 'Política de Privacidad',
+      lastUpdated: 'Última actualización: 2 de julio de 2026',
+      intro: 'Esta Política de Privacidad explica cómo se tratan los datos personales recogidos a través del sitio web gipivisconti.com, en particular mediante el formulario de suscripción a la newsletter disponible en la sección Regalito. El tratamiento se realiza de conformidad con el Reglamento (UE) 2016/679 (RGPD) y con la normativa aplicable en materia de protección de datos.',
+      sections: [
+        {
+          heading: '1. Responsable del tratamiento',
+          body: 'La responsable del tratamiento de los datos personales recogidos a través de este sitio web es Gipi Visconti, autora y creadora de la colección Pequeños Grandes Valientes. Para cualquier solicitud relacionada con el tratamiento de datos personales, puedes escribir a info@gipivisconti.com.',
+        },
+        {
+          heading: '2. Datos recogidos',
+          body: 'A través del formulario disponible en la sección Regalito se recogen el nombre del niño o de la niña, la dirección de email del padre, madre o tutor legal que realiza la suscripción, y la fecha de nacimiento del niño o de la niña. Estos datos son proporcionados voluntariamente por el padre, madre o tutor legal al completar el formulario. El sitio web también recoge de forma automática algunos datos técnicos de navegación, como la dirección IP, el tipo de navegador y las páginas visitadas, a través de los registros habituales del servidor y de posibles herramientas de terceros utilizadas.',
+        },
+        {
+          heading: '3. Finalidad del tratamiento',
+          body: 'Los datos recogidos se utilizan para enviar la biografía ilustrada ofrecida de forma gratuita y solicitada a través del formulario, para suscribir la dirección de email a la newsletter de Gipi Visconti, a través de la cual se comunican novedades sobre los libros y sobre los proyectos de la colección Pequeños Grandes Valientes, y para personalizar, cuando corresponda, los contenidos enviados en función de la edad del niño o de la niña indicada en el momento de la suscripción.',
+        },
+        {
+          heading: '4. Base jurídica',
+          body: 'El tratamiento de los datos se basa en el consentimiento explícito prestado por el padre, madre o tutor legal al completar el formulario, de conformidad con el artículo 6, apartado 1, letra a) del RGPD. El consentimiento puede revocarse en cualquier momento, sin que ello afecte a la licitud del tratamiento realizado antes de la revocación.',
+        },
+        {
+          heading: '5. Datos relativos a menores',
+          body: 'El formulario de suscripción solicita la fecha de nacimiento del niño o de la niña al que está destinada la biografía ilustrada ofrecida de forma gratuita. Este dato es proporcionado y su tratamiento es autorizado exclusivamente por el padre, madre o tutor legal del menor, quien declara tener la potestad para hacerlo en el momento de la suscripción. Gipi Visconti no recoge de forma autónoma datos relativos a menores ni se dirige directamente a niños a través del formulario de suscripción.',
+        },
+        {
+          heading: '6. Conservación de los datos',
+          body: 'Los datos recogidos se conservan mientras permanezca activa la suscripción a la newsletter, hasta que la persona interesada solicite su cancelación o revoque su consentimiento. En ausencia de revocación, los datos se someten igualmente a una revisión periódica y se eliminan cuando ya no resulten necesarios para las finalidades por las que fueron recogidos, sin perjuicio de las obligaciones de conservación que puedan derivarse de la ley.',
+        },
+        {
+          heading: '7. Modalidades de tratamiento y destinatarios de los datos',
+          body: 'Los datos personales se tratan mediante herramientas informáticas y se conservan en plataformas de terceros utilizadas para la gestión de la newsletter y el envío de comunicaciones por email, en calidad de encargados del tratamiento designados de conformidad con el artículo 28 del RGPD. Dichas plataformas pueden tener su sede dentro del Espacio Económico Europeo o garantizar en cualquier caso un nivel de protección adecuado de los datos también en caso de transferencia a terceros países, de conformidad con el RGPD. Los datos no se venden, ceden ni comunican a terceros con fines de marketing distintos de los indicados en esta Política de Privacidad.',
+        },
+        {
+          heading: '8. Cookies y tecnologías similares',
+          body: 'En el momento de la publicación, este sitio web no utiliza cookies de perfilado ni cookies de análisis de terceros. Solo pueden utilizarse cookies técnicas estrictamente necesarias para el funcionamiento del sitio web. Si esto cambiara en el futuro, se introducirá un aviso de cookies específico y una política de cookies dedicada.',
+        },
+        {
+          heading: '9. Derechos de la persona interesada',
+          body: 'Como persona interesada, el padre, madre o tutor legal que ha proporcionado los datos tiene derecho a acceder a los datos personales que le conciernen y a los del menor, a solicitar su rectificación o actualización, a solicitar su supresión, a oponerse al tratamiento o solicitar su limitación, a solicitar la portabilidad de los datos cuando proceda, y a revocar en cualquier momento el consentimiento prestado, sin que ello afecte a la licitud del tratamiento realizado antes de la revocación. Estos derechos pueden ejercerse en cualquier momento escribiendo a info@gipivisconti.com, o utilizando el enlace de baja incluido en cada email de la newsletter. También es posible presentar una reclamación ante la autoridad de control en materia de protección de datos del país de residencia.',
+        },
+        {
+          heading: '10. Seguridad de los datos',
+          body: 'Se adoptan medidas técnicas y organizativas adecuadas para proteger los datos personales frente a accesos no autorizados, pérdida, destrucción o divulgación no permitida, de conformidad con el RGPD.',
+        },
+        {
+          heading: '11. Modificaciones de esta Política de Privacidad',
+          body: 'Esta Política de Privacidad puede actualizarse con el tiempo, por ejemplo a raíz de cambios normativos o de modificaciones en las modalidades de tratamiento de los datos. Cualquier cambio se publicará en esta página, indicando la fecha de la última actualización.',
+        },
+        {
+          heading: '12. Contacto',
+          body: 'Para cualquier pregunta relacionada con esta Política de Privacidad o con el tratamiento de datos personales, puedes escribir a info@gipivisconti.com.',
+        },
+      ],
     },
   },
 };
