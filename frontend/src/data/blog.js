@@ -153,7 +153,7 @@ const posts = [
 
 <p>And in 1979 she received the Nobel Peace Prize, giving the entire sum to the poor of Calcutta and turning down the traditional laureates' banquet. She died in the same city on 5 September 1997. Pope John Paul II beatified her on 19 October 2003, and Pope Francis canonised her on 4 September 2016, at a ceremony attended by fifteen hundred homeless people brought in from across Italy.</p>
 
-<p>One of the books in the Piccoli Grandi Eroi collection is dedicated to her, available in Italian, English and Spanish. It tells children the story of Anjezë's life from when she was a child herself, in a home where food was scarce and love was not.</p>
+<p>One of the books in the Little Great Heroes series is dedicated to her, available in Italian, English and Spanish. It tells children the story of Anjezë's life from when she was a child herself, in a home where food was scarce and love was not.</p>
 
 <p>What might happen if a child started, every day, looking at the people no one else looks at?</p>`,
       },
@@ -173,7 +173,7 @@ const posts = [
 
 <p>Y en 1979 recibió el Premio Nobel de la Paz, y donó toda la cantidad a los pobres de Calcuta, rechazando el banquete tradicional reservado a los premiados. Murió en la misma ciudad el 5 de septiembre de 1997. El papa Juan Pablo II la beatificó el 19 de octubre de 2003, y el papa Francisco la canonizó el 4 de septiembre de 2016, en una ceremonia a la que asistieron también mil quinientas personas sin hogar, llegadas de toda Italia.</p>
 
-<p>A esta figura está dedicado uno de los libros de la colección Piccoli Grandi Eroi, disponible en italiano, inglés y español. Cuenta a los niños la vida de Anjezë desde que era una niña, en una casa donde la comida escaseaba y el amor no.</p>
+<p>A esta figura está dedicado uno de los libros de la colección Pequeños Grandes Valientes, disponible en italiano, inglés y español. Cuenta a los niños la vida de Anjezë desde que era una niña, en una casa donde la comida escaseaba y el amor no.</p>
 
 <p>¿Qué pasaría si un niño empezara a mirar, cada día, a quien nadie mira?</p>`,
       },
