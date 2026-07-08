@@ -218,6 +218,78 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Blog post: Michael Phelps da bambino: come nasce il nuotatore più decorato della storia olimpica IT -->
+  <url>
+    <loc>https://www.gipivisconti.com/it/blog/michael-phelps-bambino-nuotatore-piu-decorato</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/michael-phelps-bambino-nuotatore-piu-decorato"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/michael-phelps-bambino-nuotatore-piu-decorato"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/michael-phelps-bambino-nuotatore-piu-decorato"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/michael-phelps-bambino-nuotatore-piu-decorato"/>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Michael Phelps da bambino: come nasce il nuotatore più decorato della storia olimpica EN -->
+  <url>
+    <loc>https://www.gipivisconti.com/en/blog/michael-phelps-bambino-nuotatore-piu-decorato</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/michael-phelps-bambino-nuotatore-piu-decorato"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/michael-phelps-bambino-nuotatore-piu-decorato"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/michael-phelps-bambino-nuotatore-piu-decorato"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/michael-phelps-bambino-nuotatore-piu-decorato"/>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Michael Phelps da bambino: come nasce il nuotatore più decorato della storia olimpica ES -->
+  <url>
+    <loc>https://www.gipivisconti.com/es/blog/michael-phelps-bambino-nuotatore-piu-decorato</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/michael-phelps-bambino-nuotatore-piu-decorato"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/michael-phelps-bambino-nuotatore-piu-decorato"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/michael-phelps-bambino-nuotatore-piu-decorato"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/michael-phelps-bambino-nuotatore-piu-decorato"/>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Le domande dei bambini sulla disabilità IT -->
+  <url>
+    <loc>https://www.gipivisconti.com/it/blog/domande-bambini-disabilita</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/domande-bambini-disabilita"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/domande-bambini-disabilita"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/domande-bambini-disabilita"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/domande-bambini-disabilita"/>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Le domande dei bambini sulla disabilità EN -->
+  <url>
+    <loc>https://www.gipivisconti.com/en/blog/domande-bambini-disabilita</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/domande-bambini-disabilita"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/domande-bambini-disabilita"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/domande-bambini-disabilita"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/domande-bambini-disabilita"/>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Le domande dei bambini sulla disabilità ES -->
+  <url>
+    <loc>https://www.gipivisconti.com/es/blog/domande-bambini-disabilita</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/domande-bambini-disabilita"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/domande-bambini-disabilita"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/domande-bambini-disabilita"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/domande-bambini-disabilita"/>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://www.gipivisconti.com/it/libri/kathrine-switzer</loc>
     <lastmod>2026-04-17</lastmod>

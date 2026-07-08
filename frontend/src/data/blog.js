@@ -179,6 +179,148 @@ const posts = [
       },
     },
   },
+  {
+    id: 4,
+    slug: 'michael-phelps-bambino-nuotatore-piu-decorato',
+    date: '2026-07-08',
+    type: 'character',
+    content: {
+      IT: {
+        title: 'Michael Phelps da bambino: come nasce il nuotatore più decorato della storia olimpica',
+        excerpt:
+          'Un\'insegnante lo aveva dato per spacciato: troppo irrequieto, incapace di stare fermo. Michael Phelps era un bambino con l\'ADHD, e in una piscina trovò lo spazio per trasformare quell\'energia in disciplina, fino a diventare l\'atleta più decorato della storia olimpica.',
+        body: `<p>A scuola, un'insegnante disse a sua madre che quel bambino non sarebbe mai riuscito a concentrarsi su niente. Michael Phelps aveva pochi anni e in classe non stava fermo un istante, si agitava, interrompeva, sembrava incapace di seguire una lezione fino alla fine. A nove anni arrivò la diagnosi: disturbo da deficit di attenzione e iperattività, l'ADHD.</p>
+
+<p>Nato a Baltimora, nel Maryland, il 30 giugno 1985, Michael era il più piccolo di tre figli. Sua madre Debbie era preside di una scuola media e non si arrese all'idea che quell'energia incontenibile fosse solo un problema da correggere. Cercò un modo per incanalarla, e lo trovò in una piscina.</p>
+
+<p>A sette anni Michael iniziò a nuotare, spinto anche dall'esempio delle sorelle maggiori, già atlete. All'inizio non amava mettere la faccia sott'acqua e imparò prima il dorso. E fu in acqua che quell'energia, che a scuola sembrava un ostacolo, trovò uno spazio dove diventare qualcosa di utile: la concentrazione necessaria per contare le bracciate e rispettare i tempi, ripetendo lo stesso gesto per ore.</p>
+
+<p>A dieci anni deteneva un record nazionale di categoria nei 100 metri farfalla. A undici iniziò ad allenarsi con Bob Bowman, il coach che lo avrebbe seguito per il resto della carriera al North Baltimore Aquatic Club. Bowman intuì presto che quel ragazzino aveva un talento raro, ma non lo trattò mai come un fenomeno da proteggere. Gli costruì intorno una disciplina fatta di orari fissi e allenamenti quotidiani, lo stesso tipo di struttura che aiuta molti bambini con ADHD a trovare un punto fermo.</p>
+
+<p>Il resto è storia dello sport. Phelps debuttò alle Olimpiadi di Sydney nel 2000, a quindici anni, senza salire sul podio. Quattro anni dopo, ad Atene, tornò a casa con sei ori e due bronzi. Ma fu a Pechino, nel 2008, che scrisse una pagina che nessuno aveva mai scritto prima: otto medaglie d'oro in una singola edizione dei Giochi, un record che superò quello di Mark Spitz, fermo a sette dal 1972. Tra Sydney 2000 e Rio 2016, il conto finale segna 28 medaglie, 23 delle quali d'oro: nessun altro atleta nella storia dei Giochi si è mai avvicinato a questi numeri.</p>
+
+<p>Negli anni successivi al ritiro, Phelps ha parlato apertamente delle difficoltà attraversate anche da adulto, tra ansia e depressione, raccontando quanto lo sport lo avesse aiutato a gestire un disagio che a scuola nessuno sapeva come affrontare. E ha ricordato spesso quella frase dell'insegnante che lo aveva dato per spacciato, non per rivendicarsi una rivincita, ma per raccontare a chi si sente sbagliato che a volte basta trovare il posto giusto per usare bene quello che si ha.</p>
+
+<p>La sua storia è raccontata anche nel libro della collana Piccoli Grandi Eroi, disponibile su Amazon: un racconto pensato per i bambini che stanno imparando a leggere, e che ripercorre gli anni in cui Michael imparò a trasformare l'irrequietezza in energia, e l'energia in disciplina.</p>
+
+<p>Quanti bambini oggi vengono etichettati come "troppo" prima ancora di scoprire dove mettere quella stessa energia?</p>`,
+      },
+      EN: {
+        title: 'Michael Phelps as a child: how the most decorated swimmer in Olympic history was made',
+        excerpt:
+          'A teacher had written him off: too restless, unable to sit still. Michael Phelps was a child with ADHD, and in a swimming pool he found the space to turn that energy into discipline, going on to become the most decorated athlete in Olympic history.',
+        body: `<p>At school, a teacher told his mother that boy would never manage to focus on anything. Michael Phelps was still young, and in the classroom he could not sit still for a moment: he fidgeted, he interrupted, he seemed incapable of following a lesson through to the end. At nine, the diagnosis arrived: attention deficit hyperactivity disorder, ADHD.</p>
+
+<p>Born in Baltimore, Maryland, on 30 June 1985, Michael was the youngest of three children. His mother, Debbie, was a middle school headteacher, and she refused to accept that all that boundless energy was simply a problem to be corrected. She looked for a way to channel it, and she found it in a swimming pool.</p>
+
+<p>At seven, Michael started swimming, encouraged also by the example of his older sisters, who were already competitive athletes. At first, he did not like putting his face under the water, and he learned backstroke first. And it was in the water that this energy, which at school had seemed such a hindrance, found a space to become something useful: the concentration needed to count strokes and keep to the pace, repeating the same movement for hours.</p>
+
+<p>By the age of ten he held an age-group national record in the 100-metre butterfly. At eleven, he began training with Bob Bowman, the coach who would guide him for the rest of his career at the North Baltimore Aquatic Club. Bowman quickly sensed that the boy had a rare talent, but he never treated him as a prodigy to be shielded. He built a discipline around him made of fixed hours and daily training, the same kind of structure that helps many children with ADHD find something solid to hold on to.</p>
+
+<p>The rest is sporting history. Phelps made his Olympic debut at the Sydney Games in 2000, aged fifteen, without reaching the podium. Four years later, in Athens, he came home with six golds and two bronzes. But it was in Beijing, in 2008, that he wrote a page no one had ever written before: eight gold medals at a single edition of the Games, a record that surpassed Mark Spitz's seven, held since 1972. Between Sydney 2000 and Rio 2016, his final tally stands at 28 medals, 23 of them gold: no other athlete in the history of the Games has ever come close to those numbers.</p>
+
+<p>In the years since retiring, Phelps has spoken openly about the difficulties he faced even as an adult, including anxiety and depression, describing how much sport had helped him manage a struggle that no one at school had known how to address. And he has often recalled that teacher's remark, the one that had written him off, not to claim some kind of revenge, but to tell anyone who feels wrong that sometimes all it takes is finding the right place to put to good use what you already have.</p>
+
+<p>His story is also told in the book from the Little Great Heroes collection, available on Amazon: a story written for children who are learning to read, tracing the years in which Michael learned to turn restlessness into energy, and energy into discipline.</p>
+
+<p>How many children today are labelled as "too much" before they even discover where to put that same energy?</p>`,
+      },
+      ES: {
+        title: 'Michael Phelps de niño: así nace el nadador más laureado de la historia olímpica',
+        excerpt:
+          'Una profesora lo había dado por perdido: demasiado inquieto, incapaz de estarse quieto. Michael Phelps era un niño con TDAH, y en una piscina encontró el espacio para transformar esa energía en disciplina, hasta convertirse en el atleta más laureado de la historia olímpica.',
+        body: `<p>En el colegio, una profesora le dijo a su madre que aquel niño nunca conseguiría concentrarse en nada. Michael Phelps era muy pequeño y en clase no paraba quieto ni un instante: se agitaba, interrumpía, parecía incapaz de seguir una lección hasta el final. A los nueve años llegó el diagnóstico: trastorno por déficit de atención e hiperactividad, el TDAH.</p>
+
+<p>Nacido en Baltimore, en Maryland, el 30 de junio de 1985, Michael era el menor de tres hermanos. Su madre, Debbie, era directora de un instituto y no se resignó a la idea de que aquella energía incontenible fuera solo un problema que corregir. Buscó una manera de encauzarla, y la encontró en una piscina.</p>
+
+<p>A los siete años Michael empezó a nadar, animado también por el ejemplo de sus hermanas mayores, que ya eran atletas. Al principio no le gustaba meter la cara bajo el agua, y aprendió antes la espalda. Y fue en el agua donde aquella energía, que en el colegio parecía un obstáculo, encontró un espacio donde convertirse en algo útil: la concentración necesaria para contar las brazadas y respetar los tiempos, repitiendo el mismo gesto durante horas.</p>
+
+<p>A los diez años ostentaba un récord nacional de su categoría en los 100 metros mariposa. A los once empezó a entrenar con Bob Bowman, el entrenador que lo acompañaría el resto de su carrera en el North Baltimore Aquatic Club. Bowman intuyó pronto que aquel chico tenía un talento poco común, pero nunca lo trató como un fenómeno al que había que proteger. Construyó a su alrededor una disciplina hecha de horarios fijos y entrenamientos diarios, el mismo tipo de estructura que ayuda a muchos niños con TDAH a encontrar un punto de apoyo.</p>
+
+<p>El resto es historia del deporte. Phelps debutó en los Juegos Olímpicos de Sídney en 2000, con quince años, sin subir al podio. Cuatro años después, en Atenas, volvió a casa con seis oros y dos bronces. Pero fue en Pekín, en 2008, cuando escribió una página que nadie había escrito antes: ocho medallas de oro en una sola edición de los Juegos, un récord que superó el de Mark Spitz, que se mantenía en siete desde 1972. Entre Sídney 2000 y Río 2016, el balance final es de 28 medallas, 23 de ellas de oro: ningún otro atleta en la historia de los Juegos se ha acercado jamás a estas cifras.</p>
+
+<p>En los años posteriores a su retirada, Phelps ha hablado abiertamente de las dificultades que atravesó también de adulto, entre ansiedad y depresión, contando cuánto le había ayudado el deporte a gestionar un malestar que en el colegio nadie sabía cómo abordar. Y ha recordado a menudo aquella frase de la profesora que lo había dado por perdido, no para reivindicar una revancha, sino para contarle a quien se siente equivocado que a veces basta con encontrar el lugar adecuado para aprovechar bien lo que se tiene.</p>
+
+<p>Su historia se cuenta también en el libro de la colección Pequeños Grandes Valientes, disponible en Amazon: un relato pensado para los niños que están aprendiendo a leer, que recorre los años en que Michael aprendió a transformar la inquietud en energía, y la energía en disciplina.</p>
+
+<p>¿Cuántos niños reciben hoy la etiqueta de "demasiado" antes incluso de descubrir dónde poner esa misma energía?</p>`,
+      },
+    },
+  },
+  {
+    id: 5,
+    slug: 'domande-bambini-disabilita',
+    date: '2026-07-08',
+    type: 'advice',
+    content: {
+      IT: {
+        title: 'Le domande dei bambini sulla disabilità: perché rispondere conta più che stare zitti',
+        excerpt:
+          "L'imbarazzo nasce quasi sempre dal silenzio, non dalla differenza. Un bambino nota qualcosa di diverso in una persona e fa una domanda diretta, e l'adulto accanto si affretta a zittirlo, come se la curiosità fosse un errore da correggere invece che un gesto da accompagnare.",
+        body: `<p>L'imbarazzo nasce quasi sempre dal silenzio, non dalla differenza. Un bambino nota qualcosa di diverso in una persona e fa una domanda diretta, e l'adulto accanto si affretta a zittirlo, come se la curiosità fosse un errore da correggere invece che un gesto da accompagnare.</p>
+
+<p>E in quel momento si perde un'occasione di relazione. Il messaggio che il bambino riceve non sta nelle parole dell'adulto, ma nel silenzio imposto. Quella differenza diventa un argomento da evitare, qualcosa di cui vergognarsi, anche quando nessuno lo dice ad alta voce.</p>
+
+<p>I bambini chiedono tutto senza filtri, perché non hanno ancora imparato le convenzioni che spingono un adulto ad abbassare la voce o a guardare altrove per educazione. Ed è questa mancanza di sovrastrutture a farli imparare più in fretta di noi: una domanda a cui si risponde con calma resta, mentre un imbarazzo taciuto si trasforma in distanza, e la distanza è più difficile da colmare di qualsiasi risposta scomoda.</p>
+
+<p>Rispondere con serenità non significa avere sempre la risposta perfetta. Significa non trattare la domanda come un problema da chiudere in fretta. Se un bambino chiede perché una persona usa una sedia a rotelle, o perché non vede con gli occhi ma con le mani, basta rispondere con la stessa naturalezza con cui si spiega perché il cielo è blu. Il tono conta più del contenuto: se l'adulto resta tranquillo, il bambino impara che la differenza non è un pericolo, e questa lezione resta più a lungo di qualunque spiegazione tecnica.</p>
+
+<p>Una buona abitudine è lasciare che il bambino finisca di parlare prima di rispondere, senza interromperlo con un cambio di discorso. Il tempo che si prende per ascoltare la domanda intera vale quanto la risposta stessa.</p>
+
+<p>Questo non riguarda soltanto la disabilità. Riguarda ogni volta che un bambino nota qualcosa di diverso da quello che conosce e lo dice ad alta voce, senza il timore che paralizza gli adulti. Il coraggio di fare una domanda sincera resta un ponte anche fuori dall'infanzia: nel lavoro, quando non osiamo chiedere per paura di sembrare impreparati, e nelle relazioni, quando taciamo per non urtare qualcuno che invece vorrebbe solo essere ascoltato.</p>
+
+<p>E lo stesso meccanismo si attiva quando una storia viene letta ad alta voce. Un bambino ascolta il racconto di una persona, che ha vissuto un ostacolo e lo ha trasformato in qualcosa di suo, e da lì nascono le domande più oneste: come faceva, cosa provava. Non serve inventare parole complicate, basta seguire la curiosità del bambino un passo alla volta, senza saltare alla pagina successiva per chiudere l'argomento.</p>
+
+<p>La biografia diventa un terreno neutro: non si parla della persona che si ha davanti, ma di una storia, e da lì la domanda esce più facilmente. Le biografie illustrate nascono anche per questo, per dare ai bambini uno spazio dove le domande sulla differenza trovano una risposta prima ancora di essere fatte ad alta voce davanti a qualcuno che potrebbe sentirsi a disagio.</p>
+
+<p>Forse l'inclusione comincia in un gesto piccolo: lasciare che la domanda venga fatta, senza fretta di chiudere il discorso.</p>`,
+      },
+      EN: {
+        title: "Children's questions about disability: why answering matters more than staying quiet",
+        excerpt:
+          'Embarrassment almost always comes from silence, not from difference. A child notices something different about a person and asks a direct question, and the adult standing nearby rushes to hush them, as though curiosity were a mistake to correct rather than a gesture to guide.',
+        body: `<p>Embarrassment almost always comes from silence, not from difference. A child notices something different about a person and asks a direct question, and the adult standing nearby rushes to hush them, as though curiosity were a mistake to correct rather than a gesture to guide.</p>
+
+<p>And in that moment, a chance for connection is lost. The message the child receives lies not in the adult's words, but in the silence imposed on them. That difference becomes a subject to avoid, something to feel ashamed of, even when no one says so aloud.</p>
+
+<p>Children ask everything without filters, because they have not yet learned the conventions that push an adult to lower their voice or look away out of politeness. And it is this lack of pretence that lets them learn faster than we do: a question answered calmly stays with them, while an embarrassment kept quiet turns into distance, and distance is harder to bridge than any awkward answer.</p>
+
+<p>Answering calmly does not mean always having the perfect answer. It means not treating the question as a problem to be closed quickly. If a child asks why a person uses a wheelchair, or why someone sees with their hands rather than their eyes, it is enough to answer with the same ease used to explain why the sky is blue. Tone matters more than content: if the adult stays calm, the child learns that difference is not a danger, and that lesson lasts longer than any technical explanation.</p>
+
+<p>A good habit is to let the child finish speaking before answering, without cutting them off with a change of subject. The time taken to listen to the whole question matters just as much as the answer itself.</p>
+
+<p>This is not only about disability. It applies every time a child notices something different from what they already know and says it out loud, without the fear that paralyses adults. The courage to ask a sincere question remains a bridge well beyond childhood: at work, when we do not dare to ask for fear of seeming unprepared, and in relationships, when we stay quiet so as not to upset someone who would actually rather just be heard.</p>
+
+<p>And the same mechanism kicks in when a story is read aloud. A child listens to the account of a person, who faced an obstacle and turned it into something of their own, and from there come the most honest questions: how did they manage, what did it feel like. There is no need to invent complicated words, just follow the child's curiosity one step at a time, without skipping to the next page to close the subject.</p>
+
+<p>The biography becomes neutral ground: it is not about the person standing in front of them, but about a story, and from there the question comes out more easily. Illustrated biographies exist for this reason too, to give children a space where questions about difference find an answer before they are even asked aloud in front of someone who might feel uncomfortable.</p>
+
+<p>Perhaps inclusion begins with one small gesture: letting the question be asked, without any hurry to close the conversation.</p>`,
+      },
+      ES: {
+        title: 'Las preguntas de los niños sobre la discapacidad: por qué responder importa más que callar',
+        excerpt:
+          'La vergüenza casi siempre nace del silencio, no de la diferencia. Un niño se fija en algo distinto en una persona y hace una pregunta directa, y el adulto que tiene al lado se apresura a mandarlo callar, como si la curiosidad fuera un error que corregir en lugar de un gesto que acompañar.',
+        body: `<p>La vergüenza casi siempre nace del silencio, no de la diferencia. Un niño se fija en algo distinto en una persona y hace una pregunta directa, y el adulto que tiene al lado se apresura a mandarlo callar, como si la curiosidad fuera un error que corregir en lugar de un gesto que acompañar.</p>
+
+<p>Y en ese momento se pierde una ocasión de relación. El mensaje que recibe el niño no está en las palabras del adulto, sino en el silencio impuesto. Esa diferencia se convierte en un tema que evitar, algo de lo que avergonzarse, aunque nadie lo diga en voz alta.</p>
+
+<p>Los niños preguntan todo sin filtros, porque todavía no han aprendido las convenciones que llevan a un adulto a bajar la voz o mirar hacia otro lado por educación. Y es precisamente esa falta de artificios lo que les hace aprender más rápido que nosotros: una pregunta respondida con calma permanece, mientras que una vergüenza callada se transforma en distancia, y la distancia es más difícil de salvar que cualquier respuesta incómoda.</p>
+
+<p>Responder con serenidad no significa tener siempre la respuesta perfecta. Significa no tratar la pregunta como un problema que cerrar deprisa. Si un niño pregunta por qué una persona usa silla de ruedas, o por qué no ve con los ojos sino con las manos, basta con responder con la misma naturalidad con la que se explica por qué el cielo es azul. El tono importa más que el contenido: si el adulto permanece tranquilo, el niño aprende que la diferencia no es un peligro, y esa lección permanece más tiempo que cualquier explicación técnica.</p>
+
+<p>Una buena costumbre es dejar que el niño termine de hablar antes de responder, sin interrumpirlo con un cambio de tema. El tiempo que se dedica a escuchar la pregunta entera vale tanto como la respuesta misma.</p>
+
+<p>Esto no tiene que ver solo con la discapacidad. Tiene que ver con cada vez que un niño se fija en algo distinto de lo que ya conoce y lo dice en voz alta, sin el miedo que paraliza a los adultos. El valor de hacer una pregunta sincera sigue siendo un puente también fuera de la infancia: en el trabajo, cuando no nos atrevemos a preguntar por miedo a parecer poco preparados, y en las relaciones, cuando callamos para no molestar a alguien que en realidad solo querría que lo escucharan.</p>
+
+<p>Y el mismo mecanismo se activa cuando se lee un cuento en voz alta. Un niño escucha el relato de una persona, que vivió un obstáculo y lo transformó en algo propio, y de ahí nacen las preguntas más honestas: cómo lo hacía, qué sentía. No hace falta inventar palabras complicadas, basta con seguir la curiosidad del niño paso a paso, sin saltar a la página siguiente para cerrar el tema.</p>
+
+<p>La biografía se convierte en un terreno neutral: no se habla de la persona que se tiene delante, sino de una historia, y desde ahí la pregunta surge con más facilidad. Las biografías ilustradas nacen también para esto, para dar a los niños un espacio donde las preguntas sobre la diferencia encuentran una respuesta antes incluso de formularse en voz alta delante de alguien que podría sentirse incómodo.</p>
+
+<p>Quizá la inclusión empiece con un gesto pequeño: dejar que la pregunta se haga, sin prisa por cerrar la conversación.</p>`,
+      },
+    },
+  },
 ];
 
 export const getAllPosts = () =>
