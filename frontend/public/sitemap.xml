@@ -290,6 +290,42 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Blog post: Perché ho scelto le biografie vere e non le favole per i bambini che imparano a leggere IT -->
+  <url>
+    <loc>https://www.gipivisconti.com/it/blog/perche-storie-vere-non-favole-prima-lettura</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/perche-storie-vere-non-favole-prima-lettura"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/perche-storie-vere-non-favole-prima-lettura"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/perche-storie-vere-non-favole-prima-lettura"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/perche-storie-vere-non-favole-prima-lettura"/>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Perché ho scelto le biografie vere e non le favole per i bambini che imparano a leggere EN -->
+  <url>
+    <loc>https://www.gipivisconti.com/en/blog/perche-storie-vere-non-favole-prima-lettura</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/perche-storie-vere-non-favole-prima-lettura"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/perche-storie-vere-non-favole-prima-lettura"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/perche-storie-vere-non-favole-prima-lettura"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/perche-storie-vere-non-favole-prima-lettura"/>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Perché ho scelto le biografie vere e non le favole per i bambini che imparano a leggere ES -->
+  <url>
+    <loc>https://www.gipivisconti.com/es/blog/perche-storie-vere-non-favole-prima-lettura</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/perche-storie-vere-non-favole-prima-lettura"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/perche-storie-vere-non-favole-prima-lettura"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/perche-storie-vere-non-favole-prima-lettura"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/perche-storie-vere-non-favole-prima-lettura"/>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://www.gipivisconti.com/it/libri/kathrine-switzer</loc>
     <lastmod>2026-04-17</lastmod>

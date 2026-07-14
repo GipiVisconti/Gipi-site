@@ -321,6 +321,68 @@ const posts = [
       },
     },
   },
+  {
+    id: 6,
+    slug: 'perche-storie-vere-non-favole-prima-lettura',
+    date: '2026-07-14',
+    type: 'project',
+    content: {
+      IT: {
+        title: 'Perché ho scelto le biografie vere e non le favole per i bambini che imparano a leggere',
+        excerpt:
+          "Il primo giorno in cui un bambino legge una frase da solo, senza che nessuno gli tenga la mano sulla pagina, succede qualcosa che vale la pena di non sciupare. Ecco perché nei libri di Piccoli Grandi Eroi le storie sono sempre vere, mai inventate.",
+        body: `<p>Il primo giorno in cui un bambino legge una frase da solo, senza che nessuno gli tenga la mano sulla pagina, succede qualcosa che vale la pena di non sciupare. È una fatica vera, fatta di lettere che si incastrano piano, di parole che si ricompongono una sillaba dopo l'altra. E quella fatica merita una ricompensa che non sia una favola.</p>
+
+<p>Quando ho iniziato a lavorare su Piccoli Grandi Eroi, mi sono fatta una domanda che sembrava semplice e che invece ha deciso tutto il resto: cosa deve trovare un bambino alla fine di quello sforzo? Una storia vera, qualcuno che ha vissuto, che ha fatto esattamente quello che il libro racconta.</p>
+
+<p>Non è una preferenza stilistica, è una convinzione che riguarda il valore che diamo al tempo dei bambini in quella fase precisa. La finzione ha un potere enorme, e nessuno lo discute, ma quel potere può aspettare. La prima lettura, quella in cui ogni frase è una piccola scalata, no.</p>
+
+<p>Un bambino che legge che qualcuno ha costruito una scuola dove tutti dicevano che non si potesse fare sta facendo due cose insieme: sta decifrando dei segni sulla pagina, e sta scoprendo che quella frase racconta qualcosa che è accaduto, non qualcosa che qualcuno ha inventato per farlo sognare. Non è una metafora del coraggio: è un fatto. E credo che questa differenza, che a un adulto può sembrare sottile, per un bambino di sei anni sia enorme, perché cambia il modo in cui guarda quello che sta leggendo, e forse anche quello che pensa sia possibile per lui.</p>
+
+<p>Per questo il linguaggio dei libri è calibrato per chi sta imparando a leggere: frasi brevi, costruzioni semplici, senza subordinate che si arrampicano una sull'altra. Ma quella semplicità non deve svuotare il contenuto. Un bambino che sta facendo il suo primo sforzo di lettura, che affronta ogni frase come una piccola scalata, merita comunque la verità intera, raccontata in un modo che possa arrivarci da solo.</p>
+
+<p>C'è poi un secondo pezzo di questa scelta, che riguarda chi sta intorno al bambino in quel momento. Ogni libro della collana arriva con schede scaricabili gratuitamente, pensate per essere usate subito, senza che chi le propone debba prima costruirci sopra un percorso. Non è un accessorio aggiunto alla fine: è parte della stessa idea. Se un bambino scopre che quella storia è vera, il passo naturale che segue è voler saperne di più. Le schede esistono per raccogliere quella curiosità nel momento in cui è più viva, che è subito dopo l'ultima pagina.</p>
+
+<p>Libri per la prima lettura esistono; biografie per l'infanzia esistono; materiali didattici gratuiti esistono. Questi tre elementi, presi singolarmente, non sono una novità. La novità è metterli insieme nello stesso libro, pensato per chi sta iniziando a leggere. Ed è la ragione per cui, ogni volta che qualcuno mi scrive che suo figlio ha chiuso uno di questi libri e ha chiesto "ma è vero?", so di aver fatto la scelta giusta.</p>`,
+      },
+      EN: {
+        title: 'Why I Chose True Stories Over Fairy Tales for Children Learning to Read',
+        excerpt:
+          'The first time a child reads a sentence entirely alone, something happens that deserves to matter. That is why Gipi Visconti chose true stories over fairy tales for Little Great Heroes, and why the difference is anything but a stylistic detail.',
+        body: `<p>The first day a child reads a sentence alone, with no one holding their hand on the page, something happens that is worth not wasting. It is real effort, made of letters slotting together slowly, of words rebuilding themselves one syllable at a time. And that effort deserves a reward that is not a fairy tale.</p>
+
+<p>When I started working on Little Great Heroes, I asked myself a question that seemed simple and that ended up deciding everything else: what should a child find at the end of that effort? A true story, someone who actually lived, who did exactly what the book describes.</p>
+
+<p>It is not a stylistic preference; it is a conviction about the value we give to children's time at that precise stage. Fiction has enormous power, and no one disputes that, but that power can wait. First reading, the one in which every sentence is a small climb, cannot.</p>
+
+<p>A child reading that someone built a school where everyone said it could not be done is doing two things at once: decoding marks on a page, and discovering that the sentence describes something that actually happened, not something invented to make them dream. It is not a metaphor for courage: it is a fact. And I believe this difference, which to an adult might seem subtle, is enormous for a six-year-old, because it changes the way they look at what they are reading, and perhaps also what they think is possible for themselves.</p>
+
+<p>This is why the language of the books is calibrated for children learning to read: short sentences, simple constructions, without subordinate clauses climbing one on top of another. But that simplicity must not empty out the content. A child making their first effort at reading, facing every sentence like a small climb, still deserves the whole truth, told in a way that can reach them on their own.</p>
+
+<p>There is then a second part to this choice, one that concerns the people around the child at that moment. Every book in the series comes with free downloadable worksheets, designed to be used straight away, without whoever proposes them having to build a whole programme around them first. This is not an add-on tacked on at the end: it is part of the same idea. If a child discovers that the story is true, the natural next step is wanting to know more. The worksheets exist to catch that curiosity at the moment it is most alive, which is right after the last page.</p>
+
+<p>Books for early reading exist; children's biographies exist; free teaching materials exist. Taken individually, these three elements are nothing new. What is new is putting them together in the same book, designed for children who are just starting to read. And that is why, every time someone writes to me that their child closed one of these books and asked "but is it true?", I know I made the right choice.</p>`,
+      },
+      ES: {
+        title: 'Por qué elegí biografías reales y no cuentos de hadas para los niños que aprenden a leer',
+        excerpt:
+          'El primer día en que un niño lee una frase él solo es un esfuerzo real, que no merece premiarse con un cuento de hadas. Gipi Visconti explica por qué Pequeños Grandes Valientes elige historias verdaderas, y por qué esa diferencia no es un simple detalle de estilo.',
+        body: `<p>El primer día en que un niño lee una frase él solo, sin que nadie le sujete la mano sobre la página, sucede algo que merece la pena no desperdiciar. Es un esfuerzo real, hecho de letras que encajan despacio, de palabras que se recomponen sílaba a sílaba. Y ese esfuerzo merece una recompensa que no sea un cuento de hadas.</p>
+
+<p>Cuando empecé a trabajar en Pequeños Grandes Valientes, me hice una pregunta que parecía sencilla y que sin embargo lo decidió todo lo demás: ¿qué debe encontrar un niño al final de ese esfuerzo? Una historia verdadera, alguien que vivió de verdad, que hizo exactamente lo que el libro cuenta.</p>
+
+<p>No es una preferencia estilística, es una convicción sobre el valor que damos al tiempo de los niños en esa etapa precisa. La ficción tiene un poder enorme, y nadie lo discute, pero ese poder puede esperar. La primera lectura, esa en la que cada frase es una pequeña escalada, no.</p>
+
+<p>Un niño que lee que alguien construyó una escuela donde todos decían que no se podía hacer está haciendo dos cosas a la vez: está descifrando signos sobre la página, y está descubriendo que esa frase cuenta algo que ocurrió de verdad, no algo que alguien inventó para hacerle soñar. No es una metáfora del valor: es un hecho. Y creo que esa diferencia, que a un adulto puede parecerle sutil, para un niño de seis años es enorme, porque cambia el modo en que mira lo que está leyendo, y quizás también lo que piensa que es posible para él.</p>
+
+<p>Por eso el lenguaje de los libros está calibrado para quien está aprendiendo a leer: frases cortas, construcciones sencillas, sin subordinadas que se trepan unas sobre otras. Pero esa sencillez no debe vaciar el contenido. Un niño que hace su primer esfuerzo de lectura, que afronta cada frase como una pequeña escalada, merece de todos modos la verdad entera, contada de un modo al que pueda llegar solo.</p>
+
+<p>Hay luego una segunda parte de esta elección, que tiene que ver con quienes rodean al niño en ese momento. Cada libro de la colección viene con fichas descargables gratuitas, pensadas para usarse de inmediato, sin que quien las proponga tenga que construir antes todo un recorrido alrededor. No es un añadido de última hora: es parte de la misma idea. Si un niño descubre que esa historia es verdadera, el paso natural que sigue es querer saber más. Las fichas existen para recoger esa curiosidad en el momento en que está más viva, que es justo después de la última página.</p>
+
+<p>Libros para la primera lectura existen; biografías infantiles existen; materiales didácticos gratuitos existen. Estos tres elementos, tomados por separado, no son ninguna novedad. La novedad está en juntarlos en el mismo libro, pensado para quien empieza a leer. Y por eso, cada vez que alguien me escribe que su hijo ha cerrado uno de estos libros y ha preguntado "¿pero esto es verdad?", sé que he tomado la decisión correcta.</p>`,
+      },
+    },
+  },
 ];
 
 export const getAllPosts = () =>
