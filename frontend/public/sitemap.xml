@@ -326,6 +326,42 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Blog post: Chi era Coco Chanel e come un'infanzia in orfanotrofio ha cambiato la moda IT -->
+  <url>
+    <loc>https://www.gipivisconti.com/it/blog/chi-era-coco-chanel</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/chi-era-coco-chanel"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/chi-era-coco-chanel"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/chi-era-coco-chanel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/chi-era-coco-chanel"/>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Chi era Coco Chanel e come un'infanzia in orfanotrofio ha cambiato la moda EN -->
+  <url>
+    <loc>https://www.gipivisconti.com/en/blog/chi-era-coco-chanel</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/chi-era-coco-chanel"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/chi-era-coco-chanel"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/chi-era-coco-chanel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/chi-era-coco-chanel"/>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Chi era Coco Chanel e come un'infanzia in orfanotrofio ha cambiato la moda ES -->
+  <url>
+    <loc>https://www.gipivisconti.com/es/blog/chi-era-coco-chanel</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/chi-era-coco-chanel"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/chi-era-coco-chanel"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/chi-era-coco-chanel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/chi-era-coco-chanel"/>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://www.gipivisconti.com/it/libri/kathrine-switzer</loc>
     <lastmod>2026-04-17</lastmod>

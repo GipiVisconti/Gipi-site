@@ -383,6 +383,68 @@ const posts = [
       },
     },
   },
+  {
+    id: 7,
+    slug: 'chi-era-coco-chanel',
+    date: '2026-07-15',
+    type: 'character',
+    content: {
+      IT: {
+        title: "Chi era Coco Chanel e come un'infanzia in orfanotrofio ha cambiato la moda",
+        excerpt:
+          "Prima di diventare la donna che ha rivoluzionato la moda del Novecento, Gabrielle Chanel era una bambina cresciuta in un orfanotrofio, tra le monache che le insegnarono a cucire. La sua storia inizia lì, molto prima di rue Cambon.",
+        body: `<p>Gabrielle Bonheur Chanel nasce nel 1883 a Saumur, in Francia, in un ospizio per persone povere. Quando ha undici anni la madre muore di tubercolosi, e il padre, un venditore ambulante che ha sempre avuto poco tempo per i figli, affida lei e le sorelle a un orfanotrofio gestito da religiose, nell'abbazia di Aubazine. Non tornerà mai a riprenderle.</p>
+
+<p>Aubazine è un luogo severo, fatto di regole rigide e di giornate scandite dal silenzio, ma è lì che Gabrielle impara a cucire: le monache le insegnano un mestiere che, con il tempo, diventerà la sua vita intera. A diciotto anni lascia l'orfanotrofio e si trasferisce a Moulins, dove lavora come sarta e canta nei cabaret della zona. È in uno di questi locali che riceve il soprannome che porterà per sempre: Coco.</p>
+
+<p>E la storia della sarta di Moulins comincia a intrecciarsi con quella della donna che rivoluzionerà la moda. Nel 1910, con l'aiuto economico prima di Étienne Balsan e poi di Arthur Capel, apre un piccolo negozio di cappelli in rue Cambon, a Parigi. Tre anni dopo, a Deauville, comincia a disegnare abiti comodi usando il jersey, un tessuto fino ad allora riservato alla biancheria intima maschile: le donne dell'epoca sono abituate a corsetti stretti e gonne pesanti, e i vestiti di Gabrielle sembrano appartenere a un altro mondo.</p>
+
+<p>Nel 1921 apre la boutique al numero 31 di rue Cambon, quella che diventerà il cuore della sua maison, e lo stesso anno lancia un profumo realizzato insieme al chimico Ernest Beaux: lo sceglie tra una serie di campioni numerati e decide di chiamarlo semplicemente Chanel N°5, dal numero del flacone che ha preferito. Qualche anno più tardi, nel 1925, presenta il tailleur, la giacca dritta e la gonna aderente che diventeranno il simbolo del suo stile, fatto di linee pulite e di tessuti morbidi, senza inutili fronzoli.</p>
+
+<p>Con questi due gesti, uno stile e un profumo, Gabrielle Chanel cambia il modo in cui le donne si vestono e si presentano al mondo. Non disegna solo abiti: toglie i corsetti e lascia che il corpo delle donne si muova con naturalezza. La comodità diventa eleganza, e la semplicità diventa un segno di forza.</p>
+
+<p>È una storia che vale la pena raccontare a un bambino per questo: perché mostra come da un'infanzia difficile, fatta di perdite e di regole rigide, possa nascere qualcosa di completamente nuovo. Gabrielle non aveva soldi né una famiglia alle spalle, ma aveva imparato un mestiere, e a quel mestiere ha dedicato tutta la sua ostinazione.</p>
+
+<p>Il libro di Gipi Visconti dedicato a Coco Chanel, parte della collana Piccoli Grandi Eroi, racconta questo percorso con parole e immagini pensate per i bambini che iniziano a leggere: la storia di una donna che ha imparato a cucire in un orfanotrofio e ha finito per cambiare il modo in cui il mondo intero si veste.</p>`,
+      },
+      EN: {
+        title: 'Who Was Coco Chanel, and How a Childhood in an Orphanage Changed Fashion',
+        excerpt:
+          'Before becoming the woman who revolutionised twentieth-century fashion, Gabrielle Chanel was a child growing up in an orphanage, taught to sew by the nuns who raised her. Her story begins there, long before rue Cambon.',
+        body: `<p>Gabrielle Bonheur Chanel was born in 1883 in Saumur, France, in a poorhouse for the destitute. When she was eleven, her mother died of tuberculosis, and her father, a travelling salesman who had always had little time for his children, placed her and her sisters in an orphanage run by nuns, at the abbey of Aubazine. He never came back for them.</p>
+
+<p>Aubazine is a severe place, made of rigid rules and days marked by silence, but it is there that Gabrielle learns to sew: the nuns teach her a trade that, in time, will become her entire life. At eighteen she leaves the orphanage and moves to Moulins, where she works as a seamstress and sings in the local cabarets. It is in one of these venues that she receives the nickname she will carry for the rest of her life: Coco.</p>
+
+<p>And the story of the seamstress from Moulins begins to weave together with that of the woman who will revolutionise fashion. In 1910, with financial help first from Étienne Balsan and then from Arthur Capel, she opens a small hat shop in rue Cambon, in Paris. Three years later, in Deauville, she starts designing comfortable clothes using jersey, a fabric until then reserved for men's underwear: the women of the time are used to tight corsets and heavy skirts, and Gabrielle's clothes seem to belong to another world.</p>
+
+<p>In 1921 she opens the boutique at number 31 rue Cambon, the one that will become the heart of her maison, and that same year she launches a perfume created together with the chemist Ernest Beaux: she chooses it from a series of numbered samples and decides to call it simply Chanel N°5, after the number of the bottle she preferred. A few years later, in 1925, she presents the tailleur, the straight jacket and fitted skirt that will become the symbol of her style, made of clean lines and soft fabrics, without unnecessary frills.</p>
+
+<p>With these two gestures, a style and a perfume, Gabrielle Chanel changes the way women dress and present themselves to the world. She does not just design clothes: she does away with corsets and lets women's bodies move naturally. Comfort becomes elegance, and simplicity becomes a mark of strength.</p>
+
+<p>This is a story worth telling a child for this reason: because it shows how something entirely new can be born out of a difficult childhood, made of loss and rigid rules. Gabrielle had no money and no family behind her, but she had learned a trade, and she devoted all her stubbornness to it.</p>
+
+<p>The book by Gipi Visconti dedicated to Coco Chanel, part of the Little Great Heroes series, tells this journey with words and images designed for children who are starting to read: the story of a woman who learned to sew in an orphanage and ended up changing the way the entire world dresses.</p>`,
+      },
+      ES: {
+        title: 'Quién fue Coco Chanel y cómo una infancia en un orfanato cambió la moda',
+        excerpt:
+          'Antes de convertirse en la mujer que revolucionó la moda del siglo XX, Gabrielle Chanel fue una niña criada en un orfanato, donde las monjas le enseñaron a coser. Su historia empieza ahí, mucho antes de la rue Cambon.',
+        body: `<p>Gabrielle Bonheur Chanel nace en 1883 en Saumur, Francia, en un hospicio para personas pobres. Cuando tiene once años su madre muere de tuberculosis, y su padre, un vendedor ambulante que siempre tuvo poco tiempo para sus hijos, la deja a ella y a sus hermanas en un orfanato dirigido por religiosas, en la abadía de Aubazine. Nunca volverá a buscarlas.</p>
+
+<p>Aubazine es un lugar severo, hecho de normas rígidas y de jornadas marcadas por el silencio, pero es allí donde Gabrielle aprende a coser: las monjas le enseñan un oficio que, con el tiempo, se convertirá en toda su vida. A los dieciocho años deja el orfanato y se traslada a Moulins, donde trabaja como costurera y canta en los cabarés de la zona. Es en uno de esos locales donde recibe el apodo que llevará para siempre: Coco.</p>
+
+<p>Y la historia de la costurera de Moulins empieza a entrelazarse con la de la mujer que revolucionará la moda. En 1910, con la ayuda económica primero de Étienne Balsan y después de Arthur Capel, abre una pequeña tienda de sombreros en la rue Cambon, en París. Tres años después, en Deauville, empieza a diseñar vestidos cómodos usando el jersey, un tejido hasta entonces reservado a la ropa interior masculina: las mujeres de la época están acostumbradas a corsés estrechos y faldas pesadas, y los vestidos de Gabrielle parecen pertenecer a otro mundo.</p>
+
+<p>En 1921 abre la boutique del número 31 de la rue Cambon, la que se convertirá en el corazón de su maison, y ese mismo año lanza un perfume creado junto al químico Ernest Beaux: lo elige entre una serie de muestras numeradas y decide llamarlo simplemente Chanel N°5, por el número del frasco que había preferido. Unos años después, en 1925, presenta el tailleur, la chaqueta recta y la falda ajustada que se convertirán en el símbolo de su estilo, hecho de líneas limpias y tejidos suaves, sin adornos innecesarios.</p>
+
+<p>Con estos dos gestos, un estilo y un perfume, Gabrielle Chanel cambia el modo en que las mujeres se visten y se presentan al mundo. No se limita a diseñar vestidos: elimina los corsés y deja que el cuerpo de las mujeres se mueva con naturalidad. La comodidad se convierte en elegancia, y la sencillez se convierte en una señal de fuerza.</p>
+
+<p>Es una historia que merece la pena contar a un niño por esto: porque muestra cómo de una infancia difícil, hecha de pérdidas y de normas rígidas, puede nacer algo completamente nuevo. Gabrielle no tenía dinero ni una familia detrás, pero había aprendido un oficio, y a ese oficio dedicó toda su obstinación.</p>
+
+<p>El libro de Gipi Visconti dedicado a Coco Chanel, parte de la colección Pequeños Grandes Valientes, cuenta este recorrido con palabras e imágenes pensadas para los niños que empiezan a leer: la historia de una mujer que aprendió a coser en un orfanato y acabó cambiando la forma en que se viste el mundo entero.</p>`,
+      },
+    },
+  },
 ];
 
 export const getAllPosts = () =>
