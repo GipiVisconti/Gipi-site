@@ -445,6 +445,104 @@ const posts = [
       },
     },
   },
+  {
+    id: 8,
+    slug: 'ascoltare-i-bambini-quando-insistono',
+    date: '2026-07-21',
+    type: 'advice',
+    content: {
+      IT: {
+        title: 'Perché dovremmo ascoltare i bambini quando insistono',
+        excerpt:
+          "Un episodio qualunque tra una madre e suo figlio durante un esercizio di letto-scrittura diventa lo spunto per una riflessione sull'ascolto vero, quello capace di riconoscere quando un bambino ha ragione.",
+        body: `<p>Ero al computer, mio figlio aveva appena aperto un nuovo quaderno di letto-scrittura, fatto con cura, con poche parole per pagina, immagini chiare e puntini da seguire. Si era messo lì da solo, concentrato, con l'aria di chi vuole fare bene le cose.</p>
+
+<p>Io ero nella stanza, ma con la testa altrove: rispondevo a una mail e controllavo qualcos'altro, senza entrare in quello che stava facendo. Ogni tanto alzavo lo sguardo e dicevo "bravo", tanto per dire qualcosa.</p>
+
+<p>Poi è arrivata la seconda pagina, divisa in due parti: sopra immagini con puntini, sotto parole con puntini. Lui si è fermato, ha sfogliato il libro avanti e indietro ed è arrivato a una pagina più avanti. "Mamma, dobbiamo usare quelli qui per fare questo," mi ha detto.</p>
+
+<p>Io, senza guardare bene, gli ho risposto: "No amore, stai sbagliando, vai avanti." Lui ha insistito: "No mamma, guarda, c'è scritto." E io mi sono irrigidita, con lo sguardo a metà tra lui e lo schermo: "Fai come ti ho detto."</p>
+
+<p>Non ha mollato. È tornato indietro, ha indicato, ha provato a spiegarmi; e più insisteva, più mi innervosivo, finché ho alzato la voce: "Ti ho detto che è così, basta." Silenzio. Poi gli occhi pieni di lacrime, ma non si è fermato: ha continuato, piano, "Mamma, ma è giusto così."</p>
+
+<p>E lì è successo qualcosa. Mi sono fermata, ho chiuso il computer, l'ho guardato per la prima volta in quei minuti con attenzione vera. "Fammi vedere."</p>
+
+<p>Ha ripreso il libro, è tornato a quella pagina, ha letto le istruzioni, lentamente, ma le ha lette. E aveva ragione, del tutto: quella seconda parte dell'esercizio si faceva usando gli elementi di qualche pagina più avanti. Lui aveva letto e aveva collegato quello che serviva; io invece avevo dato per scontato di avere ragione, e avevo corretto senza nemmeno guardare.</p>
+
+<p>Mi si è stretto qualcosa dentro, e mi sono sentita piccola davanti a lui. "Amore, scusa," gli ho detto, semplice, senza giustificarmi. "Ho sbagliato io, non ti ho ascoltato." L'ho abbracciato forte: "Tu avevi ragione. Hai letto e hai insistito finché non ti ho ascoltato: hai fatto una cosa bellissima."</p>
+
+<p>Lui si è appoggiato a me e, tra le lacrime, mi ha detto una frase che mi è rimasta addosso: "Mi sono sentito sbagliato."</p>
+
+<p>E lì ho capito tutto. Non era solo un esercizio: era fiducia, era il suo modo di dirmi che stava crescendo e che aveva bisogno di essere creduto, prima ancora di essere corretto.</p>
+
+<p>Abbiamo ripreso insieme, questa volta con attenzione vera. Lui faceva gli esercizi con calma, li collegava, leggeva; era concentrato e sereno. Io dicevo poco, guardavo: imparavo.</p>
+
+<p>Un bambino che insiste, raramente lo fa per capriccio: ha visto qualcosa, ha collegato dei pezzi, e chiede solo che qualcuno si fermi un attimo a guardare con lui.</p>
+
+<p>La prossima volta che un bambino insiste per dirci qualcosa, forse la domanda giusta non è chi ha ragione, ma cosa succederebbe se ci fermassimo a guardare prima di rispondere.</p>`,
+      },
+      EN: {
+        title: 'Why We Should Listen When Children Insist',
+        excerpt:
+          'An ordinary moment between a mother and her son during a reading exercise becomes the starting point for a reflection on real listening: the kind that recognises when a child is right.',
+        body: `<p>I was at the computer, and my son had just opened a new reading and writing workbook, put together with care, with few words per page, clear pictures and dots to follow. He had sat down on his own, focused, with the look of someone who wants to get things right.</p>
+
+<p>I was in the room, but my mind was elsewhere: I was replying to an email and checking something else, without engaging with what he was doing. Every so often I looked up and said "well done", just to say something.</p>
+
+<p>Then came the second page, split into two parts: pictures with dots on top, words with dots below. He stopped, flicked back and forth through the book and reached a page further on. "Mum, we need to use these here to do this," he told me.</p>
+
+<p>Without looking properly, I answered: "No love, you're getting it wrong, move on." He insisted: "No mum, look, it says so." And I stiffened, my eyes half on him and half on the screen: "Do as I told you."</p>
+
+<p>He didn't give up. He went back, pointed, tried to explain it to me; and the more he insisted, the more worked up I got, until I raised my voice: "I told you it's like this, that's enough." Silence. Then his eyes filled with tears, but he didn't stop: he carried on, quietly, "Mum, but this is right."</p>
+
+<p>And that's when something happened. I stopped, closed the computer, and looked at him for the first time in those minutes with real attention. "Show me."</p>
+
+<p>He picked the book back up, went back to that page, and read the instructions slowly, but he read them. And he was right, completely right: that second part of the exercise had to be done using the elements from a page further on. He had read and connected what was needed; I, on the other hand, had assumed I was right, and had corrected him without even looking.</p>
+
+<p>Something tightened inside me, and I felt small in front of him. "I'm sorry, love," I told him, simply, without justifying myself. "I was wrong, I didn't listen to you." I hugged him tight: "You were right. You read it and kept insisting until I listened to you: you did something wonderful."</p>
+
+<p>He leaned against me and, through his tears, said something that has stayed with me: "I felt like I was wrong."</p>
+
+<p>And that's when I understood everything. It wasn't just an exercise: it was trust, it was his way of telling me he was growing up and that he needed to be believed, before being corrected.</p>
+
+<p>We started again together, this time with real attention. He did the exercises calmly, connected them, read them; he was focused and at ease. I said little, I watched: I was learning.</p>
+
+<p>A child who insists rarely does it out of stubbornness: he has noticed something, connected some pieces, and is simply asking for someone to stop for a moment and look with him.</p>
+
+<p>Next time a child insists on telling us something, perhaps the right question isn't who is right, but what would happen if we stopped to look before answering.</p>`,
+      },
+      ES: {
+        title: 'Por qué deberíamos escuchar a los niños cuando insisten',
+        excerpt:
+          'Un episodio cualquiera entre una madre y su hijo durante un ejercicio de lectoescritura se convierte en el punto de partida de una reflexión sobre la escucha verdadera, esa capaz de reconocer cuándo un niño tiene razón.',
+        body: `<p>Estaba en el ordenador, y mi hijo acababa de abrir un cuaderno nuevo de lectoescritura, hecho con cuidado, con pocas palabras por página, imágenes claras y puntitos que seguir. Se había sentado solo, concentrado, con la actitud de quien quiere hacer bien las cosas.</p>
+
+<p>Yo estaba en la habitación, pero con la cabeza en otra parte: contestaba un correo y miraba otra cosa, sin entrar en lo que él estaba haciendo. De vez en cuando levantaba la vista y decía "muy bien", por decir algo.</p>
+
+<p>Luego llegó la segunda página, dividida en dos partes: arriba imágenes con puntitos, abajo palabras con puntitos. Él se detuvo, hojeó el libro adelante y atrás y llegó a una página más avanzada. "Mamá, tenemos que usar esto de aquí para hacer esto", me dijo.</p>
+
+<p>Yo, sin mirar bien, le contesté: "No, cariño, te equivocas, sigue adelante." Él insistió: "No, mamá, mira, lo pone aquí." Y yo me puse rígida, con la mirada a medio camino entre él y la pantalla: "Haz lo que te he dicho."</p>
+
+<p>No se rindió. Volvió atrás, señaló, intentó explicármelo; y cuanto más insistía, más me irritaba yo, hasta que levanté la voz: "Te he dicho que es así, basta." Silencio. Luego los ojos se le llenaron de lágrimas, pero no se detuvo: siguió, bajito, "Mamá, pero es así, está bien."</p>
+
+<p>Y ahí pasó algo. Me detuve, cerré el ordenador, y lo miré por primera vez en esos minutos con atención de verdad. "Enséñame."</p>
+
+<p>Volvió a coger el libro, regresó a esa página, y leyó las instrucciones despacio, pero las leyó. Y tenía razón, del todo: esa segunda parte del ejercicio se hacía usando los elementos de una página más adelante. Él había leído y había relacionado lo que hacía falta; yo, en cambio, había dado por hecho que tenía razón, y lo había corregido sin siquiera mirar.</p>
+
+<p>Se me encogió algo por dentro, y me sentí pequeña delante de él. "Cariño, perdóname", le dije, sencillamente, sin justificarme. "Me he equivocado yo, no te he escuchado." Lo abracé fuerte: "Tenías razón. Has leído y has insistido hasta que te he escuchado: has hecho algo precioso."</p>
+
+<p>Él se apoyó en mí y, entre lágrimas, me dijo una frase que se me ha quedado grabada: "Me he sentido equivocado."</p>
+
+<p>Y ahí lo entendí todo. No era solo un ejercicio: era confianza, era su manera de decirme que estaba creciendo y que necesitaba que le creyeran, antes incluso de ser corregido.</p>
+
+<p>Retomamos juntos, esta vez con atención de verdad. Él hacía los ejercicios con calma, los relacionaba, leía; estaba concentrado y tranquilo. Yo decía poco, miraba: aprendía.</p>
+
+<p>Un niño que insiste, raras veces lo hace por capricho: ha visto algo, ha relacionado piezas, y solo pide que alguien se pare un momento a mirar con él.</p>
+
+<p>La próxima vez que un niño insista en decirnos algo, quizá la pregunta correcta no sea quién tiene razón, sino qué pasaría si nos parásemos a mirar antes de responder.</p>`,
+      },
+    },
+  },
 ];
 
 export const getAllPosts = () =>

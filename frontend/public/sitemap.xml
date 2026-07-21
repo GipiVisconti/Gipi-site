@@ -362,6 +362,42 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Blog post: Perché dovremmo ascoltare i bambini quando insistono IT -->
+  <url>
+    <loc>https://www.gipivisconti.com/it/blog/ascoltare-i-bambini-quando-insistono</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/ascoltare-i-bambini-quando-insistono"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/ascoltare-i-bambini-quando-insistono"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/ascoltare-i-bambini-quando-insistono"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/ascoltare-i-bambini-quando-insistono"/>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Perché dovremmo ascoltare i bambini quando insistono EN -->
+  <url>
+    <loc>https://www.gipivisconti.com/en/blog/ascoltare-i-bambini-quando-insistono</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/ascoltare-i-bambini-quando-insistono"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/ascoltare-i-bambini-quando-insistono"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/ascoltare-i-bambini-quando-insistono"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/ascoltare-i-bambini-quando-insistono"/>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Perché dovremmo ascoltare i bambini quando insistono ES -->
+  <url>
+    <loc>https://www.gipivisconti.com/es/blog/ascoltare-i-bambini-quando-insistono</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/ascoltare-i-bambini-quando-insistono"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/ascoltare-i-bambini-quando-insistono"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/ascoltare-i-bambini-quando-insistono"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/ascoltare-i-bambini-quando-insistono"/>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://www.gipivisconti.com/it/libri/kathrine-switzer</loc>
     <lastmod>2026-04-17</lastmod>
