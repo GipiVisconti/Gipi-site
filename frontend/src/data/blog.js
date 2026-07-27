@@ -543,6 +543,74 @@ const posts = [
       },
     },
   },
+  {
+    id: 9,
+    slug: 'chi-era-leonardo-da-vinci',
+    date: '2026-07-27',
+    type: 'character',
+    content: {
+      IT: {
+        title: 'Chi era Leonardo da Vinci e perché la sua curiosità può ispirare un bambino',
+        excerpt:
+          'Leonardo da Vinci riempiva i suoi quaderni di domande, osservazioni e progetti, perché ogni dettaglio del mondo gli sembrava degno di essere capito. La sua storia mostra quanto lontano possa arrivare la curiosità di un bambino.',
+        body: `<p>Leonardo nacque il 15 aprile 1452 ad Anchiano, una piccola frazione vicino al borgo di Vinci, figlio di un notaio e di una giovane contadina che non si sposarono mai. Essere un figlio illegittimo, in quell'epoca, significava restare escluso da molte strade tradizionali, come l'università o la professione notarile che il padre avrebbe voluto tramandargli; e fu forse questa esclusione a lasciargli una libertà che pochi altri bambini del suo tempo potevano permettersi.</p>
+
+<p>Ancora ragazzo, si trasferì con il padre a Firenze, dove entrò nella bottega di Andrea del Verrocchio, uno degli artisti più stimati della città. Lì imparò a dipingere, a scolpire, a lavorare i metalli e a costruire macchine, restando in bottega per anni prima di cominciare a lavorare per conto proprio.</p>
+
+<p>Era mancino, e scriveva da destra verso sinistra, tanto che le sue pagine si leggono bene solo allo specchio. Per secoli si è pensato che lo facesse per nascondere i suoi segreti, ma la spiegazione più semplice è che, essendo mancino, scrivere in quel modo gli permetteva di non sporcare l'inchiostro con la mano che si muoveva sul foglio. Quella scrittura rovesciata, ancora oggi, è uno dei dettagli che incuriosisce di più i bambini quando scoprono chi era Leonardo.</p>
+
+<p>E fu nei suoi quaderni, migliaia di pagine oggi conosciute come i Codici, che Leonardo mise tutto se stesso. Non era un artista che dipingeva soltanto: osservava il volo degli uccelli e disegnava macchine capaci di planare, studiava il corpo umano per capire come funzionassero i muscoli e il cuore, immaginava argini per deviare i fiumi, ponti girevoli, ingranaggi, persino un cavaliere meccanico che si muoveva da solo. In quegli stessi anni disegnò anche l'Uomo Vitruviano, la figura umana inscritta in un cerchio e in un quadrato, che ancora oggi riconosciamo ovunque, dai libri di scuola alle monete. Molte delle sue idee restarono solo sulla carta, perché mancavano i materiali o le tecniche per costruirle, ma bastano a mostrare come vedesse il mondo: un enorme meccanismo da capire pezzo per pezzo.</p>
+
+<p>Delle sue opere, l'Ultima Cena e la Gioconda restano le più conosciute in tutto il mondo. Dipinse l'Ultima Cena tra il 1495 e il 1499 su un muro del refettorio di Santa Maria delle Grazie, a Milano, mentre lavorava per il duca Ludovico il Moro; e qualche anno dopo, tornato a Firenze, iniziò il ritratto, che oggi chiamiamo la Gioconda, portandolo con sé per il resto della vita e continuando a ritoccarlo. Oggi quel piccolo dipinto si trova al Louvre, a Parigi, dietro un vetro che lo protegge dai milioni di visitatori che ogni anno vanno a cercarlo.</p>
+
+<p>Morì il 2 maggio 1519 ad Amboise, in Francia, dove si era trasferito su invito del re Francesco I. Accanto a lui, fino all'ultimo, c'era Francesco Melzi, l'allievo a cui lasciò in eredità tutti i suoi disegni e i suoi appunti; senza quella scelta, probabilmente, oggi conosceremmo molto meno della sua mente.</p>
+
+<p>Raccontare Leonardo a un bambino non significa elencare le sue invenzioni, ma mostrargli qualcuno che faceva domande continue, che guardava una foglia caduta o un vortice d'acqua nel fiume e voleva capire perché si muovesse in quel modo. Cosa succede se lasciamo che anche un bambino faccia la stessa domanda, senza dargli subito la risposta?</p>
+
+<p>Il libro "Leonardo Da Vinci", sottotitolato "Il bambino che immaginava il futuro", racconta questa storia ai lettori più piccoli della collana Piccoli Grandi Eroi.</p>`,
+      },
+      EN: {
+        title: 'Who Was Leonardo da Vinci, and How Can His Curiosity Inspire a Child?',
+        excerpt:
+          'Leonardo da Vinci filled his notebooks with questions, observations and designs because every detail of the world seemed worth understanding. His story shows how far a child’s curiosity can reach.',
+        body: `<p>Leonardo was born on 15 April 1452 in Anchiano, a small hamlet near the town of Vinci, the son of a notary and a young peasant woman who never married. Being born outside marriage at that time meant being excluded from many traditional paths, including university and the notarial profession his father might otherwise have passed on to him; perhaps that exclusion gave him a freedom few other children of his time could enjoy.</p>
+
+<p>While still young, he moved with his father to Florence, where he entered the workshop of Andrea del Verrocchio, one of the city's most highly regarded artists. There he learnt to paint, sculpt, work with metal and build machines, remaining in the workshop for years before beginning to work independently.</p>
+
+<p>He was left-handed and wrote from right to left, so his pages are easiest to read in a mirror. For centuries people believed he did this to conceal his secrets, but the simplest explanation is that writing in this direction allowed him to avoid smudging the ink with his hand as it moved across the page. That mirror writing is still one of the details that most intrigues children when they discover Leonardo's story.</p>
+
+<p>And it was in his notebooks, thousands of pages now known as the Codices, that Leonardo recorded the workings of his mind. He was not simply an artist who painted: he observed the flight of birds and designed machines capable of gliding, studied the human body to understand how muscles and the heart worked, and imagined river defences, revolving bridges, mechanisms and even a mechanical knight that could move by itself. During those years he also drew the Vitruvian Man, the human figure enclosed within a circle and a square, which is still recognised everywhere, from schoolbooks to coins. Many of his ideas remained on paper because the materials or techniques needed to build them did not yet exist, but they reveal how he saw the world: as an immense mechanism to be understood piece by piece.</p>
+
+<p>Of all his works, The Last Supper and the Mona Lisa remain the best known around the world. He painted The Last Supper between 1495 and 1499 on a wall in the refectory of Santa Maria delle Grazie in Milan, while working for Duke Ludovico Sforza; a few years later, after returning to Florence, he began the portrait we now call the Mona Lisa, carrying it with him for the rest of his life and continuing to refine it. Today that small painting hangs in the Louvre in Paris, behind glass that protects it from the millions of visitors who come to see it each year.</p>
+
+<p>He died on 2 May 1519 in Amboise, France, where he had moved at the invitation of King Francis I. Francesco Melzi remained beside him until the end, and Leonardo left all his drawings and notes to this devoted pupil; without that decision, we would probably know far less about his mind today.</p>
+
+<p>Introducing Leonardo to a child does not mean listing his inventions, but showing them someone who never stopped asking questions, who could watch a falling leaf or a whirlpool in a river and want to understand why it moved that way. What happens when we let a child ask the same question without giving them the answer immediately?</p>
+
+<p>The book "Leonardo Da Vinci", subtitled "The Boy Who Imagined the Future", tells this story to the youngest readers in the Little Great Heroes series.</p>`,
+      },
+      ES: {
+        title: 'Quién fue Leonardo da Vinci y por qué su curiosidad puede inspirar a un niño',
+        excerpt:
+          'Leonardo da Vinci llenaba sus cuadernos de preguntas, observaciones y proyectos, porque cada detalle del mundo le parecía digno de ser comprendido. Su historia muestra hasta dónde puede llegar la curiosidad de un niño.',
+        body: `<p>Leonardo nació el 15 de abril de 1452 en Anchiano, una pequeña aldea cercana al pueblo de Vinci, hijo de un notario y de una joven campesina que nunca se casaron. Ser un hijo ilegítimo, en aquella época, significaba quedar excluido de muchos caminos tradicionales, como la universidad o la profesión notarial que su padre habría querido transmitirle; quizá esa exclusión le dio una libertad de la que pocos niños de su tiempo podían disfrutar.</p>
+
+<p>Siendo todavía joven, se trasladó con su padre a Florencia, donde entró en el taller de Andrea del Verrocchio, uno de los artistas más apreciados de la ciudad. Allí aprendió a pintar, esculpir, trabajar los metales y construir máquinas, y permaneció durante años antes de comenzar a trabajar por su cuenta.</p>
+
+<p>Era zurdo y escribía de derecha a izquierda, por lo que sus páginas se leen bien únicamente con un espejo. Durante siglos se creyó que lo hacía para ocultar sus secretos, pero la explicación más sencilla es que, al ser zurdo, escribir de ese modo le permitía no emborronar la tinta con la mano al desplazarse por la hoja. Esa escritura invertida sigue siendo uno de los detalles que más despierta la curiosidad de los niños cuando descubren quién fue Leonardo.</p>
+
+<p>Y fue en sus cuadernos, miles de páginas que hoy conocemos como los Códices, donde Leonardo dejó todo lo que pasaba por su mente. No era un artista que se limitara a pintar: observaba el vuelo de los pájaros y diseñaba máquinas capaces de planear, estudiaba el cuerpo humano para comprender cómo funcionaban los músculos y el corazón, e imaginaba diques para desviar los ríos, puentes giratorios, mecanismos e incluso un caballero mecánico que podía moverse solo. En aquellos años también dibujó el Hombre de Vitruvio, la figura humana inscrita en un círculo y un cuadrado, que aún reconocemos en todas partes, desde los libros escolares hasta las monedas. Muchas de sus ideas permanecieron sobre el papel porque faltaban los materiales o las técnicas para construirlas, pero muestran cómo veía el mundo: un enorme mecanismo que debía comprender pieza por pieza.</p>
+
+<p>Entre sus obras, La última cena y La Gioconda siguen siendo las más conocidas en todo el mundo. Pintó La última cena entre 1495 y 1499 en una pared del refectorio de Santa Maria delle Grazie, en Milán, mientras trabajaba para el duque Ludovico Sforza; unos años después, al regresar a Florencia, comenzó el retrato que hoy llamamos La Gioconda, lo llevó consigo durante el resto de su vida y continuó retocándolo. Actualmente, ese pequeño cuadro se encuentra en el Louvre de París, detrás de un cristal que lo protege de los millones de visitantes que acuden a verlo cada año.</p>
+
+<p>Murió el 2 de mayo de 1519 en Amboise, Francia, donde se había instalado por invitación del rey Francisco I. A su lado, hasta el final, estuvo Francesco Melzi, el discípulo al que dejó en herencia todos sus dibujos y apuntes; sin aquella decisión, probablemente hoy conoceríamos mucho menos de su mente.</p>
+
+<p>Contarle la vida de Leonardo a un niño no significa enumerar sus inventos, sino mostrarle a alguien que hacía preguntas sin descanso, que miraba una hoja al caer o un remolino de agua en el río y quería comprender por qué se movía de esa manera. ¿Qué ocurre si dejamos que un niño haga la misma pregunta, sin darle enseguida la respuesta?</p>
+
+<p>El libro "Leonardo Da Vinci", subtitulado "El niño que imaginaba el futuro", cuenta esta historia a los lectores más pequeños de la colección Pequeños Grandes Valientes.</p>`,
+      },
+    },
+  },
 ];
 
 export const getAllPosts = () =>

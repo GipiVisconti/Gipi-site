@@ -398,6 +398,42 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Blog post: Chi era Leonardo da Vinci e perché la sua curiosità può ispirare un bambino IT -->
+  <url>
+    <loc>https://www.gipivisconti.com/it/blog/chi-era-leonardo-da-vinci</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/chi-era-leonardo-da-vinci"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/chi-era-leonardo-da-vinci"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/chi-era-leonardo-da-vinci"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/chi-era-leonardo-da-vinci"/>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Chi era Leonardo da Vinci e perché la sua curiosità può ispirare un bambino EN -->
+  <url>
+    <loc>https://www.gipivisconti.com/en/blog/chi-era-leonardo-da-vinci</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/chi-era-leonardo-da-vinci"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/chi-era-leonardo-da-vinci"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/chi-era-leonardo-da-vinci"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/chi-era-leonardo-da-vinci"/>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Chi era Leonardo da Vinci e perché la sua curiosità può ispirare un bambino ES -->
+  <url>
+    <loc>https://www.gipivisconti.com/es/blog/chi-era-leonardo-da-vinci</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/chi-era-leonardo-da-vinci"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/chi-era-leonardo-da-vinci"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/chi-era-leonardo-da-vinci"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/chi-era-leonardo-da-vinci"/>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://www.gipivisconti.com/it/libri/kathrine-switzer</loc>
     <lastmod>2026-04-17</lastmod>
