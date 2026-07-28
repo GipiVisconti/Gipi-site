@@ -132,13 +132,6 @@ const BookDetailPage = () => {
     }
     metaDescription.setAttribute('content', pageDescription);
 
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement('link');
-      canonical.setAttribute('rel', 'canonical');
-      document.head.appendChild(canonical);
-    }
-    canonical.setAttribute('href', `https://www.gipivisconti.com${location.pathname}`);
   }, [book, language, location.pathname]);
 
   if (!book || !isValidRoute) {

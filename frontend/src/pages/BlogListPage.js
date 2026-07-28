@@ -32,8 +32,6 @@ const BlogListPage = () => {
       EN: 'Stories, updates and curiosities from the world of Little Great Heroes.',
       ES: 'Historias, novedades y curiosidades del mundo de Pequeños Grandes Valientes.',
     };
-    const langSlug = language === 'IT' ? 'it' : language === 'EN' ? 'en' : 'es';
-
     document.title = titleMap[language];
 
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -44,13 +42,6 @@ const BlogListPage = () => {
     }
     metaDescription.setAttribute('content', descMap[language]);
 
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement('link');
-      canonical.setAttribute('rel', 'canonical');
-      document.head.appendChild(canonical);
-    }
-    canonical.setAttribute('href', `https://www.gipivisconti.com/${langSlug}/blog`);
   }, [language]);
 
   return (

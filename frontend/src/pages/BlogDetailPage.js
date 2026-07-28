@@ -21,8 +21,6 @@ const BlogDetailPage = () => {
     window.scrollTo(0, 0);
 
     const content = post.content[language];
-    const langSlug = language === 'IT' ? 'it' : language === 'EN' ? 'en' : 'es';
-
     document.title = `${content.title} | Gipi Visconti`;
 
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -33,16 +31,6 @@ const BlogDetailPage = () => {
     }
     metaDescription.setAttribute('content', content.excerpt);
 
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement('link');
-      canonical.setAttribute('rel', 'canonical');
-      document.head.appendChild(canonical);
-    }
-    canonical.setAttribute(
-      'href',
-      `https://www.gipivisconti.com/${langSlug}/blog/${post.slug}`
-    );
   }, [post, language]);
 
   if (!post) return null;

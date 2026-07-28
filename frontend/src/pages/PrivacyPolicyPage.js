@@ -28,11 +28,6 @@ const PrivacyPolicyPage = () => {
       );
     }
 
-    const langSlug = language === 'IT' ? 'it' : language === 'EN' ? 'en' : 'es';
-    const canonical = document.querySelector('link[rel="canonical"]');
-    if (canonical) {
-      canonical.setAttribute('href', `https://www.gipivisconti.com/${langSlug}/privacy-policy`);
-    }
   }, [language]);
 
   return (

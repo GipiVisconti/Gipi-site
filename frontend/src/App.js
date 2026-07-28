@@ -10,11 +10,13 @@ import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import BookDetailPage from './pages/BookDetailPage';
 import BlogListPage from './pages/BlogListPage';
 import BlogDetailPage from './pages/BlogDetailPage';
+import RouteSeo from './components/RouteSeo';
 
 function App() {
   return (
     <BrowserRouter>
       <LanguageProvider>
+        <RouteSeo />
         <div className="App min-h-screen bg-[#FAF9F6]">
           <Header />
           <main>
