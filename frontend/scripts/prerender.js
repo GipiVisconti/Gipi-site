@@ -2,6 +2,7 @@ const fs = require('fs');
 const fsPromises = require('fs/promises');
 const http = require('http');
 const path = require('path');
+const serverlessChromium = require('@sparticuz/chromium');
 const puppeteer = require('puppeteer');
 
 const PROJECT_DIR = path.resolve(__dirname, '..');
@@ -226,6 +227,27 @@ const renderRoute = async (page, localOrigin, route) => {
   await fsPromises.writeFile(outputPath, html, 'utf8');
 };
 
+const getBrowserLaunchOptions = async () => {
+  if (process.env.VERCEL) {
+    serverlessChromium.setGraphicsMode = false;
+
+    return {
+      args: serverlessChromium.args,
+      executablePath: await serverlessChromium.executablePath(),
+      headless: true,
+    };
+  }
+
+  return {
+    args: [
+      '--disable-dev-shm-usage',
+      '--disable-setuid-sandbox',
+      '--no-sandbox',
+    ],
+    headless: true,
+  };
+};
+
 const main = async () => {
   await fsPromises.access(INDEX_PATH);
 
@@ -234,14 +256,7 @@ const main = async () => {
   let browser;
 
   try {
-    browser = await puppeteer.launch({
-      args: [
-        '--disable-dev-shm-usage',
-        '--disable-setuid-sandbox',
-        '--no-sandbox',
-      ],
-      headless: true,
-    });
+    browser = await puppeteer.launch(await getBrowserLaunchOptions());
 
     const page = await browser.newPage();
     const browserErrors = [];
