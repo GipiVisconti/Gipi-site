@@ -566,16 +566,22 @@ Pequeños Grandes Valientes es un proyecto abierto y en constante crecimiento: u
 
 const urlToLang = { it: 'IT', en: 'EN', es: 'ES' };
 
+const getLanguageFromPathname = (pathname = '') => {
+  const match = pathname.match(/^\/(it|en|es)(\/|$)/);
+  return match ? urlToLang[match[1]] || 'IT' : 'IT';
+};
+
+const getInitialLanguage = () => {
+  if (typeof window === 'undefined') return 'IT';
+  return getLanguageFromPathname(window.location.pathname);
+};
+
 export const LanguageProvider = ({ children }) => {
   const location = useLocation();
-  const [language, setLanguage] = useState('IT');
+  const [language, setLanguage] = useState(getInitialLanguage);
 
   useEffect(() => {
-    const match = location.pathname.match(/^\/(it|en|es)(\/|$)/);
-    if (match) {
-      const detected = urlToLang[match[1]];
-      if (detected) setLanguage(detected);
-    }
+    setLanguage(getLanguageFromPathname(location.pathname));
   }, [location.pathname]);
 
   const t = translations[language];
