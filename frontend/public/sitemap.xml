@@ -81,7 +81,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog"/>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -93,7 +93,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog"/>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -105,7 +105,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog"/>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -430,6 +430,42 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/chi-era-leonardo-da-vinci"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/chi-era-leonardo-da-vinci"/>
     <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Guardare prima di giudicare: la lezione che i bambini non hanno mai smesso di darci IT -->
+  <url>
+    <loc>https://www.gipivisconti.com/it/blog/guardare-prima-di-giudicare</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/guardare-prima-di-giudicare"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/guardare-prima-di-giudicare"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/guardare-prima-di-giudicare"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/guardare-prima-di-giudicare"/>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Guardare prima di giudicare: la lezione che i bambini non hanno mai smesso di darci EN -->
+  <url>
+    <loc>https://www.gipivisconti.com/en/blog/guardare-prima-di-giudicare</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/guardare-prima-di-giudicare"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/guardare-prima-di-giudicare"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/guardare-prima-di-giudicare"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/guardare-prima-di-giudicare"/>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Guardare prima di giudicare: la lezione che i bambini non hanno mai smesso di darci ES -->
+  <url>
+    <loc>https://www.gipivisconti.com/es/blog/guardare-prima-di-giudicare</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/guardare-prima-di-giudicare"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/guardare-prima-di-giudicare"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/guardare-prima-di-giudicare"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/guardare-prima-di-giudicare"/>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -611,6 +611,74 @@ const posts = [
       },
     },
   },
+  {
+    id: 10,
+    slug: 'guardare-prima-di-giudicare',
+    date: '2026-08-05',
+    type: 'project',
+    content: {
+      IT: {
+        title: 'Guardare prima di giudicare: la lezione che i bambini non hanno mai smesso di darci',
+        excerpt:
+          'Osservo spesso i bambini mentre ascoltano una storia o sfogliano un libro, e noto una cosa che a noi adulti sfugge quasi sempre: prima fanno esperienza, poi danno un significato a ciò che hanno visto o sentito.',
+        body: `<p>Osservo spesso i bambini mentre ascoltano una storia o sfogliano un libro, e noto una cosa che a noi adulti sfugge quasi sempre: non giudicano subito quello che hanno davanti. Prima fanno esperienza, poi, se serve, danno un significato a ciò che hanno visto o sentito. Non anticipano un'etichetta, aspettano che il significato emerga da solo.</p>
+
+<p>A farmi riflettere su questo è stata una conversazione recente, in cui qualcuno mi ha fatto notare quanto sia scomodo, ma necessario, essere meno giudicanti. E sono tornata a pensare a come funzioniamo invece noi adulti: mettiamo etichette prima ancora di aver capito se qualcosa ci riguarda davvero, se ci interessa, se ha un valore per noi. Il giudizio arriva prima dell'esperienza, non dopo.</p>
+
+<p>Da lì è nata una domanda che mi sono portata dietro per giorni: se togliessimo il giudizio, resterebbe comunque una valutazione, più pulita e più funzionale? E questo ci renderebbe cinici?</p>
+
+<p>La parola cinismo porta con sé un'idea di distacco freddo, quasi egoista, come se scegliere senza giudicare significasse smettere di curarsi delle cose. Ma forse non è questo il punto: forse si tratta invece di responsabilità, di scegliere senza caricare ogni decisione di morale o del bisogno di essere approvati da qualcuno.</p>
+
+<p>Mi è tornato in mente, a questo proposito, un episodio che da sempre mi colpisce: quello in cui Gesù scaccia i mercanti dal tempio. Non media, non cerca di farsi capire, non spiega: agisce. Ed è in quella immediatezza che vedo qualcosa che non è cinismo, ma chiarezza; una chiarezza che nasce dall'aver già attraversato l'esperienza, e non dall'averla giudicata da lontano.</p>
+
+<p>Forse il punto non è diventare freddi, ma diventare essenziali. Tornare a guardare le cose per quello che sono, prima di decidere cosa significano: esattamente come fanno i bambini, ogni volta che si trovano davanti a qualcosa di nuovo.</p>
+
+<p>È un pensiero che ritrovo nel modo in cui racconto le biografie della collana Piccoli Grandi Eroi. Quando presento ai bambini una vita vera, come quella di un'esploratrice o di uno scienziato, non parto da un giudizio già dato: racconto i fatti e le scelte, senza nascondere le difficoltà, e lascio che sia il bambino a costruirsi la propria idea. Nessuna etichetta anticipata, nessuna morale scritta in copertina. Solo l'esperienza della storia, prima di ogni significato.</p>
+
+<p>Quanto delle nostre scelte è davvero nostro, e quanto invece è filtrato dal bisogno di giudicare prima ancora di aver guardato?</p>`,
+      },
+      EN: {
+        title: 'Looking Before Judging: The Lesson Children Have Never Stopped Teaching Us',
+        excerpt:
+          'I often watch children as they listen to a story or leaf through a book, and notice something that nearly always escapes us adults: first they experience what is before them, then they give meaning to what they have seen or heard.',
+        body: `<p>I often watch children as they listen to a story or leaf through a book, and notice something that nearly always escapes us adults: they do not immediately judge what is in front of them. First they experience it; then, if needed, they give meaning to what they have seen or heard. They do not attach a label in advance; they wait for meaning to emerge on its own.</p>
+
+<p>A recent conversation prompted this reflection. Someone made me realise how uncomfortable, yet necessary, it can be to be less judgemental. It led me back to the way we adults often behave: we attach labels before we have even understood whether something concerns us, interests us or has value for us. Judgement comes before experience, not after it.</p>
+
+<p>From there came a question that stayed with me for days: if we set judgement aside, would we still be left with an assessment, one that was cleaner and more useful? And would that make us cynical?</p>
+
+<p>The word cynicism carries an idea of cold, almost selfish detachment, as though choosing without judging meant ceasing to care. But perhaps that is not the point. Perhaps it is instead a matter of responsibility: choosing without loading every decision with morality or the need for someone else's approval.</p>
+
+<p>An episode that has always struck me came back to mind: Jesus driving the merchants from the temple. He does not mediate, try to make himself understood or explain: he acts. In that immediacy I see something that is not cynicism but clarity; a clarity born of having already lived through the experience, rather than judging it from afar.</p>
+
+<p>Perhaps the point is not to become cold, but to become essential. To return to seeing things for what they are before deciding what they mean, just as children do whenever they encounter something new.</p>
+
+<p>It is a thought I recognise in the way I tell the biographies in the Little Great Heroes series. When I introduce children to a real life, such as that of an explorer or a scientist, I do not begin with a judgement already made: I tell the facts and the choices, without hiding the difficulties, and let each child form their own view. No label in advance, no moral written on the cover. Only the experience of the story, before any meaning is assigned.</p>
+
+<p>How many of our choices are truly our own, and how many are filtered through the need to judge before we have even looked?</p>`,
+      },
+      ES: {
+        title: 'Mirar antes de juzgar: la lección que los niños nunca han dejado de darnos',
+        excerpt:
+          'Observo a menudo a los niños mientras escuchan una historia u hojean un libro, y reparo en algo que a los adultos casi siempre se nos escapa: primero viven la experiencia y después dan significado a lo que han visto u oído.',
+        body: `<p>Observo a menudo a los niños mientras escuchan una historia u hojean un libro, y reparo en algo que a los adultos casi siempre se nos escapa: no juzgan de inmediato lo que tienen delante. Primero viven la experiencia; después, si hace falta, dan significado a lo que han visto u oído. No se adelantan a poner una etiqueta, sino que esperan a que el significado surja por sí solo.</p>
+
+<p>Una conversación reciente me llevó a reflexionar sobre ello. Alguien me hizo ver lo incómodo, pero necesario, que puede ser juzgar menos. Y volví a pensar en cómo funcionamos los adultos: ponemos etiquetas antes incluso de haber entendido si algo nos concierne, nos interesa o tiene valor para nosotros. El juicio llega antes que la experiencia, no después.</p>
+
+<p>A partir de ahí nació una pregunta que me acompañó durante días: si elimináramos el juicio, ¿quedaría una valoración más limpia y funcional? ¿Eso nos volvería cínicos?</p>
+
+<p>La palabra cinismo lleva asociada una idea de distanciamiento frío, casi egoísta, como si elegir sin juzgar significara dejar de interesarse por las cosas. Pero quizá no se trate de eso, sino de responsabilidad: de elegir sin cargar cada decisión de moral o de la necesidad de recibir la aprobación de alguien.</p>
+
+<p>A este respecto, me vino a la cabeza un episodio que siempre me ha impresionado: aquel en el que Jesús expulsa a los mercaderes del templo. No negocia, no intenta hacerse entender, no da explicaciones: actúa. Y en esa inmediatez veo algo que no es cinismo, sino claridad; una claridad que nace de haber atravesado la experiencia, no de haberla juzgado desde lejos.</p>
+
+<p>Quizá la cuestión no sea volvernos fríos, sino ir a lo esencial. Volver a mirar las cosas por lo que son antes de decidir qué significan, igual que hacen los niños cada vez que se encuentran ante algo nuevo.</p>
+
+<p>Es un pensamiento que reconozco en mi forma de contar las biografías de la colección Pequeños Grandes Valientes. Cuando presento a los niños una vida real, como la de una exploradora o un científico, no parto de un juicio previo: cuento los hechos y las decisiones, sin ocultar las dificultades, y dejo que cada niño forme su propia opinión. Ninguna etiqueta anticipada, ninguna moraleja escrita en la portada. Solo la experiencia de la historia, antes de cualquier significado.</p>
+
+<p>¿Qué parte de nuestras decisiones es realmente nuestra y qué parte está filtrada por la necesidad de juzgar antes incluso de haber mirado?</p>`,
+      },
+    },
+  },
 ];
 
 export const getAllPosts = () =>
