@@ -679,6 +679,68 @@ const posts = [
       },
     },
   },
+  {
+    id: 11,
+    slug: 'valentino-rossi-perche-raccontarlo-ai-bambini',
+    date: '2026-08-11',
+    type: 'character',
+    content: {
+      IT: {
+        title: 'Chi è Valentino Rossi e perché raccontarlo ai bambini',
+        excerpt:
+          'Quel bambino che guidava un go-kart nel cortile di Tavullia non sapeva dove lo avrebbe portato la sua voglia di andare veloce. Curva dopo curva, Valentino Rossi è diventato uno dei nomi che il motociclismo non dimenticherà.',
+        body: `<p>Quando aveva sei anni, Valentino Rossi guidava già un go-kart nel cortile di casa a Tavullia, la cittadina delle Marche dove la sua famiglia si era trasferita da Urbino. Non correva per vincere, correva perché non riusciva a stare fermo: ogni curva del cortile era una promessa, e lui la rincorreva ogni giorno.</p>
+
+<p>Suo padre Graziano aveva corso in moto prima di lui, e quella passione era rimasta nell'aria di casa, come un profumo di benzina che nessuno aveva mai davvero spento. Ma fu Valentino a sceglierla per sé, prima sui kart e poi sulle due ruote, e in quella scelta c'era già tutto quello che sarebbe diventato: la voglia di andare oltre, di provare ancora, di non fermarsi alla prima curva riuscita.</p>
+
+<p>E il talento, quando è vero, si vede presto. Rossi arrivò in moto ancora ragazzino, e vinse. Vinse nella classe più piccola, poi in quella intermedia, poi nella classe regina, la 500, che sarebbe diventata MotoGP proprio mentre lui continuava a correre. Nove titoli mondiali, in categorie diverse, in anni diversi, ma sempre con lo stesso gesto: quello di un ragazzo che si piega sulla moto come se stesse abbracciando la pista.</p>
+
+<p>Il soprannome "il Dottore" gli è rimasto addosso per tutta la carriera, quasi per gioco, perché Rossi è un cognome comune tra i medici in Italia. Ma è diventato vero quando tutti hanno capito che quel ragazzo non correva solo veloce: capiva la pista, la sentiva, la leggeva come pochi altri sapevano fare.</p>
+
+<p>Ha corso per tantissimi anni, cambiando moto e squadra più volte, senza mai perdere quello sguardo di chi si diverte davvero. Quando si è ritirato, il suo numero, il 46, è stato ritirato con lui: nessun altro pilota lo porterà più.</p>
+
+<p>Quel bambino nel cortile di Tavullia non sapeva dove lo avrebbe portato quella voglia di andare veloce. Sapeva solo che gli piaceva, e ha continuato a inseguirla, curva dopo curva, fino a diventare uno dei nomi che il motociclismo non dimenticherà.</p>
+
+<p>La storia di Valentino Rossi è raccontata nel libro a lui dedicato della collana Piccoli Grandi Eroi, <em>Il bambino che correva con il vento</em>, per chi, magari guidando un piccolo kart in un cortile, sta già rincorrendo la propria curva.</p>`,
+      },
+      EN: {
+        title: 'Who is Valentino Rossi and why his story is worth telling children',
+        excerpt:
+          'The boy who drove a go-kart around a yard in Tavullia had no idea where his love of speed would take him. Corner after corner, Valentino Rossi became one of the names motorcycling will not forget.',
+        body: `<p>When he was six years old, Valentino Rossi was already driving a go-kart in the yard of his family home in Tavullia, the small town in the Marche region where his family had moved from Urbino. He wasn't racing to win, he was racing because he couldn't sit still: every corner of that yard was a promise, and he chased it every day.</p>
+
+<p>His father Graziano had raced motorcycles before him, and that passion had stayed in the air at home, like a smell of petrol nobody had ever quite switched off. But it was Valentino who chose it for himself, first on karts and then on two wheels, and in that choice lay everything he would become: the urge to go further, to try again, never to settle for the first corner taken well.</p>
+
+<p>And real talent shows itself early. Rossi reached motorcycle racing while still a boy, and he won. He won in the smallest class, then in the middle one, then in the premier class, the 500cc, which would become MotoGP while he kept on racing. Nine world titles, across different categories and different years, but always with the same gesture: a young man leaning into his bike as if he were embracing the track.</p>
+
+<p>The nickname "the Doctor" stuck with him throughout his career, almost as a joke, since Rossi is a common surname among doctors in Italy. But it became true once everyone understood that this young man wasn't just fast: he understood the track, he felt it, he read it in a way few others could.</p>
+
+<p>He raced for many years, changing bikes and teams more than once, never losing that look of someone who was truly enjoying himself. When he retired, his number, 46, retired with him: no other rider will ever carry it again.</p>
+
+<p>That boy in the yard at Tavullia had no idea where his love of speed would take him. He simply knew he loved it, and he kept chasing it, corner after corner, until he became one of the names motorcycling will not forget.</p>
+
+<p>Valentino Rossi's story is told in the book dedicated to him in The Great Heroes collection, <em>The boy who rode with the wind</em>, for anyone who, perhaps steering a small kart around a yard, is already chasing their own corner.</p>`,
+      },
+      ES: {
+        title: 'Quién es Valentino Rossi y por qué contarles su historia a los niños',
+        excerpt:
+          'Aquel niño que conducía un kart en el patio de Tavullia no sabía adónde lo llevarían sus ganas de ir rápido. Curva tras curva, Valentino Rossi se convirtió en uno de los nombres que el motociclismo no olvidará.',
+        body: `<p>Cuando tenía seis años, Valentino Rossi ya conducía un kart en el patio de su casa en Tavullia, la pequeña localidad de las Marcas a la que su familia se había trasladado desde Urbino. No corría para ganar, corría porque no podía estarse quieto: cada curva de aquel patio era una promesa, y él la perseguía cada día.</p>
+
+<p>Su padre Graziano había corrido en moto antes que él, y aquella pasión se había quedado en el aire de la casa, como un olor a gasolina que nadie había apagado del todo. Pero fue Valentino quien la eligió para sí mismo, primero con karts y después sobre dos ruedas, y en aquella elección ya estaba todo lo que llegaría a ser: las ganas de ir más allá, de intentarlo de nuevo, de no conformarse con la primera curva bien tomada.</p>
+
+<p>Y el talento verdadero se muestra pronto. Rossi llegó a las motos siendo casi un niño, y ganó. Ganó en la categoría más pequeña, luego en la intermedia, luego en la categoría reina, la 500, que se convertiría en MotoGP mientras él seguía corriendo. Nueve títulos mundiales, en categorías distintas y en años distintos, pero siempre con el mismo gesto: el de un joven que se inclina sobre la moto como si abrazara la pista.</p>
+
+<p>El apodo "el Doctor" se le quedó para siempre, casi en broma, porque Rossi es un apellido común entre los médicos en Italia. Pero se volvió verdadero cuando todos entendieron que aquel joven no solo era rápido: entendía la pista, la sentía, la leía como pocos sabían hacerlo.</p>
+
+<p>Corrió durante muchísimos años, cambiando de moto y de equipo varias veces, sin perder nunca esa mirada de quien disfruta de verdad. Cuando se retiró, su número, el 46, se retiró con él: ningún otro piloto volverá a llevarlo.</p>
+
+<p>Aquel niño en el patio de Tavullia no sabía adónde lo llevarían esas ganas de ir rápido. Solo sabía que le gustaba, y siguió persiguiéndolo, curva tras curva, hasta convertirse en uno de los nombres que el motociclismo no olvidará.</p>
+
+<p>La historia de Valentino Rossi se cuenta en el libro que le dedica la colección Pequeños Grandes Valientes, <em>El niño que corría con el viento</em>, para quien, quizá conduciendo un pequeño kart en un patio, ya esté persiguiendo su propia curva.</p>`,
+      },
+    },
+  },
 ];
 
 export const getAllPosts = () =>

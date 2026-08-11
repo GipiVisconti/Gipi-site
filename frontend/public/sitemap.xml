@@ -81,7 +81,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog"/>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-08-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -93,7 +93,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog"/>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-08-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -105,7 +105,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog"/>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-08-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -466,6 +466,42 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/guardare-prima-di-giudicare"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/guardare-prima-di-giudicare"/>
     <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Chi è Valentino Rossi e perché raccontarlo ai bambini IT -->
+  <url>
+    <loc>https://www.gipivisconti.com/it/blog/valentino-rossi-perche-raccontarlo-ai-bambini</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/valentino-rossi-perche-raccontarlo-ai-bambini"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/valentino-rossi-perche-raccontarlo-ai-bambini"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/valentino-rossi-perche-raccontarlo-ai-bambini"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/valentino-rossi-perche-raccontarlo-ai-bambini"/>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Who is Valentino Rossi and why his story is worth telling children EN -->
+  <url>
+    <loc>https://www.gipivisconti.com/en/blog/valentino-rossi-perche-raccontarlo-ai-bambini</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/valentino-rossi-perche-raccontarlo-ai-bambini"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/valentino-rossi-perche-raccontarlo-ai-bambini"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/valentino-rossi-perche-raccontarlo-ai-bambini"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/valentino-rossi-perche-raccontarlo-ai-bambini"/>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Quién es Valentino Rossi y por qué contarles su historia a los niños ES -->
+  <url>
+    <loc>https://www.gipivisconti.com/es/blog/valentino-rossi-perche-raccontarlo-ai-bambini</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/valentino-rossi-perche-raccontarlo-ai-bambini"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/valentino-rossi-perche-raccontarlo-ai-bambini"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/valentino-rossi-perche-raccontarlo-ai-bambini"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/valentino-rossi-perche-raccontarlo-ai-bambini"/>
+    <lastmod>2026-08-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
