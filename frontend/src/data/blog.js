@@ -741,6 +741,74 @@ const posts = [
       },
     },
   },
+  {
+    id: 12,
+    slug: 'chi-era-nelson-mandela-bambini',
+    date: '2026-08-18',
+    type: 'character',
+    content: {
+      IT: {
+        title: 'Chi era Nelson Mandela e perché la sua storia parla ancora ai bambini',
+        excerpt:
+          'Nelson Mandela ha passato ventisette anni in prigione, e quando ne è uscito non ha cercato vendetta: ha scelto di guidare il paese che lo aveva rinchiuso, provando a tenerlo unito invece di dividerlo ancora.',
+        body: `<p>Nelson Mandela ha passato ventisette anni in prigione, e quando ne è uscito non ha cercato vendetta: ha scelto di guidare il paese che lo aveva rinchiuso, provando a tenerlo unito invece di dividerlo ancora.</p>
+
+<p>Nacque il 18 luglio 1918 a Mvezo, un villaggio dell'Eastern Cape, in Sudafrica, e il padre gli diede il nome Rolihlahla, che significa "tirare il ramo di un albero", nel senso di chi combina guai. Il nome Nelson arrivò più tardi, il primo giorno di scuola, quando la maestra Mdingane assegnò a ogni bambino un nome inglese, come si usava allora nelle scuole missionarie.</p>
+
+<p>E da giovane si avvicinò all'African National Congress, il movimento che si opponeva all'apartheid: il sistema che dal 1948 divideva i sudafricani per colore della pelle, negando alla popolazione nera il diritto di voto, di movimento, di scelta del lavoro e persino del quartiere in cui vivere. Per anni Mandela lottò con metodi pacifici, tra boicottaggi e campagne di disobbedienza civile. Poi, quando il governo rispose alle proteste con la violenza e mise fuori legge l'ANC, si convinse che servisse anche la lotta armata, e guidò un'ala del movimento dedicata al sabotaggio di obiettivi strategici, evitando di colpire le persone.</p>
+
+<p>Fu arrestato nel 1962 e, nel 1964, al termine del processo di Rivonia, condannato all'ergastolo. Passò diciotto anni nel carcere di Robben Island, un'isola al largo di Città del Capo dove i prigionieri politici neri venivano trattati con particolare durezza, tra lavori forzati in una cava di calce e celle piccole e umide. Con gli altri detenuti organizzò lezioni di storia, diritto e politica, tanto che quel luogo divenne noto, tra i compagni di prigionia, come l'università di Robben Island: qualcuno vi entrò analfabeta e ne uscì con una laurea. Mandela stesso continuò a studiare legge per corrispondenza, negli anni in cui gli era concesso.</p>
+
+<p>Fu poi trasferito in altre prigioni sulla terraferma, dove le condizioni migliorarono e dove iniziarono i primi contatti segreti con il governo. Uscì l'11 febbraio 1990, dopo ventisette anni di carcere complessivi. E invece di alimentare la rabbia che avrebbe avuto ogni diritto di provare, lavorò al fianco del presidente Frederik de Klerk per smantellare l'apartheid attraverso il negoziato. Nel 1993 i due ricevettero insieme il premio Nobel per la pace.</p>
+
+<p>Nel 1994 si tennero le prime elezioni sudafricane aperte a tutte le razze, e Mandela ne uscì primo presidente nero del paese, in carica fino al 1999. Governò cercando di tenere insieme una nazione divisa per legge da decenni, e promosse la Commissione per la verità e la riconciliazione, che invitava vittime e responsabili dei crimini dell'apartheid a raccontare pubblicamente ciò che era accaduto. Un anno dopo l'elezione, indossò la maglia verde e oro degli Springbok, la squadra di rugby fino ad allora simbolo del vecchio Sudafrica bianco, per consegnare la coppa del mondo al capitano della nazionale: un gesto che il paese intero ricorda ancora come uno dei momenti più alti della riconciliazione.</p>
+
+<p>Morì il 5 dicembre 2013 a Johannesburg, a novantacinque anni.</p>
+
+<p>E chi era il bambino che tirava rami e combinava guai a Mvezo, prima di diventare Madiba, il nome con cui il Sudafrica lo chiama ancora con affetto? È una domanda che il libro <em>Nelson Mandela</em>, della collana Piccoli Grandi Eroi, prova a raccontare ai lettori più piccoli, un capitolo alla volta.</p>`,
+      },
+      EN: {
+        title: 'Who was Nelson Mandela and why his story still speaks to children',
+        excerpt:
+          'Nelson Mandela spent twenty-seven years in prison, and when he was released he did not seek revenge: he chose to lead the country that had imprisoned him, trying to hold it together instead of dividing it further.',
+        body: `<p>Nelson Mandela spent twenty-seven years in prison, and when he was released he did not seek revenge: he chose to lead the country that had imprisoned him, trying to hold it together instead of dividing it further.</p>
+
+<p>He was born on 18 July 1918 in Mvezo, a village in South Africa's Eastern Cape, and his father gave him the name Rolihlahla, which means "pulling the branch of a tree", in the sense of someone who causes trouble. The name Nelson came later, on his first day at school, when his teacher, Miss Mdingane, gave every child an English name, as was customary at mission schools at the time.</p>
+
+<p>As a young man, he joined the African National Congress, the movement that opposed apartheid: the system that, from 1948, separated South Africans according to the colour of their skin, denying Black people the right to vote, freedom of movement, a choice of work and even a choice of where to live. For years Mandela fought through peaceful means, including boycotts and civil disobedience campaigns. Then, when the government answered protests with violence and outlawed the ANC, he became convinced that armed resistance was also necessary and led a branch of the movement devoted to sabotaging strategic targets while seeking to avoid harming people.</p>
+
+<p>He was arrested in 1962 and, in 1964, at the end of the Rivonia Trial, sentenced to life imprisonment. He spent eighteen years in Robben Island prison, on an island off Cape Town where Black political prisoners were treated with particular harshness, enduring forced labour in a limestone quarry and small, damp cells. With his fellow prisoners he organised lessons in history, law and politics, and the place became known among them as the University of Robben Island: some entered unable to read or write and left with a degree. Mandela himself continued studying law by correspondence whenever he was allowed to do so.</p>
+
+<p>He was later transferred to other prisons on the mainland, where conditions improved and the first secret contacts with the government began. He was released on 11 February 1990, after twenty-seven years in prison altogether. Instead of feeding the anger he would have had every right to feel, he worked alongside President Frederik de Klerk to dismantle apartheid through negotiation. In 1993, the two men were jointly awarded the Nobel Peace Prize.</p>
+
+<p>In 1994, South Africa held its first elections open to people of every race, and Mandela became the country's first Black president, serving until 1999. He governed by trying to hold together a nation that had been divided by law for decades, and he promoted the Truth and Reconciliation Commission, which invited victims and perpetrators of apartheid-era crimes to speak publicly about what had happened. A year after his election, he wore the green-and-gold Springboks jersey, until then a symbol of the old white South Africa, to present the Rugby World Cup to the national team's captain: a gesture the whole country still remembers as one of the defining moments of reconciliation.</p>
+
+<p>He died in Johannesburg on 5 December 2013, aged ninety-five.</p>
+
+<p>And who was the boy who pulled branches and caused trouble in Mvezo before becoming Madiba, the name by which South Africa still affectionately calls him? That is the question the book <em>Nelson Mandela</em>, from The Great Heroes collection, explores for young readers, one chapter at a time.</p>`,
+      },
+      ES: {
+        title: 'Quién fue Nelson Mandela y por qué su historia sigue hablando a los niños',
+        excerpt:
+          'Nelson Mandela pasó veintisiete años en prisión y, cuando salió, no buscó venganza: eligió dirigir el país que lo había encarcelado, intentando mantenerlo unido en lugar de dividirlo aún más.',
+        body: `<p>Nelson Mandela pasó veintisiete años en prisión y, cuando salió, no buscó venganza: eligió dirigir el país que lo había encarcelado, intentando mantenerlo unido en lugar de dividirlo aún más.</p>
+
+<p>Nació el 18 de julio de 1918 en Mvezo, un pueblo de la provincia del Cabo Oriental, en Sudáfrica, y su padre le puso el nombre de Rolihlahla, que significa "tirar de la rama de un árbol", en el sentido de alguien que causa problemas. El nombre Nelson llegó más tarde, el primer día de escuela, cuando su maestra, la señorita Mdingane, asignó a cada niño un nombre inglés, como era costumbre entonces en las escuelas misioneras.</p>
+
+<p>De joven se unió al Congreso Nacional Africano, el movimiento que se oponía al apartheid: el sistema que, desde 1948, separaba a los sudafricanos según el color de su piel y negaba a la población negra el derecho al voto, la libertad de movimiento, la posibilidad de elegir trabajo e incluso el barrio en el que vivir. Durante años Mandela luchó con métodos pacíficos, mediante boicots y campañas de desobediencia civil. Después, cuando el gobierno respondió a las protestas con violencia e ilegalizó el ANC, se convenció de que la lucha armada también era necesaria y dirigió una rama del movimiento dedicada a sabotear objetivos estratégicos, procurando no herir a las personas.</p>
+
+<p>Fue detenido en 1962 y, en 1964, al término del proceso de Rivonia, condenado a cadena perpetua. Pasó dieciocho años en la prisión de Robben Island, una isla frente a Ciudad del Cabo donde los presos políticos negros eran tratados con especial dureza, entre trabajos forzados en una cantera de piedra caliza y celdas pequeñas y húmedas. Junto con otros reclusos organizó clases de historia, derecho y política, hasta el punto de que el lugar llegó a conocerse entre ellos como la Universidad de Robben Island: algunos entraron sin saber leer ni escribir y salieron con un título. El propio Mandela siguió estudiando Derecho por correspondencia durante los años en que se le permitió hacerlo.</p>
+
+<p>Más tarde fue trasladado a otras prisiones en tierra firme, donde las condiciones mejoraron y comenzaron los primeros contactos secretos con el gobierno. Salió en libertad el 11 de febrero de 1990, después de un total de veintisiete años en prisión. En lugar de alimentar la rabia que habría tenido todo el derecho a sentir, trabajó junto al presidente Frederik de Klerk para desmantelar el apartheid mediante la negociación. En 1993, ambos recibieron conjuntamente el Premio Nobel de la Paz.</p>
+
+<p>En 1994 se celebraron las primeras elecciones sudafricanas abiertas a personas de todas las razas, y Mandela se convirtió en el primer presidente negro del país, cargo que ocupó hasta 1999. Gobernó intentando mantener unida una nación que había estado dividida por ley durante décadas, e impulsó la Comisión de la Verdad y la Reconciliación, que invitaba a las víctimas y a los responsables de los crímenes del apartheid a contar públicamente lo que había ocurrido. Un año después de las elecciones, vistió la camiseta verde y dorada de los Springboks, la selección de rugby que hasta entonces había sido un símbolo de la antigua Sudáfrica blanca, para entregar la Copa del Mundo al capitán del equipo nacional: un gesto que todo el país sigue recordando como uno de los momentos más importantes de la reconciliación.</p>
+
+<p>Murió el 5 de diciembre de 2013 en Johannesburgo, a los noventa y cinco años.</p>
+
+<p>¿Y quién era el niño que tiraba de las ramas y causaba problemas en Mvezo antes de convertirse en Madiba, el nombre con el que Sudáfrica aún lo llama con cariño? Esa es la pregunta que el libro <em>Nelson Mandela</em>, de la colección Pequeños Grandes Valientes, explora para los lectores más jóvenes, capítulo a capítulo.</p>`,
+      },
+    },
+  },
 ];
 
 export const getAllPosts = () =>

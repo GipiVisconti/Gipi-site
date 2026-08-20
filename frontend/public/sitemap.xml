@@ -81,7 +81,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog"/>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -93,7 +93,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog"/>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -105,7 +105,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog"/>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -502,6 +502,42 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/valentino-rossi-perche-raccontarlo-ai-bambini"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/valentino-rossi-perche-raccontarlo-ai-bambini"/>
     <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Chi era Nelson Mandela e perché la sua storia parla ancora ai bambini IT -->
+  <url>
+    <loc>https://www.gipivisconti.com/it/blog/chi-era-nelson-mandela-bambini</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/chi-era-nelson-mandela-bambini"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/chi-era-nelson-mandela-bambini"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/chi-era-nelson-mandela-bambini"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/chi-era-nelson-mandela-bambini"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Who was Nelson Mandela and why his story still speaks to children EN -->
+  <url>
+    <loc>https://www.gipivisconti.com/en/blog/chi-era-nelson-mandela-bambini</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/chi-era-nelson-mandela-bambini"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/chi-era-nelson-mandela-bambini"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/chi-era-nelson-mandela-bambini"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/chi-era-nelson-mandela-bambini"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Quién fue Nelson Mandela y por qué su historia sigue hablando a los niños ES -->
+  <url>
+    <loc>https://www.gipivisconti.com/es/blog/chi-era-nelson-mandela-bambini</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/chi-era-nelson-mandela-bambini"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/chi-era-nelson-mandela-bambini"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/chi-era-nelson-mandela-bambini"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/chi-era-nelson-mandela-bambini"/>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
