@@ -6,6 +6,11 @@ const BOOK_SECTION_BY_LANGUAGE = {
   es: 'libros',
 };
 const SIMPLE_ROUTES = new Set(['faq', 'privacy-policy', 'blog']);
+const GIFT_SEGMENT_BY_LANGUAGE = {
+  it: 'libro-gratuito',
+  en: 'free-book',
+  es: 'libro-gratis',
+};
 
 const normalizePathname = (pathname) => {
   const path = typeof pathname === 'string' && pathname.startsWith('/')
@@ -21,6 +26,10 @@ const getLocalizedPath = (language, route) => {
 
   if (route.type === 'simple') {
     return `/${language}/${route.segment}`;
+  }
+
+  if (route.type === 'gift') {
+    return `/${language}/${GIFT_SEGMENT_BY_LANGUAGE[language]}`;
   }
 
   if (route.type === 'blog-detail') {
@@ -47,6 +56,17 @@ const parseRoute = (pathname) => {
       normalizedPathname,
       type: 'simple',
       segment: routeSegments[0],
+    };
+  }
+
+  if (
+    routeSegments.length === 1 &&
+    routeSegments[0] === GIFT_SEGMENT_BY_LANGUAGE[language]
+  ) {
+    return {
+      language,
+      normalizedPathname,
+      type: 'gift',
     };
   }
 

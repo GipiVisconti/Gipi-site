@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { Menu, X, BookOpen } from 'lucide-react';
+import { giftLanguageForPath, giftPathForLanguage } from '../lib/gift';
 
 const Header = () => {
   const { language, setLanguage, t } = useLanguage();
@@ -10,7 +11,6 @@ const Header = () => {
   const navigate = useNavigate();
 
   const languages = ['IT', 'EN', 'ES'];
-  const showContactNav = true;
 
   const bookRouteMap = {
     IT: { lang: 'it', section: 'libri' },
@@ -57,10 +57,13 @@ const Header = () => {
     const faqMatch = location.pathname.match(/^\/(it|en|es)\/faq$/);
     const blogListMatch = location.pathname.match(/^\/(it|en|es)\/blog$/);
     const blogDetailMatch = location.pathname.match(/^\/(it|en|es)\/blog\/([^/]+)$/);
+    const giftLanguage = giftLanguageForPath(location.pathname);
     const nextRoute = bookRouteMap[nextLanguage];
     const nextLang = bookRouteMap[nextLanguage]?.lang || 'it';
 
-    if (bookMatch && nextRoute) {
+    if (giftLanguage) {
+      navigate(giftPathForLanguage(nextLanguage));
+    } else if (bookMatch && nextRoute) {
       navigate(`/${nextRoute.lang}/${nextRoute.section}/${bookMatch[3]}`);
     } else if (faqMatch) {
       navigate(`/${nextLang}/faq`);
@@ -129,15 +132,14 @@ const Header = () => {
               {t.nav.blog}
             </Link>
 
-            {showContactNav && (
-              <button
-                onClick={() => goToSection('contact')}
+            <Link
+                to={giftPathForLanguage(language)}
+                onClick={() => setMobileMenuOpen(false)}
                 className="nav-link text-[#75736E] hover:text-[#2C2A29] transition-colors"
                 data-testid="nav-contact"
               >
                 {t.nav.contact}
-              </button>
-            )}
+            </Link>
           </nav>
 
           <div className="hidden md:flex items-center">
@@ -212,15 +214,14 @@ const Header = () => {
                 {t.nav.blog}
               </Link>
 
-              {showContactNav && (
-                <button
-                  onClick={() => goToSection('contact')}
+              <Link
+                  to={giftPathForLanguage(language)}
+                  onClick={() => setMobileMenuOpen(false)}
                   className="text-left text-[#75736E] hover:text-[#2C2A29] transition-colors py-2"
                   data-testid="mobile-nav-contact"
                 >
                   {t.nav.contact}
-                </button>
-              )}
+              </Link>
             </nav>
 
             <div className="flex items-center gap-2 mb-4">

@@ -38,6 +38,42 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- Libro gratuito IT -->
+  <url>
+    <loc>https://www.gipivisconti.com/it/libro-gratuito</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/libro-gratuito"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/free-book"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/libro-gratis"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/libro-gratuito"/>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Free book EN -->
+  <url>
+    <loc>https://www.gipivisconti.com/en/free-book</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/libro-gratuito"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/free-book"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/libro-gratis"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/libro-gratuito"/>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Libro gratis ES -->
+  <url>
+    <loc>https://www.gipivisconti.com/es/libro-gratis</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/libro-gratuito"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/free-book"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/libro-gratis"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/libro-gratuito"/>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- FAQ IT -->
   <url>
     <loc>https://www.gipivisconti.com/it/faq</loc>

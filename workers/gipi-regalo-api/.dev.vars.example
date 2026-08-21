@@ -1,0 +1,7 @@
+# Copia questo file come .dev.vars soltanto per lo sviluppo locale.
+# Non inserire mai credenziali reali in questo file di esempio.
+PROTON_SMTP_TOKEN="token-smtp-proton"
+TURNSTILE_SECRET="secret-turnstile"
+DATA_HASH_KEY="segreto-casuale-lungo-per-hmac"
+OUTBOX_ENCRYPTION_KEY="chiave-aes-256-in-base64url"
+ADMIN_API_TOKEN="chiave-amministrativa-casuale-di-almeno-32-caratteri"
