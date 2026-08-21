@@ -49,6 +49,17 @@ describe('route SEO links', () => {
     ]);
   });
 
+  test('keeps the localized gift routes together', () => {
+    const seoLinks = buildRouteSeoLinks('/en/free-book');
+
+    expect(seoLinks.alternatives).toEqual([
+      { hreflang: 'it', href: 'https://www.gipivisconti.com/it/libro-gratuito' },
+      { hreflang: 'en', href: 'https://www.gipivisconti.com/en/free-book' },
+      { hreflang: 'es', href: 'https://www.gipivisconti.com/es/libro-gratis' },
+      { hreflang: 'x-default', href: 'https://www.gipivisconti.com/it/libro-gratuito' },
+    ]);
+  });
+
   test('replaces stale links with one canonical and four alternates', () => {
     document.head.innerHTML = `
       <link rel="canonical" href="https://www.gipivisconti.com/it">

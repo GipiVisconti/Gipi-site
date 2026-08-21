@@ -1,0 +1,43 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "gipi-regalo-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-16",
+  "workers_dev": true,
+  "triggers": {
+    "crons": ["*/10 * * * *"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "gipi-regalo",
+      "database_id": "b8cc108d-271a-41c1-8db5-4144af32ea77"
+    }
+  ],
+  "queues": {
+    "producers": [
+      {
+        "binding": "MAIL_QUEUE",
+        "queue": "gipi-regalo-mail"
+      }
+    ],
+    "consumers": [
+      {
+        "queue": "gipi-regalo-mail",
+        "max_batch_size": 1,
+        "max_batch_timeout": 5,
+        "max_retries": 5
+      }
+    ]
+  },
+  "assets": {
+    "directory": "./assets",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "vars": {
+    "PUBLIC_BASE_URL": "https://gipi-regalo-api.tight-river-419a.workers.dev",
+    "ALLOWED_ORIGINS": "https://www.gipivisconti.com,https://gipivisconti.com,http://localhost:3000,http://127.0.0.1:3000",
+    "TURNSTILE_ALLOWED_HOSTNAMES": "gipivisconti.com,www.gipivisconti.com"
+  }
+}

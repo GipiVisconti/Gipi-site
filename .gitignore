@@ -61,6 +61,9 @@ chainlit.md
 # Deployment
 .vercel
 
+# Worker temporaneo usato soltanto per il test SMTP Proton
+workers/proton-smtp-test/
+
 # Data and databases
 agenthub/agents/youtube/db
 
