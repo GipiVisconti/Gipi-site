@@ -14,8 +14,10 @@ import { Input } from '../components/ui/input';
 import { Label } from '../components/ui/label';
 
 const configuredApiUrl = (process.env.REACT_APP_GIFT_API_URL || '').replace(/\/+$/, '');
+const PRODUCTION_API_URL = 'https://gipi-regalo-api.tight-river-419a.workers.dev';
 const API_BASE_URL =
-  configuredApiUrl || (process.env.NODE_ENV === 'development' ? 'http://localhost:8787' : '');
+  configuredApiUrl ||
+  (process.env.NODE_ENV === 'development' ? 'http://localhost:8787' : PRODUCTION_API_URL);
 
 const AdminPage = () => {
   const [token, setToken] = useState('');
@@ -72,7 +74,7 @@ const AdminPage = () => {
       setStatus('ready');
     } catch {
       setStatus('error');
-      setMessage('Il Worker locale non è raggiungibile. Avvialo e riprova.');
+      setMessage('Il servizio amministrativo non è raggiungibile. Riprova tra poco.');
     }
   };
 
