@@ -7,7 +7,7 @@
     { "source": "/privacy-policy", "destination": "/it/privacy-policy", "permanent": true }
   ],
   "rewrites": [
-    { "source": "/admin", "destination": "/index.html" },
+    { "source": "/admin", "destination": "/admin/index.html" },
     { "source": "/it", "destination": "/it/index.html" },
     { "source": "/it/:path*", "destination": "/it/:path*/index.html" },
     { "source": "/en", "destination": "/en/index.html" },

@@ -293,6 +293,10 @@ const main = async () => {
       }
     }
 
+    const adminOutputPath = path.join(BUILD_DIR, 'admin', 'index.html');
+    await fsPromises.mkdir(path.dirname(adminOutputPath), { recursive: true });
+    await fsPromises.copyFile(INDEX_PATH, adminOutputPath);
+
     if (browserErrors.length > 0) {
       throw new Error(
         `Errori JavaScript durante il prerendering:\n${[
