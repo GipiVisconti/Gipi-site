@@ -1,6 +1,10 @@
 import { useNavigate, Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { Heart, BookOpen, Instagram, Mail, Linkedin } from 'lucide-react';
+import {
+  buildContactEmailHref,
+  CONTACT_EMAIL_COPY,
+} from '../lib/contactEmail';
 
 const Footer = () => {
   const { t, language } = useLanguage();
@@ -9,6 +13,11 @@ const Footer = () => {
 
   const langMap = { IT: 'it', EN: 'en', ES: 'es' };
   const currentLang = langMap[language] || 'it';
+  const contactEmailCopy = CONTACT_EMAIL_COPY[currentLang];
+  const contactEmailHref = buildContactEmailHref(
+    contactEmailCopy.subject,
+    contactEmailCopy.body,
+  );
 
   const goToSection = (sectionId) => {
     navigate(`/${currentLang}`, { state: { scrollTo: sectionId } });
@@ -104,10 +113,10 @@ const Footer = () => {
               </a>
 
               <a
-                href="mailto:info@gipivisconti.com"
+                href={contactEmailHref}
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#C18C5D] transition-colors"
                 data-testid="footer-email-link"
-                aria-label="Email"
+                aria-label={contactEmailCopy.ariaLabel}
               >
                 <Mail className="w-5 h-5" />
               </a>
