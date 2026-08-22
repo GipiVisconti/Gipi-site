@@ -1,4 +1,9 @@
-import { buildGiftMessage, SMTP_USERNAME, utf8ToBase64 } from "./message";
+import {
+  buildGiftMessage,
+  SMTP_USERNAME,
+  utf8ToBase64,
+  type GiftMessage,
+} from "./message";
 import type { Locale } from "./config";
 import {
   expectCode,
@@ -73,11 +78,24 @@ export async function runSmtpSession(
   downloadUrl: string,
   smtpToken: string,
 ): Promise<{ messageId: string }> {
+  return runSmtpMessageSession(
+    initialSocket,
+    recipient,
+    buildGiftMessage({ recipient, name, locale, downloadUrl }),
+    smtpToken,
+  );
+}
+
+export async function runSmtpMessageSession(
+  initialSocket: MailSocket,
+  recipient: string,
+  message: GiftMessage,
+  smtpToken: string,
+): Promise<{ messageId: string }> {
   if (!smtpToken || smtpToken.length > 1_024 || /[\r\n]/.test(smtpToken)) {
     throw new SmtpFailure("smtp-token-invalid");
   }
 
-  const message = buildGiftMessage({ recipient, name, locale, downloadUrl });
   let socket = initialSocket;
   let channel: SmtpChannel | undefined;
 

@@ -4,6 +4,8 @@ import {
   hasRecentRequest,
   insertGiftRequest,
   isRateLimited,
+  markAdminNotificationEnqueueFailed,
+  markAdminNotificationQueued,
   markEnqueueFailed,
   markQueued,
 } from "./database";
@@ -129,10 +131,21 @@ async function createGiftRequest(
   });
 
   try {
-    await env.MAIL_QUEUE.send({ requestId });
+    await env.MAIL_QUEUE.send({ requestId, kind: "gift" });
     await markQueued(env, requestId, new Date().toISOString());
   } catch {
     await markEnqueueFailed(env, requestId, new Date().toISOString());
+  }
+
+  try {
+    await env.MAIL_QUEUE.send({ requestId, kind: "admin-notification" });
+    await markAdminNotificationQueued(env, requestId, new Date().toISOString());
+  } catch {
+    await markAdminNotificationEnqueueFailed(
+      env,
+      requestId,
+      new Date().toISOString(),
+    );
   }
 
   return jsonResponse({ success: true }, 202, origin, env.ALLOWED_ORIGINS);

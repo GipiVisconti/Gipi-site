@@ -1,5 +1,11 @@
 import { isLocale, type Locale } from "./config";
-import type { DownloadRow, Env, GiftMailPayload, OutboxRow } from "./types";
+import type {
+  AdminNotificationRow,
+  DownloadRow,
+  Env,
+  GiftMailPayload,
+  OutboxRow,
+} from "./types";
 
 export interface NewGiftRequest {
   requestId: string;
@@ -108,6 +114,16 @@ export async function insertGiftRequest(env: Env, input: NewGiftRequest): Promis
       input.newsletterConsent ? 1 : 0,
       input.createdAt,
     ),
+    env.DB.prepare(
+      `INSERT INTO admin_notifications (
+        request_id, status, attempts, created_at, updated_at, next_attempt_at
+      ) VALUES (?, 'pending', 0, ?, ?, ?)`,
+    ).bind(
+      input.requestId,
+      input.createdAt,
+      input.createdAt,
+      input.createdAt,
+    ),
   ];
 
   if (input.newsletterConsent) {
@@ -167,6 +183,131 @@ export async function markEnqueueFailed(env: Env, requestId: string, now: string
       WHERE request_id = ? AND status = 'pending'`,
   )
     .bind(now, now, requestId)
+    .run();
+}
+
+export async function markAdminNotificationQueued(
+  env: Env,
+  requestId: string,
+  now: string,
+): Promise<void> {
+  await env.DB.prepare(
+    `UPDATE admin_notifications
+        SET status = 'queued', last_enqueued_at = ?, updated_at = ?
+      WHERE request_id = ? AND status IN ('pending', 'retry')`,
+  )
+    .bind(now, now, requestId)
+    .run();
+}
+
+export async function markAdminNotificationEnqueueFailed(
+  env: Env,
+  requestId: string,
+  now: string,
+): Promise<void> {
+  await env.DB.prepare(
+    `UPDATE admin_notifications
+        SET status = 'retry', next_attempt_at = ?, updated_at = ?
+      WHERE request_id = ? AND status = 'pending'`,
+  )
+    .bind(now, now, requestId)
+    .run();
+}
+
+export async function claimAdminNotification(
+  env: Env,
+  requestId: string,
+  now: string,
+): Promise<boolean> {
+  const result = await env.DB.prepare(
+    `UPDATE admin_notifications
+        SET status = 'sending', attempts = attempts + 1, updated_at = ?
+      WHERE request_id = ? AND status IN ('pending', 'queued', 'retry')`,
+  )
+    .bind(now, requestId)
+    .run();
+  return Number(result.meta.changes ?? 0) === 1;
+}
+
+export async function getAdminNotification(
+  env: Env,
+  requestId: string,
+): Promise<AdminNotificationRow | null> {
+  return env.DB.prepare(
+    `SELECT n.request_id, p.encrypted_profile, p.profile_iv,
+            p.newsletter_consent, r.locale, r.created_at, n.attempts
+       FROM admin_notifications n
+       JOIN gift_request_profiles p ON p.request_id = n.request_id
+       JOIN gift_requests r ON r.request_id = n.request_id
+      WHERE n.request_id = ?`,
+  )
+    .bind(requestId)
+    .first<AdminNotificationRow>();
+}
+
+export async function markAdminNotificationSent(
+  env: Env,
+  requestId: string,
+  messageId: string,
+  now: string,
+): Promise<void> {
+  await env.DB.prepare(
+    `UPDATE admin_notifications
+        SET status = 'completed', message_id = ?, updated_at = ?,
+            next_attempt_at = NULL, failure_stage = NULL, smtp_code = NULL
+      WHERE request_id = ?`,
+  )
+    .bind(messageId, now, requestId)
+    .run();
+}
+
+export async function markAdminNotificationUnknown(
+  env: Env,
+  requestId: string,
+  stage: string,
+  smtpCode: number | null,
+  now: string,
+): Promise<void> {
+  await env.DB.prepare(
+    `UPDATE admin_notifications
+        SET status = 'unknown', failure_stage = ?, smtp_code = ?, updated_at = ?
+      WHERE request_id = ?`,
+  )
+    .bind(stage, smtpCode, now, requestId)
+    .run();
+}
+
+export async function markAdminNotificationRetry(
+  env: Env,
+  requestId: string,
+  stage: string,
+  smtpCode: number | null,
+  nextAttemptAt: string,
+  now: string,
+): Promise<void> {
+  await env.DB.prepare(
+    `UPDATE admin_notifications
+        SET status = 'retry', failure_stage = ?, smtp_code = ?,
+            next_attempt_at = ?, updated_at = ?
+      WHERE request_id = ?`,
+  )
+    .bind(stage, smtpCode, nextAttemptAt, now, requestId)
+    .run();
+}
+
+export async function markAdminNotificationFailed(
+  env: Env,
+  requestId: string,
+  stage: string,
+  smtpCode: number | null,
+  now: string,
+): Promise<void> {
+  await env.DB.prepare(
+    `UPDATE admin_notifications
+        SET status = 'failed', failure_stage = ?, smtp_code = ?, updated_at = ?
+      WHERE request_id = ?`,
+  )
+    .bind(stage, smtpCode, now, requestId)
     .run();
 }
 
@@ -330,6 +471,26 @@ export async function pendingOutboxIds(env: Env, now: string): Promise<string[]>
   return result.results.map((row) => row.request_id);
 }
 
+export async function pendingAdminNotificationIds(
+  env: Env,
+  now: string,
+): Promise<string[]> {
+  const staleQueued = new Date(Date.parse(now) - 15 * 60 * 1_000).toISOString();
+  const result = await env.DB.prepare(
+    `SELECT request_id
+       FROM admin_notifications
+      WHERE (
+          (status IN ('pending', 'retry') AND (next_attempt_at IS NULL OR next_attempt_at <= ?))
+          OR (status = 'queued' AND last_enqueued_at < ?)
+        )
+      ORDER BY created_at ASC
+      LIMIT 50`,
+  )
+    .bind(now, staleQueued)
+    .all<{ request_id: string }>();
+  return result.results.map((row) => row.request_id);
+}
+
 export async function cleanExpiredData(env: Env, now: string): Promise<void> {
   const staleSending = new Date(Date.parse(now) - 30 * 60 * 1_000).toISOString();
   const oldRequests = new Date(Date.parse(now) - 30 * 24 * 60 * 60 * 1_000).toISOString();
@@ -342,6 +503,11 @@ export async function cleanExpiredData(env: Env, now: string): Promise<void> {
     env.DB.prepare(
       `UPDATE mail_outbox
           SET status = 'unknown', encrypted_payload = NULL, payload_iv = NULL, updated_at = ?
+        WHERE status = 'sending' AND updated_at < ?`,
+    ).bind(now, staleSending),
+    env.DB.prepare(
+      `UPDATE admin_notifications
+          SET status = 'unknown', updated_at = ?, failure_stage = 'worker-interrupted'
         WHERE status = 'sending' AND updated_at < ?`,
     ).bind(now, staleSending),
     env.DB.prepare("DELETE FROM gift_requests WHERE created_at < ?").bind(oldRequests),

@@ -1,19 +1,35 @@
 import { decryptJson } from "./crypto";
 import {
+  claimAdminNotification,
   assertMailPayload,
   claimOutbox,
   cleanExpiredData,
+  getAdminNotification,
   getOutbox,
+  markAdminNotificationFailed,
+  markAdminNotificationQueued,
+  markAdminNotificationRetry,
+  markAdminNotificationSent,
+  markAdminNotificationUnknown,
   markFailed,
   markQueued,
   markRetry,
   markSent,
   markUnknown,
+  pendingAdminNotificationIds,
   pendingOutboxIds,
 } from "./database";
-import { sendProtonGiftEmail } from "./smtp";
+import {
+  sendProtonAdminNotificationEmail,
+  sendProtonGiftEmail,
+} from "./smtp";
 import { SmtpFailure } from "./smtp-protocol";
-import type { Env, GiftMailPayload, MailQueueMessage } from "./types";
+import type {
+  Env,
+  GiftMailPayload,
+  MailQueueMessage,
+  StoredContactProfile,
+} from "./types";
 
 const MAX_ATTEMPTS = 5;
 
@@ -37,7 +53,10 @@ function isRetryable(error: SmtpFailure): boolean {
   ].some((stage) => error.stage.startsWith(stage));
 }
 
-async function processMessage(env: Env, message: Message<MailQueueMessage>): Promise<void> {
+async function processGiftMessage(
+  env: Env,
+  message: Message<MailQueueMessage>,
+): Promise<void> {
   const now = new Date();
   const nowIso = now.toISOString();
   const claimed = await claimOutbox(env, message.body.requestId, nowIso);
@@ -110,13 +129,123 @@ async function processMessage(env: Env, message: Message<MailQueueMessage>): Pro
   }
 }
 
+async function processAdminNotification(
+  env: Env,
+  message: Message<MailQueueMessage>,
+): Promise<void> {
+  const nowIso = new Date().toISOString();
+  const claimed = await claimAdminNotification(env, message.body.requestId, nowIso);
+  if (!claimed) {
+    message.ack();
+    return;
+  }
+
+  const notification = await getAdminNotification(env, message.body.requestId);
+  if (!notification) {
+    await markAdminNotificationFailed(
+      env,
+      message.body.requestId,
+      "notification-data-missing",
+      null,
+      nowIso,
+    );
+    message.ack();
+    return;
+  }
+
+  let profile: StoredContactProfile;
+  try {
+    profile = await decryptJson<StoredContactProfile>(
+      env.OUTBOX_ENCRYPTION_KEY,
+      notification.encrypted_profile,
+      notification.profile_iv,
+    );
+  } catch {
+    await markAdminNotificationFailed(
+      env,
+      notification.request_id,
+      "notification-decryption",
+      null,
+      nowIso,
+    );
+    message.ack();
+    return;
+  }
+
+  try {
+    const result = await sendProtonAdminNotificationEmail(
+      {
+        name: profile.name,
+        email: profile.email,
+        birthday: profile.birthday,
+        locale: notification.locale,
+        newsletterConsent: notification.newsletter_consent === 1,
+        createdAt: notification.created_at,
+      },
+      env.PROTON_SMTP_TOKEN,
+    );
+    await markAdminNotificationSent(
+      env,
+      notification.request_id,
+      result.messageId,
+      new Date().toISOString(),
+    );
+    message.ack();
+  } catch (error) {
+    const failure = error instanceof SmtpFailure
+      ? error
+      : new SmtpFailure("unexpected-admin-notification-error");
+    const failureTime = new Date().toISOString();
+
+    if (isUnknownDelivery(failure)) {
+      await markAdminNotificationUnknown(
+        env,
+        notification.request_id,
+        failure.stage,
+        failure.smtpCode ?? null,
+        failureTime,
+      );
+      message.ack();
+      return;
+    }
+
+    if (notification.attempts < MAX_ATTEMPTS && isRetryable(failure)) {
+      const delaySeconds = retryDelay(notification.attempts);
+      const nextAttemptAt = new Date(Date.now() + delaySeconds * 1_000).toISOString();
+      await markAdminNotificationRetry(
+        env,
+        notification.request_id,
+        failure.stage,
+        failure.smtpCode ?? null,
+        nextAttemptAt,
+        failureTime,
+      );
+      message.retry({ delaySeconds });
+      return;
+    }
+
+    await markAdminNotificationFailed(
+      env,
+      notification.request_id,
+      failure.stage,
+      failure.smtpCode ?? null,
+      failureTime,
+    );
+    message.ack();
+  }
+}
+
 export async function consumeMailQueue(
   batch: MessageBatch<MailQueueMessage>,
   env: Env,
 ): Promise<void> {
   for (const message of batch.messages) {
     try {
-      await processMessage(env, message);
+      if (message.body.kind === "admin-notification") {
+        await processAdminNotification(env, message);
+      } else {
+        await processGiftMessage(env, message);
+      }
     } catch {
       message.retry({ delaySeconds: 300 });
     }
@@ -130,8 +259,18 @@ export async function maintainOutbox(env: Env): Promise<void> {
 
   for (const requestId of requestIds) {
     try {
-      await env.MAIL_QUEUE.send({ requestId });
+      await env.MAIL_QUEUE.send({ requestId, kind: "gift" });
       await markQueued(env, requestId, new Date().toISOString());
+    } catch {
+      // Il record rimane pendente e verrà ripreso dal trigger successivo.
+    }
+  }
+
+  const adminRequestIds = await pendingAdminNotificationIds(env, now);
+  for (const requestId of adminRequestIds) {
+    try {
+      await env.MAIL_QUEUE.send({ requestId, kind: "admin-notification" });
+      await markAdminNotificationQueued(env, requestId, new Date().toISOString());
     } catch {
       // Il record rimane pendente e verrà ripreso dal trigger successivo.
     }

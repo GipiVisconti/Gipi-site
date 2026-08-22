@@ -39,6 +39,17 @@ export interface GiftMailPayload {
 
 export interface MailQueueMessage {
   requestId: string;
+  kind?: "gift" | "admin-notification";
+}
+
+export interface AdminNotificationRow {
+  request_id: string;
+  encrypted_profile: string;
+  profile_iv: string;
+  newsletter_consent: number;
+  locale: Locale;
+  created_at: string;
+  attempts: number;
 }
 
 export interface OutboxRow {

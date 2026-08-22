@@ -55,6 +55,16 @@ export interface GiftEmailContent {
   htmlBody: string;
 }
 
+export interface AdminNotificationMessageInput {
+  name: string;
+  email: string;
+  birthday: string;
+  locale: Locale;
+  newsletterConsent: boolean;
+  createdAt: string;
+  now?: Date;
+}
+
 const LINKEDIN_URL = "https://www.linkedin.com/in/gipi-visconti";
 const INSTAGRAM_URL = "https://www.instagram.com/gipi_visconti";
 
@@ -158,6 +168,104 @@ export function buildGiftMessage(input: GiftMessageInput): GiftMessage {
     `Date: ${now.toUTCString()}`,
     `Message-ID: <${messageId}>`,
     `Subject: ${encodeHeader(copy.emailSubject)}`,
+    "MIME-Version: 1.0",
+    `Content-Type: multipart/alternative; boundary="${boundary}"`,
+    "Auto-Submitted: auto-generated",
+    "X-Auto-Response-Suppress: All",
+  ];
+  const body = [
+    `--${boundary}`,
+    "Content-Type: text/plain; charset=UTF-8",
+    "Content-Transfer-Encoding: base64",
+    "",
+    wrapBase64(utf8ToBase64(textBody)),
+    `--${boundary}`,
+    "Content-Type: text/html; charset=UTF-8",
+    "Content-Transfer-Encoding: base64",
+    "",
+    wrapBase64(utf8ToBase64(htmlBody)),
+    `--${boundary}--`,
+  ];
+
+  return {
+    messageId,
+    source: `${headers.join(CRLF)}${CRLF}${CRLF}${body.join(CRLF)}`,
+  };
+}
+
+function formatBirthday(value: string): string {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value);
+  return match ? `${match[3]}/${match[2]}/${match[1]}` : value;
+}
+
+function formatCreatedAt(value: string): string {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return value;
+  return new Intl.DateTimeFormat("it-IT", {
+    dateStyle: "medium",
+    timeStyle: "short",
+    timeZone: "Europe/Madrid",
+  }).format(date);
+}
+
+export function buildAdminNotificationMessage(
+  input: AdminNotificationMessageInput,
+): GiftMessage {
+  if (!isSafeAsciiEmail(input.email)) throw new Error("invalid-reply-to");
+
+  const now = input.now ?? new Date();
+  const messageId = `${crypto.randomUUID()}@gipivisconti.com`;
+  const boundary = `gipi-admin-${crypto.randomUUID()}`;
+  const localeLabel = { it: "Italiano", en: "Inglese", es: "Spagnolo" }[input.locale];
+  const newsletterLabel = input.newsletterConsent ? "Sì" : "No";
+  const birthday = formatBirthday(input.birthday);
+  const createdAt = formatCreatedAt(input.createdAt);
+  const subject = `Nuova richiesta del libro regalo | ${input.locale.toUpperCase()}`;
+  const textBody = [
+    "È stata ricevuta una nuova richiesta del libro regalo.",
+    "",
+    `Nome: ${input.name}`,
+    `Email: ${input.email}`,
+    `Compleanno: ${birthday}`,
+    `Lingua: ${localeLabel}`,
+    `Newsletter: ${newsletterLabel}`,
+    `Data della richiesta: ${createdAt}`,
+    "",
+    "Area amministrativa: https://www.gipivisconti.com/admin",
+  ].join("\n");
+  const htmlBody = `<!doctype html>
+<html lang="it">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="margin:0;padding:0;background:#faf9f6;color:#2c2a29;font-family:Arial,Helvetica,sans-serif;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;background:#faf9f6;">
+    <tr><td align="center" style="padding:32px 18px;">
+      <table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" style="width:100%;max-width:600px;background:#ffffff;border:1px solid #e8e4db;border-radius:16px;">
+        <tr><td style="padding:32px;">
+          <p style="margin:0 0 8px;color:#c18c5d;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;">Libro regalo</p>
+          <h1 style="margin:0 0 12px;font-size:26px;line-height:1.3;">Nuova richiesta ricevuta</h1>
+          <p style="margin:0 0 26px;color:#75736e;line-height:1.6;">Una persona ha compilato il modulo sul sito.</p>
+          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;">
+            <tr><td style="padding:9px 0;color:#75736e;width:38%;">Nome</td><td style="padding:9px 0;font-weight:700;">${escapeHtml(input.name)}</td></tr>
+            <tr><td style="padding:9px 0;color:#75736e;">Email</td><td style="padding:9px 0;"><a href="mailto:${escapeHtml(input.email)}" style="color:#2c2a29;">${escapeHtml(input.email)}</a></td></tr>
+            <tr><td style="padding:9px 0;color:#75736e;">Compleanno</td><td style="padding:9px 0;">${escapeHtml(birthday)}</td></tr>
+            <tr><td style="padding:9px 0;color:#75736e;">Lingua</td><td style="padding:9px 0;">${escapeHtml(localeLabel)}</td></tr>
+            <tr><td style="padding:9px 0;color:#75736e;">Newsletter</td><td style="padding:9px 0;">${newsletterLabel}</td></tr>
+            <tr><td style="padding:9px 0;color:#75736e;">Ricevuta</td><td style="padding:9px 0;">${escapeHtml(createdAt)}</td></tr>
+          </table>
+          <p style="margin:28px 0 0;"><a href="https://www.gipivisconti.com/admin" style="display:inline-block;background:#c18c5d;color:#ffffff;text-decoration:none;padding:13px 20px;border-radius:8px;font-weight:700;">Apri l’area amministrativa</a></p>
+        </td></tr>
+      </table>
+    </td></tr>
+  </table>
+</body>
+</html>`;
+  const headers = [
+    `From: Gipi Visconti <${SMTP_USERNAME}>`,
+    `To: Gipi Visconti <${SMTP_USERNAME}>`,
+    `Reply-To: <${input.email}>`,
+    `Date: ${now.toUTCString()}`,
+    `Message-ID: <${messageId}>`,
+    `Subject: ${encodeHeader(subject)}`,
     "MIME-Version: 1.0",
     `Content-Type: multipart/alternative; boundary="${boundary}"`,
     "Auto-Submitted: auto-generated",

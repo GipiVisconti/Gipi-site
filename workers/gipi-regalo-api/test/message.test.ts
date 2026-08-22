@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import {
+  buildAdminNotificationMessage,
   buildGiftEmailContent,
   buildGiftMessage,
   encodeHeader,
@@ -66,5 +67,24 @@ describe("MIME message", () => {
     expect(content.htmlBody).toContain("Clicca qui per scaricare il libro");
     expect(content.htmlBody).not.toMatch(/brevo|newsletter|unsubscribe/i);
     expect(content.textBody).toContain("Il link resterà valido per 72 ore");
+  });
+
+  it("creates the private notification for the site owner", () => {
+    const message = buildAdminNotificationMessage({
+      name: "Luca",
+      email: "persona@example.com",
+      birthday: "2000-08-10",
+      locale: "it",
+      newsletterConsent: true,
+      createdAt: "2026-08-22T10:00:00.000Z",
+      now: new Date("2026-08-22T10:01:00.000Z"),
+    });
+
+    expect(message.source).toContain("To: Gipi Visconti <info@gipivisconti.com>");
+    expect(message.source).toContain("Reply-To: <persona@example.com>");
+    expect(message.source).toContain(
+      `Subject: ${encodeHeader("Nuova richiesta del libro regalo | IT")}`,
+    );
+    expect(message.source).not.toMatch(/(^|[^\r])\n/);
   });
 });

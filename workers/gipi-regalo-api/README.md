@@ -6,6 +6,8 @@ La casella newsletter è facoltativa e separata dalla richiesta del libro. Le ri
 
 Render e Brevo non fanno parte di questo flusso. Il token SMTP Proton e gli altri segreti restano nelle variabili cifrate di Cloudflare e non devono mai essere inseriti nel repository o nel frontend.
 
+Per ogni nuova richiesta valida, una notifica separata viene inviata a `info@gipivisconti.com`. La notifica usa uno stato indipendente e può essere ritentata senza reinviare il libro al lettore.
+
 ## Segreti richiesti
 
 Configurare in Cloudflare, senza inserirli nel repository:
@@ -14,7 +16,7 @@ Configurare in Cloudflare, senza inserirli nel repository:
 - `TURNSTILE_SECRET`: chiave privata del widget Turnstile;
 - `DATA_HASH_KEY`: chiave casuale usata per pseudonimizzare email e indirizzo IP;
 - `OUTBOX_ENCRYPTION_KEY`: chiave casuale usata per cifrare temporaneamente i dati necessari all'invio.
-- `ADMIN_API_TOKEN`: chiave casuale di almeno 32 caratteri richiesta dall'area amministrativa locale.
+- `ADMIN_API_TOKEN`: chiave casuale di almeno 32 caratteri richiesta dall'area amministrativa.
 
 Le ultime due chiavi possono essere generate con un generatore crittografico e devono avere almeno 32 byte casuali.
 
@@ -35,7 +37,7 @@ Per variabili locali, copiare `.dev.vars.example` in `.dev.vars`; il file reale 
 
 Il database D1 e la coda devono usare i binding `DB` e `MAIL_QUEUE`. Le migrazioni si trovano in `migrations`; i PDF ottimizzati sono in `assets/books` e vengono distribuiti insieme al Worker attraverso il binding `ASSETS`. Con `run_worker_first` attivo, i percorsi reali dei file non sono pubblici: il Worker li restituisce soltanto dopo aver verificato il collegamento personale.
 
-## Area amministrativa locale
+## Area amministrativa
 
 La pagina `/admin` richiede la chiave `ADMIN_API_TOKEN`, che resta soltanto nella memoria della pagina e viene inviata al Worker nell'intestazione `Authorization`. L'area mostra il numero delle richieste recenti e degli iscritti attivi, quindi permette di scaricare due file CSV compatibili con Excel: uno per le richieste degli ultimi 30 giorni e uno per l'archivio newsletter. I dati vengono decifrati esclusivamente durante la generazione del file.
 
