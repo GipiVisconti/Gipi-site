@@ -2,7 +2,7 @@ export const GIFT_PRIVACY = {
   IT: {
     eyebrow: 'Informativa legale',
     title: 'Privacy Policy',
-    lastUpdated: 'Ultimo aggiornamento: 21 agosto 2026',
+    lastUpdated: 'Ultimo aggiornamento: 22 agosto 2026',
     intro: 'Questa informativa descrive come vengono trattati i dati personali raccolti attraverso gipivisconti.com e, in particolare, tramite il modulo del libro gratuito. Il trattamento avviene nel rispetto del Regolamento (UE) 2016/679 (GDPR) e della normativa applicabile.',
     sections: [
       { heading: '1. Titolare del trattamento', body: 'Il Titolare del trattamento è Gipi Visconti. Per richieste relative ai dati personali è possibile scrivere a info@gipivisconti.com.' },
@@ -12,14 +12,14 @@ export const GIFT_PRIVACY = {
       { heading: '5. Conservazione', body: 'Nome, indirizzo email, data del compleanno e scelta relativa alla newsletter vengono conservati in forma cifrata per un massimo di 30 giorni insieme alla richiesta del libro. I dati presenti nella coda di invio vengono eliminati appena termina il tentativo di consegna. Se viene prestato il consenso alla newsletter, il profilo cifrato e la prova del consenso vengono conservati fino alla revoca. Il collegamento al libro scade dopo 72 ore e consente al massimo cinque download.' },
       { heading: '6. Destinatari e trasferimenti', body: 'Cloudflare e Proton trattano i dati necessari a fornire i rispettivi servizi secondo i propri accordi e le proprie misure di protezione. I dati non vengono venduti né ceduti per finalità pubblicitarie.' },
       { heading: '7. Cookie e tecnologie necessarie', body: 'Il controllo Turnstile utilizza le informazioni tecniche necessarie a distinguere una persona da un invio automatico. Il sito non usa questo modulo per profilazione pubblicitaria.' },
-      { heading: '8. Diritti', body: 'È possibile chiedere accesso, rettifica, cancellazione, limitazione o opposizione al trattamento, quando applicabile, scrivendo a info@gipivisconti.com. Il consenso alla newsletter può essere revocato in qualsiasi momento allo stesso indirizzo, senza conseguenze sulla richiesta del libro. È inoltre possibile presentare reclamo all’autorità di controllo competente.' },
+      { heading: '8. Diritti', body: 'È possibile chiedere accesso, rettifica, cancellazione, limitazione o opposizione al trattamento, quando applicabile, scrivendo a info@gipivisconti.com. Il consenso alla newsletter può essere revocato in qualsiasi momento allo stesso indirizzo oppure usando il collegamento di disiscrizione presente in ogni newsletter, senza conseguenze sulla richiesta del libro. È inoltre possibile presentare reclamo all’autorità di controllo competente.' },
       { heading: '9. Sicurezza e aggiornamenti', body: 'Sono adottate misure tecniche e organizzative adeguate, tra cui cifratura temporanea, collegamenti di download a scadenza e limiti antiabuso. Questa informativa potrà essere aggiornata se cambieranno il servizio o le norme applicabili.' },
     ],
   },
   EN: {
     eyebrow: 'Legal information',
     title: 'Privacy Policy',
-    lastUpdated: 'Last updated: 21 August 2026',
+    lastUpdated: 'Last updated: 22 August 2026',
     intro: 'This notice explains how personal data collected through gipivisconti.com is processed, with particular reference to the free-book form. Processing is carried out in accordance with Regulation (EU) 2016/679 (GDPR) and applicable data protection law.',
     sections: [
       { heading: '1. Data Controller', body: 'The Data Controller is Gipi Visconti. You can write to info@gipivisconti.com with any request concerning personal data.' },
@@ -29,14 +29,14 @@ export const GIFT_PRIVACY = {
       { heading: '5. Retention', body: 'The name, email address, birthday date and newsletter choice are kept in encrypted form with the book request for no more than 30 days. Data held in the delivery queue is erased as soon as the delivery attempt ends. If newsletter consent is given, the encrypted profile and proof of consent are retained until consent is withdrawn. The book link expires after 72 hours and permits no more than five downloads.' },
       { heading: '6. Recipients and transfers', body: 'Cloudflare and Proton process the data required to provide their respective services under their own agreements and safeguards. Data is not sold or shared for advertising purposes.' },
       { heading: '7. Necessary technologies', body: 'Turnstile uses the technical information needed to distinguish a person from an automated submission. This form is not used for advertising profiling.' },
-      { heading: '8. Your rights', body: 'You may request access, rectification, erasure, restriction or objection where applicable by writing to info@gipivisconti.com. Newsletter consent may be withdrawn at any time through the same address, without affecting the book request. You may also lodge a complaint with the competent supervisory authority.' },
+      { heading: '8. Your rights', body: 'You may request access, rectification, erasure, restriction or objection where applicable by writing to info@gipivisconti.com. Newsletter consent may be withdrawn at any time through the same address or by using the unsubscribe link in every newsletter, without affecting the book request. You may also lodge a complaint with the competent supervisory authority.' },
       { heading: '9. Security and updates', body: 'Appropriate technical and organisational measures are used, including temporary encryption, expiring download links and anti-abuse limits. This notice may be updated if the service or the applicable law changes.' },
     ],
   },
   ES: {
     eyebrow: 'Información legal',
     title: 'Política de Privacidad',
-    lastUpdated: 'Última actualización: 21 de agosto de 2026',
+    lastUpdated: 'Última actualización: 22 de agosto de 2026',
     intro: 'Esta política explica cómo se tratan los datos personales recogidos a través de gipivisconti.com y, en particular, mediante el formulario del libro gratuito. El tratamiento se realiza de conformidad con el Reglamento (UE) 2016/679 (RGPD) y la normativa aplicable.',
     sections: [
       { heading: '1. Responsable del tratamiento', body: 'La responsable del tratamiento es Gipi Visconti. Para cualquier solicitud relacionada con los datos personales puedes escribir a info@gipivisconti.com.' },
@@ -46,7 +46,7 @@ export const GIFT_PRIVACY = {
       { heading: '5. Conservación', body: 'El nombre, la dirección de email, la fecha del cumpleaños y la elección sobre la newsletter se conservan cifrados junto con la solicitud del libro durante un máximo de 30 días. Los datos presentes en la cola de envío se eliminan al finalizar el intento de entrega. Si se presta el consentimiento para la newsletter, el perfil cifrado y la prueba del consentimiento se conservan hasta su retirada. El enlace al libro caduca a las 72 horas y permite un máximo de cinco descargas.' },
       { heading: '6. Destinatarios y transferencias', body: 'Cloudflare y Proton tratan los datos necesarios para prestar sus respectivos servicios conforme a sus acuerdos y medidas de protección. Los datos no se venden ni se ceden con fines publicitarios.' },
       { heading: '7. Tecnologías necesarias', body: 'Turnstile utiliza la información técnica necesaria para distinguir a una persona de un envío automático. Este formulario no se utiliza para crear perfiles publicitarios.' },
-      { heading: '8. Derechos', body: 'Puedes solicitar el acceso, la rectificación, la supresión, la limitación o la oposición al tratamiento, cuando corresponda, escribiendo a info@gipivisconti.com. El consentimiento para la newsletter puede retirarse en cualquier momento a través de la misma dirección, sin afectar a la solicitud del libro. También puedes presentar una reclamación ante la autoridad de control competente.' },
+      { heading: '8. Derechos', body: 'Puedes solicitar el acceso, la rectificación, la supresión, la limitación o la oposición al tratamiento, cuando corresponda, escribiendo a info@gipivisconti.com. El consentimiento para la newsletter puede retirarse en cualquier momento a través de la misma dirección o mediante el enlace de baja incluido en cada newsletter, sin afectar a la solicitud del libro. También puedes presentar una reclamación ante la autoridad de control competente.' },
       { heading: '9. Seguridad y actualizaciones', body: 'Se aplican medidas técnicas y organizativas adecuadas, entre ellas el cifrado temporal, los enlaces de descarga con caducidad y los límites contra abusos. Esta política podrá actualizarse si cambia el servicio o la normativa aplicable.' },
     ],
   },

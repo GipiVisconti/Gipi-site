@@ -1,4 +1,4 @@
-import { decryptJson } from "./crypto";
+import { decryptJson, hmacHex } from "./crypto";
 import {
   claimAdminNotification,
   assertMailPayload,
@@ -20,8 +20,15 @@ import {
   pendingOutboxIds,
 } from "./database";
 import {
+  claimNewsletterDelivery,
+  getNewsletterDelivery,
+  markNewsletterDelivery,
+} from "./newsletter-database";
+import { enqueuePendingNewsletters } from "./newsletter";
+import {
   sendProtonAdminNotificationEmail,
   sendProtonGiftEmail,
+  sendProtonNewsletterEmail,
 } from "./smtp";
 import { SmtpFailure } from "./smtp-protocol";
 import type {
@@ -29,6 +36,7 @@ import type {
   GiftMailPayload,
   MailQueueMessage,
   StoredContactProfile,
+  NewsletterArticleContent,
 } from "./types";
 
 const MAX_ATTEMPTS = 5;
@@ -59,15 +67,20 @@ async function processGiftMessage(
 ): Promise<void> {
   const now = new Date();
   const nowIso = now.toISOString();
-  const claimed = await claimOutbox(env, message.body.requestId, nowIso);
+  const requestId = message.body.requestId;
+  if (!requestId) {
+    message.ack();
+    return;
+  }
+  const claimed = await claimOutbox(env, requestId, nowIso);
   if (!claimed) {
     message.ack();
     return;
   }
 
-  const outbox = await getOutbox(env, message.body.requestId);
+  const outbox = await getOutbox(env, requestId);
   if (!outbox?.encrypted_payload || !outbox.payload_iv) {
-    await markFailed(env, message.body.requestId, "outbox-payload-missing", null, nowIso);
+    await markFailed(env, requestId, "outbox-payload-missing", null, nowIso);
     message.ack();
     return;
   }
@@ -81,7 +94,7 @@ async function processGiftMessage(
     );
     assertMailPayload(payload);
   } catch {
-    await markFailed(env, message.body.requestId, "outbox-decryption", null, nowIso);
+    await markFailed(env, requestId, "outbox-decryption", null, nowIso);
     message.ack();
     return;
   }
@@ -134,17 +147,22 @@ async function processAdminNotification(
   message: Message<MailQueueMessage>,
 ): Promise<void> {
   const nowIso = new Date().toISOString();
-  const claimed = await claimAdminNotification(env, message.body.requestId, nowIso);
+  const requestId = message.body.requestId;
+  if (!requestId) {
+    message.ack();
+    return;
+  }
+  const claimed = await claimAdminNotification(env, requestId, nowIso);
   if (!claimed) {
     message.ack();
     return;
   }
 
-  const notification = await getAdminNotification(env, message.body.requestId);
+  const notification = await getAdminNotification(env, requestId);
   if (!notification) {
     await markAdminNotificationFailed(
       env,
-      message.body.requestId,
+      requestId,
       "notification-data-missing",
       null,
       nowIso,
@@ -235,13 +253,132 @@ async function processAdminNotification(
   }
 }
 
+async function processNewsletter(
+  env: Env,
+  message: Message<MailQueueMessage>,
+): Promise<void> {
+  const { campaignId, emailHash } = message.body;
+  if (!campaignId || !emailHash) {
+    message.ack();
+    return;
+  }
+  const nowIso = new Date().toISOString();
+  const claimed = await claimNewsletterDelivery(env, campaignId, emailHash, nowIso);
+  if (!claimed) {
+    message.ack();
+    return;
+  }
+  const delivery = await getNewsletterDelivery(env, campaignId, emailHash);
+  if (!delivery || delivery.consent_status !== "subscribed") {
+    await markNewsletterDelivery(env, campaignId, emailHash, "skipped", nowIso, {
+      stage: "consent-not-active",
+    });
+    message.ack();
+    return;
+  }
+
+  let profile: StoredContactProfile;
+  try {
+    if (delivery.encrypted_profile && delivery.profile_iv) {
+      profile = await decryptJson<StoredContactProfile>(
+        env.OUTBOX_ENCRYPTION_KEY,
+        delivery.encrypted_profile,
+        delivery.profile_iv,
+      );
+    } else {
+      const legacy = await decryptJson<{ email: string }>(
+        env.OUTBOX_ENCRYPTION_KEY,
+        delivery.encrypted_email,
+        delivery.email_iv,
+      );
+      profile = { name: "", email: legacy.email, birthday: "" };
+    }
+  } catch {
+    await markNewsletterDelivery(env, campaignId, emailHash, "failed", nowIso, {
+      stage: "newsletter-decryption",
+    });
+    message.ack();
+    return;
+  }
+
+  let article: NewsletterArticleContent;
+  try {
+    const content = JSON.parse(delivery.content_json) as Record<string, NewsletterArticleContent>;
+    article = content[delivery.locale];
+    if (!article?.title || !article.excerpt || !article.url) throw new Error("missing-copy");
+  } catch {
+    await markNewsletterDelivery(env, campaignId, emailHash, "failed", nowIso, {
+      stage: "newsletter-content",
+    });
+    message.ack();
+    return;
+  }
+
+  const signature = await hmacHex(
+    env.DATA_HASH_KEY,
+    `newsletter-unsubscribe:${emailHash}`,
+  );
+  const unsubscribeUrl = `${env.PUBLIC_BASE_URL.replace(/\/+$/, "")}/newsletter/unsubscribe/${emailHash}/${signature}`;
+  try {
+    const result = await sendProtonNewsletterEmail(
+      {
+        recipient: profile.email,
+        name: profile.name,
+        locale: delivery.locale,
+        article,
+        unsubscribeUrl,
+      },
+      env.PROTON_SMTP_TOKEN,
+    );
+    await markNewsletterDelivery(
+      env,
+      campaignId,
+      emailHash,
+      "completed",
+      new Date().toISOString(),
+      { messageId: result.messageId },
+    );
+    message.ack();
+  } catch (error) {
+    const failure = error instanceof SmtpFailure
+      ? error
+      : new SmtpFailure("unexpected-newsletter-error");
+    const failureTime = new Date().toISOString();
+    if (isUnknownDelivery(failure)) {
+      await markNewsletterDelivery(env, campaignId, emailHash, "unknown", failureTime, {
+        stage: failure.stage,
+        smtpCode: failure.smtpCode ?? null,
+      });
+      message.ack();
+      return;
+    }
+    if (delivery.attempts < MAX_ATTEMPTS && isRetryable(failure)) {
+      const delaySeconds = retryDelay(delivery.attempts);
+      await markNewsletterDelivery(env, campaignId, emailHash, "retry", failureTime, {
+        stage: failure.stage,
+        smtpCode: failure.smtpCode ?? null,
+        nextAttemptAt: new Date(Date.now() + delaySeconds * 1_000).toISOString(),
+      });
+      message.retry({ delaySeconds });
+      return;
+    }
+    await markNewsletterDelivery(env, campaignId, emailHash, "failed", failureTime, {
+      stage: failure.stage,
+      smtpCode: failure.smtpCode ?? null,
+    });
+    message.ack();
+  }
+}
+
 export async function consumeMailQueue(
   batch: MessageBatch<MailQueueMessage>,
   env: Env,
 ): Promise<void> {
   for (const message of batch.messages) {
     try {
-      if (message.body.kind === "admin-notification") {
+      if (message.body.kind === "newsletter") {
+        await processNewsletter(env, message);
+      } else if (message.body.kind === "admin-notification") {
         await processAdminNotification(env, message);
       } else {
         await processGiftMessage(env, message);
@@ -275,4 +412,6 @@ export async function maintainOutbox(env: Env): Promise<void> {
       // Il record rimane pendente e verrà ripreso dal trigger successivo.
     }
   }
+
+  await enqueuePendingNewsletters(env);
 }

@@ -19,6 +19,10 @@
       {
         "binding": "MAIL_QUEUE",
         "queue": "gipi-regalo-mail"
+      },
+      {
+        "binding": "NEWSLETTER_QUEUE",
+        "queue": "gipi-newsletter-mail"
       }
     ],
     "consumers": [
@@ -26,6 +30,12 @@
         "queue": "gipi-regalo-mail",
         "max_batch_size": 1,
         "max_batch_timeout": 5,
+        "max_retries": 5
+      },
+      {
+        "queue": "gipi-newsletter-mail",
+        "max_batch_size": 1,
+        "max_batch_timeout": 10,
         "max_retries": 5
       }
     ]
@@ -38,6 +48,7 @@
   "vars": {
     "PUBLIC_BASE_URL": "https://gipi-regalo-api.tight-river-419a.workers.dev",
     "ALLOWED_ORIGINS": "https://www.gipivisconti.com,https://gipivisconti.com,http://localhost:3000,http://127.0.0.1:3000",
-    "TURNSTILE_ALLOWED_HOSTNAMES": "gipivisconti.com,www.gipivisconti.com"
+    "TURNSTILE_ALLOWED_HOSTNAMES": "gipivisconti.com,www.gipivisconti.com",
+    "NEWSLETTER_AUTOMATION_MODE": "live"
   }
 }

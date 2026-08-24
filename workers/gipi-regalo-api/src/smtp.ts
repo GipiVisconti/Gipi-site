@@ -8,8 +8,10 @@ import {
 import type { Locale } from "./config";
 import {
   buildAdminNotificationMessage,
+  buildNewsletterMessage,
   SMTP_USERNAME,
   type AdminNotificationMessageInput,
+  type NewsletterMessageInput,
 } from "./message";
 
 export { SmtpFailure } from "./smtp-protocol";
@@ -46,6 +48,22 @@ export async function sendProtonAdminNotificationEmail(
     socket as MailSocket,
     SMTP_USERNAME,
     message,
+    smtpToken,
+  );
+}
+
+export async function sendProtonNewsletterEmail(
+  input: NewsletterMessageInput,
+  smtpToken: string,
+): Promise<{ messageId: string }> {
+  const socket = connect(
+    { hostname: SMTP_HOST, port: SMTP_PORT },
+    { secureTransport: "starttls", allowHalfOpen: false },
+  );
+  return runSmtpMessageSession(
+    socket as MailSocket,
+    SMTP_USERNAME,
+    buildNewsletterMessage(input),
     smtpToken,
   );
 }

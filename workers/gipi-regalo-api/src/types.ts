@@ -3,6 +3,7 @@ import type { Locale } from "./config";
 export interface Env {
   DB: D1Database;
   MAIL_QUEUE: Queue<MailQueueMessage>;
+  NEWSLETTER_QUEUE: Queue<MailQueueMessage>;
   ASSETS: Fetcher;
   PROTON_SMTP_TOKEN: string;
   TURNSTILE_SECRET: string;
@@ -12,6 +13,7 @@ export interface Env {
   PUBLIC_BASE_URL: string;
   ALLOWED_ORIGINS: string;
   TURNSTILE_ALLOWED_HOSTNAMES: string;
+  NEWSLETTER_AUTOMATION_MODE: string;
 }
 
 export interface StoredContactProfile {
@@ -38,8 +40,36 @@ export interface GiftMailPayload {
 }
 
 export interface MailQueueMessage {
-  requestId: string;
-  kind?: "gift" | "admin-notification";
+  requestId?: string;
+  campaignId?: string;
+  emailHash?: string;
+  kind?: "gift" | "admin-notification" | "newsletter";
+}
+
+export interface NewsletterArticleContent {
+  title: string;
+  excerpt: string;
+  url: string;
+}
+
+export interface NewsletterCampaignPayload {
+  slug: string;
+  commit: string;
+  publishedAt: string;
+  content: Record<Locale, NewsletterArticleContent>;
+}
+
+export interface NewsletterDeliveryRow {
+  campaign_id: string;
+  email_hash: string;
+  locale: Locale;
+  attempts: number;
+  content_json: string;
+  encrypted_profile: string | null;
+  profile_iv: string | null;
+  encrypted_email: string;
+  email_iv: string;
+  consent_status: string;
 }
 
 export interface AdminNotificationRow {

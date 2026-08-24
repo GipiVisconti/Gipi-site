@@ -13,6 +13,7 @@ import { downloadBook, showDownload } from "./downloads";
 import { allowedOrigins, corsHeaders, jsonResponse } from "./http";
 import { consumeMailQueue, maintainOutbox } from "./mail-queue";
 import { handleAdminRequest } from "./admin";
+import { handleNewsletterUnsubscribe } from "./newsletter";
 import { verifyTurnstile } from "./turnstile";
 import type { Env, GiftMailPayload, MailQueueMessage } from "./types";
 import { parseGiftRequest, ValidationFailure } from "./validation";
@@ -160,7 +161,8 @@ export default {
     const giftMatch = /^\/v1\/gift-requests\/(it|en|es)$/.exec(url.pathname);
     const downloadMatch = /^\/d\/([A-Za-z0-9_-]{40,80})$/.exec(url.pathname);
     const fileMatch = /^\/d\/([A-Za-z0-9_-]{40,80})\/download$/.exec(url.pathname);
-    const emailAssetMatch = /^\/email-assets\/(cover-(?:it|en|es)\.jpg|signature\.png|instagram\.png)$/.exec(url.pathname);
+    const emailAssetMatch = /^\/email-assets\/(cover-(?:it|en|es)\.jpg|signature\.png|instagram\.png|mother-child-reading-solid\.png)$/.exec(url.pathname);
+    const unsubscribeMatch = /^\/newsletter\/unsubscribe\/([a-f0-9]{64})\/([a-f0-9]{64})$/.exec(url.pathname);
 
     if (request.method === "GET" && emailAssetMatch) {
       const assetResponse = await env.ASSETS.fetch(
@@ -174,6 +176,15 @@ export default {
           "X-Content-Type-Options": "nosniff",
         },
       });
+    }
+
+    if ((request.method === "GET" || request.method === "POST") && unsubscribeMatch) {
+      return handleNewsletterUnsubscribe(
+        request,
+        env,
+        unsubscribeMatch[1],
+        unsubscribeMatch[2],
+      );
     }
 
     if (request.method === "OPTIONS" && giftMatch) {

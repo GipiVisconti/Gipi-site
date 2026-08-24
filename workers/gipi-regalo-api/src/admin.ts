@@ -1,5 +1,7 @@
 import { decryptJson } from "./crypto";
 import { allowedOrigins, BASE_SECURITY_HEADERS, corsHeaders, jsonResponse } from "./http";
+import { prepareOrSendNewsletterCampaign } from "./newsletter";
+import { getNewsletterCampaignSummary } from "./newsletter-database";
 import type { Env, StoredContactProfile } from "./types";
 
 const MAX_EXPORT_ROWS = 10_000;
@@ -192,7 +194,7 @@ function csvResponse(body: string, filename: string, origin: string, env: Env): 
 
 export async function handleAdminRequest(request: Request, env: Env): Promise<Response> {
   const origin = request.headers.get("Origin") ?? "";
-  if (!allowedOrigins(env.ALLOWED_ORIGINS).has(origin)) {
+  if (origin && !allowedOrigins(env.ALLOWED_ORIGINS).has(origin)) {
     return jsonResponse({ success: false }, 403, origin, env.ALLOWED_ORIGINS);
   }
   if (request.method === "OPTIONS") {
@@ -201,15 +203,31 @@ export async function handleAdminRequest(request: Request, env: Env): Promise<Re
       headers: corsHeaders(origin, env.ALLOWED_ORIGINS),
     });
   }
-  if (request.method !== "GET") {
-    return jsonResponse({ success: false }, 405, origin, env.ALLOWED_ORIGINS);
-  }
   if (!isAuthorised(request, env)) {
     return jsonResponse({ success: false }, 401, origin, env.ALLOWED_ORIGINS);
   }
 
   const pathname = new URL(request.url).pathname;
   try {
+    if (request.method === "POST" && pathname === "/v1/admin/newsletter/campaigns") {
+      const result = await prepareOrSendNewsletterCampaign(request, env);
+      return jsonResponse(result.payload, result.status, origin, env.ALLOWED_ORIGINS);
+    }
+    const campaignMatch = /^\/v1\/admin\/newsletter\/campaigns\/([a-f0-9]{64})$/.exec(pathname);
+    if (request.method === "GET" && campaignMatch) {
+      return jsonResponse(
+        {
+          success: true,
+          campaign: await getNewsletterCampaignSummary(env, campaignMatch[1]),
+        },
+        200,
+        origin,
+        env.ALLOWED_ORIGINS,
+      );
+    }
+    if (request.method !== "GET") {
+      return jsonResponse({ success: false }, 405, origin, env.ALLOWED_ORIGINS);
+    }
     if (pathname === "/v1/admin/summary") {
       return jsonResponse(
         { success: true, ...(await loadSummary(env)) },
