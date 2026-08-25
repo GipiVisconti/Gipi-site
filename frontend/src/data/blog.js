@@ -809,6 +809,74 @@ const posts = [
       },
     },
   },
+  {
+    id: 13,
+    slug: 'diritto-di-sbagliare-dsa',
+    date: '2026-08-25',
+    type: 'advice',
+    content: {
+      IT: {
+        title: 'Il diritto di sbagliare: come stare vicino a un bambino con DSA',
+        excerpt:
+          'I bambini con DSA incontrano l’errore più spesso degli altri e troppo spesso lo pagano con un giudizio. Ma è proprio attraverso quei tentativi che costruiscono strategie, fiducia e autonomia.',
+        body: `<p>Un bambino con dislessia legge una parola e la sbaglia. La rilegge, la sbaglia ancora, la riprova una terza volta prima che qualcuno gli dica di andare avanti. Chi guarda da fuori vede una lentezza che sembra distrazione, un errore che sembra svogliatezza. Non vede le ore passate sui libri la sera prima, senza che nessuno se ne accorgesse.</p>
+
+<p>I bambini con dislessia, discalculia, disortografia o disgrafia vivono l'errore in un modo che il resto della classe non conosce: lo incontrano più spesso, ci restano più a lungo, e spesso lo pagano con un giudizio che non tiene conto della fatica reale. Eppure sono proprio questi bambini a costruire, tentativo dopo tentativo, un metodo che gli altri non hanno mai dovuto inventare.</p>
+
+<p>Le neuroscienze studiano da anni cosa succede nel cervello subito dopo un errore. Nella corteccia cingolata si attiva un segnale che aumenta l'attenzione verso ciò che segue, e l'informazione corretta che arriva subito dopo lo sbaglio viene elaborata con più intensità rispetto a quando non c'è stato nessun errore prima. È un meccanismo che i ricercatori chiamano apprendimento guidato dall'errore, ed è uno dei modi in cui il cervello umano costruisce competenze nuove. Nei bambini con DSA questo passaggio è ancora più centrale, perché il loro percorso richiede spesso un numero più alto di tentativi prima di arrivare al risultato.</p>
+
+<p>Il punto è cosa succede in quel momento, subito dopo l'errore. Se viene accolto come una colpa, il bambino impara a nasconderlo invece che a osservarlo; se viene corretto in fretta senza fermarsi a capire da dove nasce, il bambino resta passivo davanti a una soluzione calata dall'alto invece di costruirsela da solo. La ricerca sulla didattica per i DSA insiste proprio su questo: la semplice correzione non basta, serve entrare nel ragionamento del bambino e capire quale strategia lo ha portato a sbagliare, per aiutarlo a sostituirla con una che funzioni meglio.</p>
+
+<p>Questo richiede tempo, non buone intenzioni generiche. Vuol dire fermarsi accanto al bambino e chiedergli come ha ragionato, dove ha perso il filo, cosa lo ha portato a scrivere o leggere in quel modo; vuol dire lasciargli lo spazio per rispondere invece di anticipare la correzione. È un lavoro paziente, che va ripetuto ogni volta, perché nessun bambino con DSA impara una strategia una volta sola e la porta con sé per sempre.</p>
+
+<p>Vuol dire anche smettere di misurare la sua fatica con lo stesso metro di chi non ha bisogno di fare quello sforzo. Un bambino che finisce un compito in più tempo non sta rallentando la classe: sta trovando la strada che gli permette di arrivare allo stesso punto degli altri. E quando qualcuno riconosce quella strada invece di trattarla come un difetto da correggere, il bambino inizia a fidarsi del proprio modo di procedere.</p>
+
+<p>C'è un aspetto che riguarda da vicino chi lavora con le storie e le biografie per bambini. Molti bambini con DSA crescono pensando di essere gli unici a dover fare tanta fatica per arrivare dove gli altri sembrano arrivare senza sforzo. Raccontare loro vite reali di persone che hanno fallito più volte, che sono state fraintese prima di trovare la propria strada, e che comunque ce l'hanno fatta, cambia qualcosa dentro. Non perché l'errore smetta di far male, ma perché smette di sembrare definitivo. Diventa un passaggio della storia, non la fine.</p>
+
+<p>La domanda giusta, allora, non è come evitare che un bambino con DSA sbagli. È quanto tempo siamo disposti a restargli accanto subito dopo, in quel momento preciso in cui l'errore può diventare un ostacolo o un punto da cui ripartire.</p>`,
+      },
+      EN: {
+        title: 'The right to make mistakes: how to stand by a child with specific learning difficulties',
+        excerpt:
+          'Children with specific learning difficulties encounter mistakes more often than others and are too often judged for them. Yet it is through those attempts that they build strategies, confidence and independence.',
+        body: `<p>A child with dyslexia reads a word and gets it wrong. They read it again, get it wrong a second time, try a third time before someone tells them to move on. Anyone watching from the outside sees a slowness that looks like distraction, a mistake that looks like carelessness. They do not see the hours spent over books the night before, with nobody there to notice.</p>
+
+<p>Children with dyslexia, dyscalculia, dysorthographia or dysgraphia experience mistakes in a way the rest of the class does not: they meet them more often, stay with them longer, and often pay for it with a judgement that takes no account of the real effort involved. And yet these are exactly the children who build, attempt after attempt, a method the others have never had to invent.</p>
+
+<p>Neuroscience has studied for years what happens in the brain immediately after a mistake. A signal fires in the cingulate cortex that heightens attention to whatever comes next, and the correct information arriving right after the error is processed more intensely than it would be without a prior mistake. Researchers call this mechanism error-driven learning, and it is one of the ways the human brain builds new skills. In children with specific learning difficulties this passage matters even more, because their path often requires a higher number of attempts before reaching the result.</p>
+
+<p>The point is what happens in that moment, right after the mistake. If it is treated as a fault, the child learns to hide it rather than observe it; if it is corrected quickly without stopping to understand where it comes from, the child stays passive in front of a solution handed down from above instead of building one of their own. Research on teaching children with specific learning difficulties insists on exactly this: a simple correction is not enough, someone needs to enter the child's reasoning and understand which strategy led to the mistake, so as to help replace it with one that works better.</p>
+
+<p>This takes time, not generic good intentions. It means sitting beside the child and asking how they reasoned, where they lost the thread, what led them to write or read in that way; it means leaving them room to answer instead of jumping in with the correction. It is patient work, one that has to be repeated every time, because no child with a specific learning difficulty learns a strategy once and keeps it forever.</p>
+
+<p>It also means no longer measuring their effort against the same yardstick used for those who do not need to make that effort. A child who finishes a task in more time is not slowing the class down: they are finding the route that lets them reach the same point as everyone else. And when someone recognises that route instead of treating it as a flaw to fix, the child begins to trust their own way of working.</p>
+
+<p>There is something in this that speaks directly to the work of telling stories and biographies for children. Many children with specific learning difficulties grow up thinking they are the only ones who have to work so hard to reach a place others seem to reach without effort. Telling them about real people who failed more than once, who were misunderstood before finding their own way, and who made it anyway, changes something inside. Not because the mistake stops hurting, but because it stops feeling final. It becomes a passage in the story, not the ending.</p>
+
+<p>The right question, then, is not how to stop a child with a specific learning difficulty from making mistakes. It is how much time we are willing to give, staying right beside them afterwards, in that precise moment when a mistake can become either an obstacle or a place to start again.</p>`,
+      },
+      ES: {
+        title: 'El derecho a equivocarse: cómo acompañar a un niño con dificultades de aprendizaje',
+        excerpt:
+          'Los niños con dificultades de aprendizaje se encuentran con el error más a menudo que los demás y con demasiada frecuencia son juzgados por ello. Sin embargo, es a través de esos intentos como construyen estrategias, confianza y autonomía.',
+        body: `<p>Un niño con dislexia lee una palabra y se equivoca. La vuelve a leer, se equivoca de nuevo, lo intenta una tercera vez antes de que alguien le diga que siga adelante. Quien lo observa desde fuera ve una lentitud que parece distracción, un error que parece desgana. No ve las horas pasadas sobre los libros la noche anterior, sin que nadie se diera cuenta.</p>
+
+<p>Los niños con dislexia, discalculia, disortografía o disgrafía viven el error de una manera que el resto de la clase no conoce: lo encuentran más a menudo, se quedan más tiempo atrapados en él, y a menudo lo pagan con un juicio que no tiene en cuenta el esfuerzo real. Y sin embargo son precisamente estos niños quienes construyen, intento tras intento, un método que los demás nunca han tenido que inventar.</p>
+
+<p>Las neurociencias llevan años estudiando qué sucede en el cerebro justo después de un error. En la corteza cingulada se activa una señal que aumenta la atención hacia lo que viene a continuación, y la información correcta que llega inmediatamente después del fallo se procesa con más intensidad que cuando no ha habido ningún error previo. Es un mecanismo que los investigadores llaman aprendizaje guiado por el error, y es una de las formas en que el cerebro humano construye nuevas competencias. En los niños con dificultades específicas de aprendizaje este paso es todavía más central, porque su camino requiere a menudo un número más alto de intentos antes de llegar al resultado.</p>
+
+<p>La cuestión es qué sucede en ese momento, justo después del error. Si se recibe como una culpa, el niño aprende a esconderlo en lugar de observarlo; si se corrige deprisa sin detenerse a entender de dónde nace, el niño permanece pasivo ante una solución impuesta desde fuera en lugar de construirla por sí mismo. La investigación sobre la didáctica para las dificultades específicas de aprendizaje insiste precisamente en esto: la simple corrección no basta, hace falta entrar en el razonamiento del niño y comprender qué estrategia lo llevó a equivocarse, para ayudarlo a sustituirla por otra que funcione mejor.</p>
+
+<p>Esto requiere tiempo, no buenas intenciones genéricas. Significa detenerse junto al niño y preguntarle cómo ha razonado, dónde ha perdido el hilo, qué lo ha llevado a escribir o leer de esa manera; significa dejarle el espacio para responder en lugar de anticipar la corrección. Es un trabajo paciente, que hay que repetir cada vez, porque ningún niño con dificultades específicas de aprendizaje aprende una estrategia una sola vez y la lleva consigo para siempre.</p>
+
+<p>Significa también dejar de medir su esfuerzo con el mismo rasero que se usa con quien no necesita hacer ese esfuerzo. Un niño que termina una tarea en más tiempo no está ralentizando a la clase: está encontrando el camino que le permite llegar al mismo punto que los demás. Y cuando alguien reconoce ese camino en lugar de tratarlo como un defecto que corregir, el niño empieza a confiar en su propia manera de proceder.</p>
+
+<p>Hay un aspecto que atañe de cerca a quien trabaja con historias y biografías para niños. Muchos niños con dificultades específicas de aprendizaje crecen pensando que son los únicos que tienen que esforzarse tanto para llegar adonde los demás parecen llegar sin esfuerzo. Contarles vidas reales de personas que fracasaron varias veces, que fueron incomprendidas antes de encontrar su propio camino, y que aun así lo consiguieron, cambia algo por dentro. No porque el error deje de doler, sino porque deja de parecer definitivo. Se convierte en un pasaje de la historia, no en el final.</p>
+
+<p>La pregunta correcta, entonces, no es cómo evitar que un niño con dificultades específicas de aprendizaje se equivoque. Es cuánto tiempo estamos dispuestos a quedarnos a su lado justo después, en ese momento preciso en que el error puede convertirse en un obstáculo o en un punto desde el cual volver a empezar.</p>`,
+      },
+    },
+  },
 ];
 
 export const getAllPosts = () =>
