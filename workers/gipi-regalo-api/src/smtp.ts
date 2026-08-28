@@ -62,7 +62,7 @@ export async function sendProtonNewsletterEmail(
   );
   return runSmtpMessageSession(
     socket as MailSocket,
-    SMTP_USERNAME,
+    input.recipient,
     buildNewsletterMessage(input),
     smtpToken,
   );
