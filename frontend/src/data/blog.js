@@ -877,6 +877,68 @@ const posts = [
       },
     },
   },
+  {
+    id: 14,
+    slug: 'senso-di-colpa-genitori-che-lavorano',
+    date: '2026-09-01',
+    type: 'project',
+    content: {
+      IT: {
+        title: 'Il senso di colpa dei genitori che lavorano: una riflessione sincera',
+        excerpt:
+          'Tra lavoro e figli, basta un compromesso inatteso per sentirsi lontani dal genitore che si pensava di diventare. Una riflessione sul senso di colpa e sulla qualità del tempo condiviso.',
+        body: `<p>C'è una call che ancora oggi mi torna in mente in momenti improbabili: sotto la doccia, mentre aspetto che l'acqua bolla. Non era una call che avrei potuto rimandare, o almeno così mi sembrava allora, e mio figlio aveva meno di tre anni. Quel pomeriggio ho acceso la televisione e l'ho lasciato lì, da solo, per quaranta minuti che mi sono sembrati infiniti.</p>
+
+<p>Prima di avere figli ero convinta di sapere esattamente come sarebbe andata. Avevo osservato altre madri, letto, ascoltato, e mi ero fatta un'idea molto precisa di quello che avrei fatto e di quello che non avrei mai fatto. La televisione prima dei tre anni era uno dei punti fermi: non se ne parlava nemmeno. Poi sono arrivati i giorni veri, quelli con le scadenze e le chiamate che non si possono spostare, e quella certezza si è sgretolata in un pomeriggio qualunque.</p>
+
+<p>Non racconto questo per descrivere un episodio isolato. Lo scrivo perché credo che quasi ogni genitore che lavora abbia una scena simile custodita da qualche parte, e che la tenga nascosta perché non se ne va fieri. Il punto non è la televisione in sé, che probabilmente non ha fatto nessun danno reale: il punto è quella sensazione precisa di aver tradito un'idea di sé stessi, di essere scesi a un compromesso che si era giurato di non fare mai.</p>
+
+<p>E qui sta forse la cosa più difficile da accettare: le convinzioni costruite prima, quando i figli erano ancora un'ipotesi, non reggono quasi mai il contatto con la realtà. Non perché fossero sbagliate in partenza, ma perché nascevano in un contesto che non aveva ancora dovuto fare i conti con il lavoro che non aspetta e con le notti che si accorciano senza permesso. Chi non ha ancora figli immagina la genitorialità come una serie di scelte da fare bene; chi i figli li ha già sa che è soprattutto una serie di compromessi da gestire, giorno dopo giorno, senza manuale.</p>
+
+<p>Il senso di colpa, in questo, è una compagnia costante e un po' ingiusta, perché nasce sempre dal confronto con un'idea perfetta di genitore che non esiste, e non da quello che si è effettivamente fatto per quel bambino nelle migliaia di altre ore, di altri giorni. Un pomeriggio davanti alla tv pesa più, nella memoria, di mesi passati a costruire torri di cuscini o a leggere la stessa storia per la decima volta di fila. Non è una questione di logica: i sensi di colpa scelgono sempre gli episodi più scomodi da ricordare, e lasciano scivolare via tutto il resto.</p>
+
+<p>Quello che ho imparato, se qualcosa ho imparato, è che il tempo con i figli non si misura per sottrazione di errori, ma per la qualità di quello che resta quando si è presenti per intero. Un libro letto insieme la sera, con tutta l'attenzione che quel momento merita, vale più di dieci pomeriggi passati distratti anche senza televisione di mezzo. Raccontare una storia a un bambino, con la voce giusta e il tempo giusto, è uno dei pochi momenti in cui nessuna call riesce a intromettersi: per quei dieci minuti si è lì, e basta.</p>
+
+<p>Non so se un giorno racconterò a mio figlio di quel pomeriggio davanti alla televisione. Forse sì, quando sarà abbastanza grande da capire che i genitori, anche quelli che scrivono libri per bambini, restano persone che sbagliano e che tornano, la sera dopo, a leggere una storia con tutta l'attenzione che avevano promesso.</p>`,
+      },
+      EN: {
+        title: 'The guilt of working parents: an honest reflection',
+        excerpt:
+          'When work and children compete for our attention, one unexpected compromise can make us feel far removed from the parent we thought we would become. A reflection on guilt and the quality of the time we share.',
+        body: `<p>There is a work call that still comes back to me at unlikely moments: in the shower, while I wait for the water to boil. It was not a call I could have postponed, or at least that is how it seemed to me then, and my son was not yet three. That afternoon I switched on the television and left him there, on his own, for forty minutes that felt endless.</p>
+
+<p>Before I had children, I was convinced I knew exactly how things would go. I had watched other mothers, read and listened, and formed a very precise idea of what I would do and what I would never do. Television before the age of three was one of my fixed rules: it was simply out of the question. Then real life arrived, with deadlines and calls that could not be moved, and that certainty crumbled during an otherwise ordinary afternoon.</p>
+
+<p>I am not telling this story to describe an isolated incident. I am writing it because I believe almost every working parent has a similar scene stored away somewhere, hidden because it is not something they are proud of. The point is not the television itself, which probably did no real harm. The point is that precise feeling of having betrayed an idea of yourself, of having accepted a compromise you once swore you would never make.</p>
+
+<p>And perhaps this is the hardest thing to accept: the convictions we form beforehand, when children are still only a possibility, rarely survive contact with reality. Not because they were wrong to begin with, but because they arose in a life that had not yet reckoned with work that will not wait or nights that grow shorter without permission. People without children imagine parenthood as a series of choices to get right; those who have children know that it is, above all, a series of compromises to manage, day after day, without a manual.</p>
+
+<p>Guilt is a constant and rather unfair companion in all this, because it always springs from a comparison with an idea of the perfect parent who does not exist, rather than from everything we have actually done for that child across thousands of other hours and days. One afternoon in front of the television weighs more heavily in the memory than months spent building towers out of cushions or reading the same story for the tenth time in a row. It is not a matter of logic: guilt always chooses the most uncomfortable episodes to remember and lets everything else slip away.</p>
+
+<p>What I have learnt, if I have learnt anything, is that time with our children is not measured by subtracting mistakes, but by the quality of what remains when we are fully present. A book read together in the evening, with all the attention that moment deserves, is worth more than ten distracted afternoons, even without a television involved. Telling a child a story, with the right voice and at the right pace, is one of the few moments no work call can interrupt: for those ten minutes, you are there, and nowhere else.</p>
+
+<p>I do not know whether I will one day tell my son about that afternoon in front of the television. Perhaps I will, when he is old enough to understand that parents, even those who write children's books, are still people who make mistakes and who come back the next evening to read a story with all the attention they had promised.</p>`,
+      },
+      ES: {
+        title: 'El sentimiento de culpa de los padres que trabajan: una reflexión sincera',
+        excerpt:
+          'Cuando el trabajo y los hijos compiten por nuestra atención, basta un compromiso inesperado para sentirnos lejos del progenitor que pensábamos ser. Una reflexión sobre la culpa y la calidad del tiempo compartido.',
+        body: `<p>Hay una llamada de trabajo que todavía hoy vuelve a mi cabeza en los momentos más inesperados: bajo la ducha, mientras espero a que hierva el agua. No era una llamada que pudiera aplazar, o al menos eso me parecía entonces, y mi hijo aún no tenía tres años. Aquella tarde encendí la televisión y lo dejé allí, solo, durante cuarenta minutos que me parecieron interminables.</p>
+
+<p>Antes de tener hijos estaba convencida de saber exactamente cómo irían las cosas. Había observado a otras madres, había leído y escuchado, y me había formado una idea muy precisa de lo que haría y de lo que nunca haría. La televisión antes de los tres años era una de mis reglas inamovibles: ni hablar. Después llegaron los días de verdad, los de los plazos y las llamadas que no se pueden cambiar, y aquella certeza se desmoronó en una tarde cualquiera.</p>
+
+<p>No cuento esto para describir un episodio aislado. Lo escribo porque creo que casi todos los padres que trabajan guardan en algún lugar una escena parecida y la mantienen oculta porque no se sienten orgullosos de ella. La cuestión no es la televisión en sí, que probablemente no causó ningún daño real. La cuestión es esa sensación precisa de haber traicionado una idea de uno mismo, de haber aceptado un compromiso que uno había jurado no hacer jamás.</p>
+
+<p>Y quizá esta sea la parte más difícil de aceptar: las convicciones que construimos antes, cuando los hijos todavía eran solo una posibilidad, casi nunca resisten el contacto con la realidad. No porque fueran equivocadas desde el principio, sino porque nacieron en un contexto que aún no había tenido que vérselas con un trabajo que no espera y con noches que se acortan sin pedir permiso. Quien todavía no tiene hijos imagina la crianza como una serie de decisiones que hay que tomar bien; quien ya los tiene sabe que consiste, sobre todo, en una serie de compromisos que hay que gestionar, día tras día, sin manual.</p>
+
+<p>En todo esto, el sentimiento de culpa es una compañía constante y un poco injusta, porque siempre nace de compararnos con una idea de progenitor perfecto que no existe, y no de lo que realmente hemos hecho por ese niño durante miles de horas y de días. Una tarde delante de la televisión pesa más en la memoria que meses construyendo torres de cojines o leyendo el mismo cuento por décima vez. No es una cuestión de lógica: la culpa siempre elige los episodios más incómodos para recordarlos y deja que todo lo demás se desvanezca.</p>
+
+<p>Lo que he aprendido, si es que he aprendido algo, es que el tiempo con los hijos no se mide restando errores, sino por la calidad de lo que queda cuando estamos presentes por completo. Un libro leído juntos por la noche, con toda la atención que ese momento merece, vale más que diez tardes distraídas, incluso sin una televisión de por medio. Contarle un cuento a un niño, con la voz adecuada y el ritmo adecuado, es uno de los pocos momentos en los que ninguna llamada consigue entrometerse: durante esos diez minutos estamos allí, y nada más.</p>
+
+<p>No sé si algún día le contaré a mi hijo lo de aquella tarde delante de la televisión. Tal vez sí, cuando sea lo bastante mayor para entender que los padres, incluso quienes escriben libros infantiles, siguen siendo personas que se equivocan y que vuelven, la noche siguiente, a leer un cuento con toda la atención que habían prometido.</p>`,
+      },
+    },
+  },
 ];
 
 export const getAllPosts = () =>

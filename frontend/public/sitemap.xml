@@ -117,7 +117,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog"/>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -129,7 +129,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog"/>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -141,7 +141,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog"/>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -610,6 +610,42 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/diritto-di-sbagliare-dsa"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/diritto-di-sbagliare-dsa"/>
     <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Il senso di colpa dei genitori che lavorano: una riflessione sincera IT -->
+  <url>
+    <loc>https://www.gipivisconti.com/it/blog/senso-di-colpa-genitori-che-lavorano</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/senso-di-colpa-genitori-che-lavorano"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/senso-di-colpa-genitori-che-lavorano"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/senso-di-colpa-genitori-che-lavorano"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/senso-di-colpa-genitori-che-lavorano"/>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: The guilt of working parents: an honest reflection EN -->
+  <url>
+    <loc>https://www.gipivisconti.com/en/blog/senso-di-colpa-genitori-che-lavorano</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/senso-di-colpa-genitori-che-lavorano"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/senso-di-colpa-genitori-che-lavorano"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/senso-di-colpa-genitori-che-lavorano"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/senso-di-colpa-genitori-che-lavorano"/>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: El sentimiento de culpa de los padres que trabajan: una reflexión sincera ES -->
+  <url>
+    <loc>https://www.gipivisconti.com/es/blog/senso-di-colpa-genitori-che-lavorano</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/senso-di-colpa-genitori-che-lavorano"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/senso-di-colpa-genitori-che-lavorano"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/senso-di-colpa-genitori-che-lavorano"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/senso-di-colpa-genitori-che-lavorano"/>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
