@@ -4,7 +4,6 @@ import { GIFT_PRIVACY } from '../lib/giftPrivacy';
 
 const POLICY_LINK_HOSTS = new Set([
   'policies.google.com',
-  'legal.applovin.com',
 ]);
 
 const isSafePolicyLink = (href) => {
