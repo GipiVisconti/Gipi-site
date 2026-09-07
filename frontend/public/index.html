@@ -1,15 +1,102 @@
 <!doctype html>
 <html lang="it">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Consent preferences and conditional Google Tag Manager loading -->
     <script>
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id=GTM-M4HRN5J8'+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-M4HRN5J8');
+      (function (window, document) {
+        var storageKey = 'gipi_cookie_consent';
+        var consentVersion = 3;
+        var textVersion = '2026-09-07.1';
+        var consentMaxAge = 390 * 24 * 60 * 60 * 1000;
+        var containerId = 'GTM-M4HRN5J8';
+        var scriptId = 'gipi-google-tag-manager';
+        var preference = null;
+
+        window.dataLayer = window.dataLayer || [];
+
+        try {
+          var storedPreference = JSON.parse(
+            window.localStorage.getItem(storageKey)
+          );
+          var isCurrent =
+            storedPreference &&
+            storedPreference.version === consentVersion &&
+            storedPreference.textVersion === textVersion &&
+            storedPreference.necessary === true &&
+            ['IT', 'EN', 'ES'].indexOf(storedPreference.language) !== -1 &&
+            typeof storedPreference.analytics === 'boolean' &&
+            typeof storedPreference.timestamp === 'string';
+          var storedAt = isCurrent
+            ? Date.parse(storedPreference.timestamp)
+            : NaN;
+          var preferenceAge = Date.now() - storedAt;
+
+          if (
+            isCurrent &&
+            Number.isFinite(storedAt) &&
+            preferenceAge >= 0 &&
+            preferenceAge < consentMaxAge
+          ) {
+            preference = storedPreference;
+          } else {
+            window.localStorage.removeItem(storageKey);
+          }
+        } catch (error) {
+          preference = null;
+          try {
+            window.localStorage.removeItem(storageKey);
+          } catch (storageError) {
+            // Storage can be unavailable in restricted browser contexts.
+          }
+        }
+
+        window.__gipiConsent = preference;
+        window.gtag = window.gtag || function () {
+          window.dataLayer.push(arguments);
+        };
+        window.gtag('consent', 'default', {
+          analytics_storage: 'denied',
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied'
+        });
+        window.__gipiConsentDefaultQueued = true;
+        window.__gipiLoadTagManager = function () {
+          if (document.getElementById(scriptId)) return;
+
+          window.dataLayer.push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+          });
+          window.__gipiTagManagerInitialised = true;
+
+          var script = document.createElement('script');
+          script.async = true;
+          script.id = scriptId;
+          script.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + containerId;
+          document.head.appendChild(script);
+        };
+
+        if (!preference) return;
+        window.gtag('consent', 'update', {
+          analytics_storage: preference.analytics ? 'granted' : 'denied',
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied'
+        });
+
+        if (!preference.analytics) return;
+        window.__gipiLoadTagManager();
+
+        if (preference.analytics) {
+          window.dataLayer.push({ event: 'analyticsConsentGranted' });
+          window.__gipiAnalyticsConsentGranted = true;
+        }
+
+      })(window, document);
     </script>
-    <!-- End Google Tag Manager -->
+    <!-- End consent preferences and conditional loading -->
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -110,17 +197,6 @@
   </head>
 
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-M4HRN5J8"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <noscript>
       Gipi Visconti crea libri illustrati e biografie semplici per bambini che
       iniziano a leggere, disponibili in italiano, inglese e spagnolo. Per

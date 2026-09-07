@@ -2,9 +2,23 @@ import { useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { GIFT_PRIVACY } from '../lib/giftPrivacy';
 
+const POLICY_LINK_HOSTS = new Set([
+  'policies.google.com',
+  'legal.applovin.com',
+]);
+
+const isSafePolicyLink = (href) => {
+  try {
+    const url = new URL(href);
+    return url.protocol === 'https:' && POLICY_LINK_HOSTS.has(url.hostname);
+  } catch {
+    return false;
+  }
+};
+
 const PrivacyPolicyPage = () => {
-  const { language, t } = useLanguage();
-  const privacy = GIFT_PRIVACY[language] || t.privacy;
+  const { language } = useLanguage();
+  const privacy = GIFT_PRIVACY[language] || GIFT_PRIVACY.IT;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -51,6 +65,21 @@ const PrivacyPolicyPage = () => {
           {privacy.intro}
         </p>
 
+        <aside
+          className="mb-10 rounded-2xl border border-[#E8E4DB] bg-[#F2EFE9] p-6 md:p-7"
+          aria-labelledby="children-privacy-heading"
+        >
+          <h2
+            id="children-privacy-heading"
+            className="mb-2 font-heading text-xl text-[#2C2A29] md:text-2xl"
+          >
+            {privacy.childrenNotice.heading}
+          </h2>
+          <p className="text-base leading-relaxed text-[#75736E]">
+            {privacy.childrenNotice.body}
+          </p>
+        </aside>
+
         <div className="space-y-8">
           {privacy.sections.map((section, index) => (
             <div key={index}>
@@ -58,6 +87,22 @@ const PrivacyPolicyPage = () => {
                 {section.heading}
               </h2>
               <p className="text-base leading-relaxed text-[#75736E]">{section.body}</p>
+              {section.links?.length > 0 && (
+                <ul className="mt-3 space-y-2">
+                  {section.links.filter(({ href }) => isSafePolicyLink(href)).map((link) => (
+                    <li key={link.href}>
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#79522F] font-medium underline underline-offset-4 hover:text-[#604126] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1C6E8C]"
+                      >
+                        {link.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           ))}
         </div>

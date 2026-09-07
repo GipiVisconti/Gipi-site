@@ -5,6 +5,7 @@ import {
   buildContactEmailHref,
   CONTACT_EMAIL_COPY,
 } from '../lib/contactEmail';
+import { openCookieSettings } from '../lib/cookieConsent';
 
 const Footer = () => {
   const { t, language } = useLanguage();
@@ -136,6 +137,14 @@ const Footer = () => {
             >
               {t.footer.privacyPolicy}
             </Link>
+            <button
+              type="button"
+              onClick={openCookieSettings}
+              className="underline hover:text-[#C18C5D] transition-colors"
+              data-testid="footer-cookie-settings"
+            >
+              {t.footer.cookieSettings}
+            </button>
           </p>
           <p className="text-white/60 text-sm flex items-center gap-1">
             {t.footer.madeWith} <Heart className="w-4 h-4 text-[#C18C5D]" /> {t.footer.forChildren}

@@ -16,6 +16,7 @@ const emptyForm = {
   name: '',
   email: '',
   birthday: '',
+  adultConfirmed: false,
   newsletterConsent: false,
 };
 
@@ -175,6 +176,19 @@ const GiftLandingPage = () => {
                   required
                 />
               </div>
+
+              <label className="flex items-start gap-3 text-sm leading-relaxed text-[#75736E]">
+                <input
+                  type="checkbox"
+                  name="adultConfirmed"
+                  checked={formData.adultConfirmed}
+                  onChange={handleChange}
+                  className="mt-1 h-4 w-4 shrink-0 accent-[#C18C5D]"
+                  data-testid="gift-adult-confirmation"
+                  required
+                />
+                <span>{copy.adultConfirmation}</span>
+              </label>
 
               <label className="flex items-start gap-3 text-sm leading-relaxed text-[#75736E]">
                 <input type="checkbox" checked={privacyRead} onChange={(event) => setPrivacyRead(event.target.checked)} className="mt-1 h-4 w-4 shrink-0 accent-[#C18C5D]" required />

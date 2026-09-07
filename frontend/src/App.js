@@ -13,6 +13,7 @@ import BlogDetailPage from './pages/BlogDetailPage';
 import RouteSeo from './components/RouteSeo';
 import GiftLandingPage from './pages/GiftLandingPage';
 import AdminPage from './pages/AdminPage';
+import CookieConsent from './components/CookieConsent';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           </main>
           <Footer />
           <Toaster />
+          <CookieConsent />
         </div>
       </LanguageProvider>
     </BrowserRouter>
