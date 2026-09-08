@@ -939,6 +939,74 @@ const posts = [
       },
     },
   },
+  {
+    id: 15,
+    slug: 'kathrine-switzer-chi-era',
+    date: '2026-09-08',
+    type: 'character',
+    content: {
+      IT: {
+        title: 'Chi era Kathrine Switzer e perché la sua corsa può ispirare i bambini',
+        excerpt:
+          'Il 19 aprile 1967, al secondo miglio della maratona di Boston, un uomo in giacca scura si lanciò tra la folla dei corridori per strappare un numero dal petto di una ragazza. Il numero era il 261, la ragazza si chiamava Kathrine Switzer e aveva vent\'anni.',
+        body: `<p>Il 19 aprile 1967, al secondo miglio della maratona di Boston, un uomo in giacca scura si lanciò tra la folla dei corridori per strappare un numero dal petto di una ragazza. Il numero era il 261, la ragazza si chiamava Kathrine Switzer e aveva vent'anni.</p>
+
+<p>Kathrine Virginia Switzer era nata il 5 gennaio 1947 ad Amberg, in Germania, dove suo padre prestava servizio come maggiore dell'esercito americano. Tornata negli Stati Uniti da bambina, crebbe in Virginia convinta, come le ripeteva spesso il padre, che fosse meglio essere protagonisti della propria vita che semplici spettatori. Da questo consiglio nacque la sua passione per lo sport, prima l'hockey su prato, poi la corsa, che allenava ogni giorno insieme ad Arnie Briggs, un postino maratoneta diventato il suo allenatore all'università di Syracuse.</p>
+
+<p>All'epoca le donne non potevano iscriversi ufficialmente alle maratone: si credeva, senza alcuna base scientifica, che il loro corpo non fosse fatto per correre distanze così lunghe. Switzer si iscrisse comunque, firmando con le iniziali K.V. Switzer, e nessuno degli organizzatori si accorse che dietro quella sigla c'era una donna. Il giorno della gara corse insieme a Briggs e al suo fidanzato Tom Miller, lanciatore del peso nella squadra di atletica.</p>
+
+<p>Fu allora che il co-direttore della gara, Jock Semple, la vide correre e le si scagliò contro urlando di lasciare il suo numero e di andarsene dalla sua corsa. Briggs cercò di proteggerla e finì a terra, ma Miller riuscì a spingere via Semple, e Switzer continuò a correre fino al traguardo, completando la maratona in circa quattro ore e venti minuti. La fotografia di quel momento, scattata da un giornalista sul percorso, fece il giro del mondo e mostrò a milioni di persone quanto fosse difficile, per una donna, anche solo il diritto di correre.</p>
+
+<p>Cinque anni dopo, nel 1972, la maratona di Boston aprì finalmente l'iscrizione ufficiale alle donne. Switzer non smise di correre: nel 1974 vinse la maratona di New York e nel 1975 tagliò il traguardo di Boston in seconda posizione, con il suo record personale di 2 ore, 51 minuti e 37 secondi, tra le prime dieci maratonete al mondo di quell'anno.</p>
+
+<p>E il suo lavoro non si fermò alla pista. Switzer fondò l'Avon Running Global Women's Circuit, una serie di gare femminili organizzate in ventisette paesi, che contribuì a convincere il Comitato Olimpico a inserire la maratona femminile nel programma dei Giochi di Los Angeles del 1984. Diventò anche giornalista sportiva e commentatrice televisiva, raccontando lo sport che l'aveva resa famosa da un punto di vista nuovo.</p>
+
+<p>Nel 2015 fondò 261 Fearless, un'organizzazione internazionale che usa la corsa per aiutare donne di ogni età e provenienza a superare paure e limiti che spesso vengono loro imposti dagli altri. Il nome viene proprio da quel numero che Jock Semple aveva tentato di strapparle. Due anni dopo, nel 2017, a cinquant'anni esatti da quella corsa, Switzer tornò a Boston e corse di nuovo con il pettorale 261: la maratona decise di ritirarlo per sempre, e da allora nessun altro atleta lo indosserà più. Con Semple, tra l'altro, sarebbe diventata amica negli anni successivi: un dettaglio che racconta quanto anche le storie più dure possano cambiare.</p>
+
+<p>A un bambino, la storia di Kathrine Switzer si può raccontare partendo da una domanda semplice: cosa faresti se qualcuno cercasse di impedirti di fare la cosa che ami di più? Gipi Visconti le ha dedicato uno dei volumi della collana Piccoli Grandi Eroi, per raccontare proprio quella corsa e il numero che oggi porta ancora il suo nome.</p>`,
+      },
+      EN: {
+        title: 'Who Was Kathrine Switzer and Why Her Run Can Inspire Children',
+        excerpt:
+          'On 19 April 1967, at the two-mile mark of the Boston Marathon, a man in a dark jacket lunged through the crowd of runners to tear a number off a young woman\'s chest. The number was 261. The woman was Kathrine Switzer, and she was twenty years old.',
+        body: `<p>On 19 April 1967, at the two-mile mark of the Boston Marathon, a man in a dark jacket lunged through the crowd of runners to tear a number off a young woman's chest. The number was 261. The woman was Kathrine Switzer, and she was twenty years old.</p>
+
+<p>Kathrine Virginia Switzer was born on 5 January 1947 in Amberg, Germany, where her father was serving as a major in the American army. The family returned to the United States when she was small, and she grew up in Virginia, raised on her father's belief that it was better to be the doer of things than a spectator watching from the sidelines. That advice shaped her love of sport, first field hockey, then running, which she trained every day alongside Arnie Briggs, a postman and marathon runner who became her coach at Syracuse University.</p>
+
+<p>At the time, women were not officially permitted to enter marathons: it was widely believed, without any scientific basis, that a woman's body simply wasn't built for such long distances. Switzer entered anyway, signing her name as K.V. Switzer, and none of the race organisers noticed a woman behind those initials. On race day she ran alongside Briggs and her boyfriend Tom Miller, a hammer thrower on the athletics team.</p>
+
+<p>That was when the marathon's co-director, Jock Semple, spotted her running and lunged at her, shouting for her to hand over her number and get out of his race. Briggs tried to shield her and was knocked to the ground, but Miller managed to shove Semple aside, and Switzer kept running all the way to the finish line, completing the marathon in roughly four hours and twenty minutes. A photograph of that moment, taken by a journalist along the route, travelled around the world and showed millions of people just how hard a woman had to fight for the simple right to run.</p>
+
+<p>Five years later, in 1972, the Boston Marathon finally opened official entry to women. Switzer didn't stop running: in 1974 she won the New York City Marathon, and in 1975 she crossed the Boston finish line in second place, setting a personal best of 2 hours, 51 minutes and 37 seconds, among the world's fastest women that year.</p>
+
+<p>And her work went well beyond the racetrack. Switzer created the Avon Running Global Women's Circuit, a series of women's races held in twenty-seven countries, which helped persuade the Olympic committee to include the women's marathon in the 1984 Los Angeles Games. She also became a sports journalist and television commentator, telling the story of the sport that had made her famous from a new vantage point.</p>
+
+<p>In 2015 she founded 261 Fearless, an international non-profit that uses running to help women of every age and background overcome fears and limits too often placed on them by others. The name comes straight from the number Jock Semple once tried to tear from her chest. Two years later, in 2017, exactly fifty years after that run, Switzer returned to Boston and ran again wearing bib 261: the marathon retired the number for good, and no athlete will ever wear it again. As for Semple, the two of them became friends in later years, a small detail that shows how even the harshest stories can change.</p>
+
+<p>A child can be told Kathrine Switzer's story starting from a simple question: what would you do if someone tried to stop you doing the thing you love most? Gipi Visconti dedicated one of the books in The Great Heroes collection to her, telling the story of that run and the number that still carries her name today.</p>`,
+      },
+      ES: {
+        title: 'Quién era Kathrine Switzer y por qué su carrera puede inspirar a los niños',
+        excerpt:
+          'El 19 de abril de 1967, en el kilómetro tres de la maratón de Boston, un hombre con chaqueta oscura se abalanzó entre la multitud de corredores para arrancar un dorsal del pecho de una joven. El dorsal era el 261, y la joven se llamaba Kathrine Switzer, con veinte años recién cumplidos.',
+        body: `<p>El 19 de abril de 1967, en el kilómetro tres de la maratón de Boston, un hombre con chaqueta oscura se abalanzó entre la multitud de corredores para arrancar un dorsal del pecho de una joven. El dorsal era el 261, y la joven se llamaba Kathrine Switzer, con veinte años recién cumplidos.</p>
+
+<p>Kathrine Virginia Switzer había nacido el 5 de enero de 1947 en Amberg, Alemania, donde su padre servía como comandante del ejército estadounidense. La familia regresó a Estados Unidos cuando ella era pequeña, y creció en Virginia con una idea que su padre repetía a menudo: era mejor ser protagonista de la propia vida que simple espectador. De ahí nació su pasión por el deporte, primero el hockey sobre hierba y después la carrera a pie, que entrenaba cada día junto a Arnie Briggs, un cartero y maratoniano que se convirtió en su entrenador en la Universidad de Syracuse.</p>
+
+<p>En aquella época las mujeres no podían inscribirse oficialmente en las maratones: se creía, sin ninguna base científica, que su cuerpo no estaba hecho para recorrer distancias tan largas. Switzer se inscribió de todos modos, firmando como K.V. Switzer, y ninguno de los organizadores se dio cuenta de que detrás de esas iniciales había una mujer. El día de la carrera corrió junto a Briggs y su novio Tom Miller, lanzador de martillo en el equipo de atletismo.</p>
+
+<p>Fue entonces cuando el codirector de la prueba, Jock Semple, la vio correr y se abalanzó sobre ella gritándole que entregara su dorsal y abandonara su carrera. Briggs intentó protegerla y acabó en el suelo, pero Miller consiguió apartar a Semple de un empujón, y Switzer siguió corriendo hasta la meta, completando la maratón en poco más de cuatro horas y veinte minutos. La fotografía de aquel instante, tomada por un periodista presente en el recorrido, dio la vuelta al mundo y mostró a millones de personas lo difícil que resultaba, para una mujer, algo tan sencillo como el derecho a correr.</p>
+
+<p>Cinco años después, en 1972, la maratón de Boston abrió por fin la inscripción oficial a las mujeres. Switzer no dejó de correr: en 1974 ganó la maratón de Nueva York, y en 1975 cruzó la meta de Boston en segunda posición, con su mejor marca personal, 2 horas, 51 minutos y 37 segundos, entre las diez maratonianas más rápidas del mundo aquel año.</p>
+
+<p>Y su trabajo no se quedó en la pista. Switzer creó el Avon Running Global Women's Circuit, una serie de carreras femeninas organizadas en veintisiete países, que ayudó a convencer al Comité Olímpico de incluir la maratón femenina en los Juegos de Los Ángeles de 1984. También se convirtió en periodista deportiva y comentarista de televisión, contando desde una nueva perspectiva el deporte que la había hecho famosa.</p>
+
+<p>En 2015 fundó 261 Fearless, una organización internacional que utiliza la carrera a pie para ayudar a mujeres de cualquier edad y origen a superar miedos y límites que otros les imponen con demasiada frecuencia. El nombre viene precisamente de aquel número que Jock Semple intentó arrancarle del pecho. Dos años después, en 2017, exactamente cincuenta años tras aquella carrera, Switzer volvió a Boston y corrió de nuevo con el dorsal 261: la maratón decidió retirarlo para siempre, y ningún otro atleta volverá a llevarlo. Con Semple, además, acabaría siendo amiga con los años, un detalle que muestra cómo incluso las historias más duras pueden cambiar.</p>
+
+<p>A un niño se le puede contar la historia de Kathrine Switzer partiendo de una pregunta sencilla: ¿qué harías si alguien intentara impedirte hacer lo que más te gusta? Gipi Visconti le ha dedicado uno de los libros de la colección Pequeños Grandes Valientes, para contar precisamente aquella carrera y el número que todavía hoy lleva su nombre.</p>`,
+      },
+    },
+  },
 ];
 
 export const getAllPosts = () =>

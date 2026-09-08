@@ -117,7 +117,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog"/>
-    <lastmod>2026-09-01</lastmod>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -129,7 +129,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog"/>
-    <lastmod>2026-09-01</lastmod>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -141,7 +141,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog"/>
-    <lastmod>2026-09-01</lastmod>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -646,6 +646,42 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/senso-di-colpa-genitori-che-lavorano"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/senso-di-colpa-genitori-che-lavorano"/>
     <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Chi era Kathrine Switzer e perché la sua corsa può ispirare i bambini IT -->
+  <url>
+    <loc>https://www.gipivisconti.com/it/blog/kathrine-switzer-chi-era</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/kathrine-switzer-chi-era"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/kathrine-switzer-chi-era"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/kathrine-switzer-chi-era"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/kathrine-switzer-chi-era"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Who Was Kathrine Switzer and Why Her Run Can Inspire Children EN -->
+  <url>
+    <loc>https://www.gipivisconti.com/en/blog/kathrine-switzer-chi-era</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/kathrine-switzer-chi-era"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/kathrine-switzer-chi-era"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/kathrine-switzer-chi-era"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/kathrine-switzer-chi-era"/>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog post: Quién era Kathrine Switzer y por qué su carrera puede inspirar a los niños ES -->
+  <url>
+    <loc>https://www.gipivisconti.com/es/blog/kathrine-switzer-chi-era</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.gipivisconti.com/it/blog/kathrine-switzer-chi-era"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gipivisconti.com/en/blog/kathrine-switzer-chi-era"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.gipivisconti.com/es/blog/kathrine-switzer-chi-era"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gipivisconti.com/it/blog/kathrine-switzer-chi-era"/>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
