@@ -20,7 +20,23 @@ const Header = () => {
 
   const langMap = { IT: 'it', EN: 'en', ES: 'es' };
   const currentLang = langMap[language] || 'it';
-  const isHomePage = location.pathname === `/${currentLang}`;
+  const isHomePage = /^\/(it|en|es)\/?$/.test(location.pathname);
+
+  const getVisibleHomeSection = () => {
+    if (!isHomePage) return null;
+
+    const headerBottom = document.querySelector('header')
+      ?.getBoundingClientRect().bottom || 0;
+    const readingLine = headerBottom + 1;
+
+    return ['books', 'about'].find((sectionId) => {
+      const section = document.getElementById(sectionId);
+      if (!section) return false;
+
+      const bounds = section.getBoundingClientRect();
+      return bounds.top <= readingLine && bounds.bottom > readingLine;
+    }) || null;
+  };
 
   const goToSection = (sectionId) => {
     if (isHomePage) {
@@ -51,15 +67,22 @@ const Header = () => {
   };
 
   const handleLanguageChange = (nextLanguage) => {
+    if (nextLanguage === language) {
+      setMobileMenuOpen(false);
+      return;
+    }
+
     const bookMatch = location.pathname.match(
       /^\/(it|en|es)\/(libri|books|libros)\/([^/]+)$/
     );
     const faqMatch = location.pathname.match(/^\/(it|en|es)\/faq$/);
+    const privacyMatch = location.pathname.match(/^\/(it|en|es)\/privacy-policy$/);
     const blogListMatch = location.pathname.match(/^\/(it|en|es)\/blog$/);
     const blogDetailMatch = location.pathname.match(/^\/(it|en|es)\/blog\/([^/]+)$/);
     const giftLanguage = giftLanguageForPath(location.pathname);
     const nextRoute = bookRouteMap[nextLanguage];
     const nextLang = bookRouteMap[nextLanguage]?.lang || 'it';
+    const visibleHomeSection = getVisibleHomeSection();
 
     if (giftLanguage) {
       navigate(giftPathForLanguage(nextLanguage));
@@ -67,10 +90,16 @@ const Header = () => {
       navigate(`/${nextRoute.lang}/${nextRoute.section}/${bookMatch[3]}`);
     } else if (faqMatch) {
       navigate(`/${nextLang}/faq`);
+    } else if (privacyMatch) {
+      navigate(`/${nextLang}/privacy-policy`);
     } else if (blogDetailMatch) {
       navigate(`/${nextLang}/blog/${blogDetailMatch[2]}`);
     } else if (blogListMatch) {
       navigate(`/${nextLang}/blog`);
+    } else if (isHomePage) {
+      navigate(`/${nextLang}`, {
+        state: { scrollTo: visibleHomeSection || 'hero' },
+      });
     } else {
       navigate(`/${nextLang}`);
     }
