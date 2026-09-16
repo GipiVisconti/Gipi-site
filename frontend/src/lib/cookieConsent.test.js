@@ -148,7 +148,8 @@ describe('cookie consent preferences', () => {
     expect(window.dataLayer[3].event).toBe('analyticsConsentGranted');
   });
 
-  test('invalidates preferences after 390 days', () => {
+  test('invalidates preferences after 180 days', () => {
+    expect(CONSENT_MAX_AGE_MS).toBe(180 * 24 * 60 * 60 * 1000);
     const now = new Date('2027-10-01T12:00:00.000Z').getTime();
     const validPreference = createConsentPreference(
       { analytics: true, language: 'IT' },

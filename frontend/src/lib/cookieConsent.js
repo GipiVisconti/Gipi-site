@@ -1,7 +1,7 @@
 export const CONSENT_STORAGE_KEY = 'gipi_cookie_consent';
-export const CONSENT_VERSION = 3;
-export const CONSENT_TEXT_VERSION = '2026-09-07.1';
-export const CONSENT_MAX_AGE_MS = 390 * 24 * 60 * 60 * 1000;
+export const CONSENT_VERSION = 4;
+export const CONSENT_TEXT_VERSION = '2026-09-16.1';
+export const CONSENT_MAX_AGE_MS = 180 * 24 * 60 * 60 * 1000;
 export const GTM_CONTAINER_ID = 'GTM-M4HRN5J8';
 export const COOKIE_SETTINGS_EVENT = 'gipi:open-cookie-settings';
 
@@ -31,21 +31,41 @@ export const isCurrentConsent = (preference, now = Date.now()) => {
   );
 };
 
-export const readConsent = (storage = window.localStorage, now = Date.now()) => {
-  try {
-    const preference = JSON.parse(storage.getItem(CONSENT_STORAGE_KEY));
-    if (isCurrentConsent(preference, now)) return preference;
+const browserStorages = () => {
+  if (typeof window === 'undefined') return [];
 
-    storage.removeItem(CONSENT_STORAGE_KEY);
-    return null;
-  } catch {
+  return ['localStorage', 'sessionStorage'].flatMap((name) => {
     try {
-      storage.removeItem(CONSENT_STORAGE_KEY);
+      return window[name] ? [window[name]] : [];
     } catch {
-      // Storage can be unavailable in restricted browser contexts.
+      return [];
     }
-    return null;
+  });
+};
+
+const candidateStorages = (storage) => (
+  storage === undefined ? browserStorages() : storage ? [storage] : []
+);
+
+export const readConsent = (storage, now = Date.now()) => {
+  for (const candidate of candidateStorages(storage)) {
+    try {
+      const rawPreference = candidate.getItem(CONSENT_STORAGE_KEY);
+      if (!rawPreference) continue;
+
+      const preference = JSON.parse(rawPreference);
+      if (isCurrentConsent(preference, now)) return preference;
+      candidate.removeItem(CONSENT_STORAGE_KEY);
+    } catch {
+      try {
+        candidate.removeItem(CONSENT_STORAGE_KEY);
+      } catch {
+        // Storage can be unavailable in restricted browser contexts.
+      }
+    }
   }
+
+  return null;
 };
 
 export const createConsentPreference = ({ analytics, language }, now = new Date()) => ({
@@ -59,12 +79,23 @@ export const createConsentPreference = ({ analytics, language }, now = new Date(
 
 export const saveConsent = (
   choices,
-  storage = window.localStorage,
+  storage,
   now = new Date()
 ) => {
   const preference = createConsentPreference(choices, now);
-  storage.setItem(CONSENT_STORAGE_KEY, JSON.stringify(preference));
-  return preference;
+  let lastError;
+
+  for (const candidate of candidateStorages(storage)) {
+    try {
+      candidate.setItem(CONSENT_STORAGE_KEY, JSON.stringify(preference));
+      window.__gipiConsent = preference;
+      return preference;
+    } catch (error) {
+      lastError = error;
+    }
+  }
+
+  throw lastError || new Error('consent-storage-unavailable');
 };
 
 export const needsReloadForRevocation = (previous, next) =>
@@ -98,6 +129,30 @@ const queueConsentMode = (preference, includeDefault) => {
   });
 };
 
+export const removeAnalyticsCookies = () => {
+  if (typeof document === 'undefined') return;
+
+  const host = window.location.hostname;
+  const domains = ['', host, `.${host}`, '.gipivisconti.com'];
+  const names = document.cookie
+    .split(';')
+    .map((cookie) => cookie.split('=')[0].trim())
+    .filter((name) => name === '_ga' || name.startsWith('_ga_'));
+
+  names.forEach((name) => {
+    domains.forEach((domain) => {
+      const domainAttribute = domain ? `; domain=${domain}` : '';
+      document.cookie = `${name}=; Max-Age=0; path=/${domainAttribute}; SameSite=Lax`;
+    });
+  });
+};
+
+export const revokeAnalytics = () => {
+  queueConsentMode({ analytics: false }, !window.__gipiConsentDefaultQueued);
+  window.__gipiAnalyticsConsentGranted = false;
+  removeAnalyticsCookies();
+};
+
 const loadTagManager = () => {
   if (window.__gipiLoadTagManager) {
     window.__gipiLoadTagManager();
@@ -122,13 +177,18 @@ const loadTagManager = () => {
 
 export const activateConsent = (preference) => {
   queueConsentMode(preference, !window.__gipiConsentDefaultQueued);
+  window.__gipiConsent = preference;
 
   if (preference.analytics) {
     loadTagManager();
     pushGrantedEvents(preference);
+  } else {
+    window.__gipiAnalyticsConsentGranted = false;
   }
 };
 
 export const openCookieSettings = () => {
-  window.dispatchEvent(new Event(COOKIE_SETTINGS_EVENT));
+  window.dispatchEvent(new CustomEvent(COOKIE_SETTINGS_EVENT, {
+    detail: { opener: document.activeElement },
+  }));
 };

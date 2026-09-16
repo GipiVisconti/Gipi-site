@@ -60,6 +60,11 @@ function cleanNewsletterConsent(value: unknown): boolean {
   return value;
 }
 
+function cleanAdultConfirmation(value: unknown): true {
+  if (value !== true) throw new ValidationFailure("adultConfirmed");
+  return true;
+}
+
 export function parseGiftRequest(value: unknown): GiftRequestInput {
   if (!value || typeof value !== "object" || Array.isArray(value)) {
     throw new ValidationFailure("body");
@@ -70,6 +75,7 @@ export function parseGiftRequest(value: unknown): GiftRequestInput {
     name: cleanName(payload.name),
     email: cleanEmail(payload.email),
     birthday: cleanBirthday(payload.birthday),
+    adultConfirmed: cleanAdultConfirmation(payload.adultConfirmed),
     newsletterConsent: cleanNewsletterConsent(payload.newsletterConsent),
     turnstileToken: cleanTurnstileToken(payload.turnstileToken),
   };

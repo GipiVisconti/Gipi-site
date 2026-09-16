@@ -6,6 +6,7 @@ const validRequest = {
   name: "  Luca   B.  ",
   email: "  PERSONA@example.com ",
   birthday: "1980-05-12",
+  adultConfirmed: true,
   newsletterConsent: true,
   turnstileToken: "turnstile-token-valid",
 };
@@ -16,6 +17,7 @@ describe("gift request validation", () => {
       name: "Luca B.",
       email: "persona@example.com",
       birthday: "1980-05-12",
+      adultConfirmed: true,
       newsletterConsent: true,
       turnstileToken: "turnstile-token-valid",
     });
@@ -29,6 +31,17 @@ describe("gift request validation", () => {
   it("rejects non-boolean newsletter consent values", () => {
     expect(() =>
       parseGiftRequest({ ...validRequest, newsletterConsent: "yes" }),
+    ).toThrowError(ValidationFailure);
+  });
+
+  it("rejects requests without an explicit adult confirmation", () => {
+    const { adultConfirmed: _adultConfirmed, ...withoutConfirmation } = validRequest;
+    expect(() => parseGiftRequest(withoutConfirmation)).toThrowError(ValidationFailure);
+    expect(() =>
+      parseGiftRequest({ ...validRequest, adultConfirmed: false }),
+    ).toThrowError(ValidationFailure);
+    expect(() =>
+      parseGiftRequest({ ...validRequest, adultConfirmed: "true" }),
     ).toThrowError(ValidationFailure);
   });
 

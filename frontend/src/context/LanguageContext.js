@@ -132,7 +132,7 @@ Piccoli Grandi Eroi è un progetto aperto e in continua crescita: un piccolo pon
       forChildren: 'per i piccoli lettori',
       siteTitle: 'Sito',
       privacyPolicy: 'Privacy Policy',
-      cookieSettings: 'Impostazioni cookie',
+      cookieSettings: 'Preferenze cookie',
     },
     privacy: {
       eyebrow: 'Informativa legale',
@@ -319,7 +319,7 @@ Little Great Heroes is an open project, constantly growing: a small bridge betwe
       forChildren: 'for little readers',
       siteTitle: 'Site',
       privacyPolicy: 'Privacy Policy',
-      cookieSettings: 'Cookie settings',
+      cookieSettings: 'Cookie preferences',
     },
     privacy: {
       eyebrow: 'Legal information',
@@ -506,7 +506,7 @@ Pequeños Grandes Valientes es un proyecto abierto y en constante crecimiento: u
       forChildren: 'para pequeños lectores',
       siteTitle: 'Sitio',
       privacyPolicy: 'Política de Privacidad',
-      cookieSettings: 'Configuración de cookies',
+      cookieSettings: 'Preferencias de cookies',
     },
     privacy: {
       eyebrow: 'Información legal',

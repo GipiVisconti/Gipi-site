@@ -26,6 +26,7 @@ export interface GiftRequestInput {
   name: string;
   email: string;
   birthday: string;
+  adultConfirmed: true;
   newsletterConsent: boolean;
   turnstileToken: string;
 }

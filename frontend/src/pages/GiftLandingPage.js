@@ -77,6 +77,7 @@ const GiftLandingPage = () => {
           name: formData.name,
           email: formData.email,
           birthday: formData.birthday,
+          adultConfirmed: formData.adultConfirmed,
           newsletterConsent: formData.newsletterConsent,
           turnstileToken,
         }),

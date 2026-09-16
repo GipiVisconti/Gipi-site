@@ -277,7 +277,10 @@ export async function withdrawNewsletterConsent(
     .all<{ campaign_id: string }>();
   const result = await env.DB.prepare(
     `UPDATE newsletter_consents
-        SET status = 'withdrawn', updated_at = ?
+        SET status = 'withdrawn', updated_at = ?,
+            encrypted_email = '', email_iv = '',
+            encrypted_profile = NULL, profile_iv = NULL,
+            source_request_id = NULL
       WHERE email_hash = ?`,
   )
     .bind(now, emailHash)

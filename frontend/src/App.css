@@ -120,13 +120,17 @@
 }
 
 .cookie-consent__intro {
-  padding-right: 2rem;
+  min-width: 0;
 }
 
 .cookie-consent__intro h2 {
   margin: 0 0 0.4rem;
   font-size: clamp(1.65rem, 4vw, 2rem);
   line-height: 1.1;
+}
+
+.cookie-consent__intro h2:focus {
+  outline: none;
 }
 
 .cookie-consent__intro p {
@@ -140,39 +144,11 @@
   font-size: 0.9rem;
 }
 
-.cookie-consent__intro .cookie-consent__close-notice {
-  margin-top: 0.5rem;
-  color: #2C2A29;
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
 .cookie-consent__privacy a {
   color: #79522F;
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 0.18rem;
-}
-
-.cookie-consent__close {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  color: #FFFFFF;
-  font-size: 1.75rem;
-  line-height: 1;
-  background: #2C2A29;
-  border: 2px solid #2C2A29;
-  border-radius: 999px;
-  cursor: pointer;
-  transition: background-color 160ms ease, border-color 160ms ease;
-}
-
-.cookie-consent__close:hover {
-  background: #604126;
-  border-color: #604126;
 }
 
 .cookie-consent__actions {
@@ -198,17 +174,7 @@
   background: #F2E8DE;
 }
 
-.cookie-consent__button--primary {
-  color: #FFFFFF;
-  background: #79522F;
-}
-
-.cookie-consent__button--primary:hover {
-  background: #604126;
-}
-
 .cookie-consent__button:focus-visible,
-.cookie-consent__close:focus-visible,
 .cookie-consent__option input:focus-visible,
 .cookie-consent__privacy a:focus-visible {
   outline: 3px solid #1C6E8C;
@@ -221,6 +187,14 @@
   margin-top: 1rem;
   padding-top: 1rem;
   border-top: 1px solid #D7D0C3;
+}
+
+.cookie-consent__options h3 {
+  margin: 0;
+  color: #2C2A29;
+  font-family: 'Cormorant Garamond', ui-serif, Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .cookie-consent__option {
@@ -260,7 +234,7 @@
 
 .cookie-consent__option-actions {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 16rem));
+  grid-template-columns: repeat(3, minmax(0, 13rem));
   justify-content: end;
   gap: 0.75rem;
   margin-top: 0.25rem;

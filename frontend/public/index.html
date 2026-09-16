@@ -5,48 +5,54 @@
     <script>
       (function (window, document) {
         var storageKey = 'gipi_cookie_consent';
-        var consentVersion = 3;
-        var textVersion = '2026-09-07.1';
-        var consentMaxAge = 390 * 24 * 60 * 60 * 1000;
+        var consentVersion = 4;
+        var textVersion = '2026-09-16.1';
+        var consentMaxAge = 180 * 24 * 60 * 60 * 1000;
         var containerId = 'GTM-M4HRN5J8';
         var scriptId = 'gipi-google-tag-manager';
         var preference = null;
 
         window.dataLayer = window.dataLayer || [];
 
-        try {
-          var storedPreference = JSON.parse(
-            window.localStorage.getItem(storageKey)
-          );
-          var isCurrent =
-            storedPreference &&
-            storedPreference.version === consentVersion &&
-            storedPreference.textVersion === textVersion &&
-            storedPreference.necessary === true &&
-            ['IT', 'EN', 'ES'].indexOf(storedPreference.language) !== -1 &&
-            typeof storedPreference.analytics === 'boolean' &&
-            typeof storedPreference.timestamp === 'string';
-          var storedAt = isCurrent
-            ? Date.parse(storedPreference.timestamp)
-            : NaN;
-          var preferenceAge = Date.now() - storedAt;
+        var storages = [];
+        try { storages.push(window.localStorage); } catch (error) {}
+        try { storages.push(window.sessionStorage); } catch (error) {}
 
-          if (
-            isCurrent &&
-            Number.isFinite(storedAt) &&
-            preferenceAge >= 0 &&
-            preferenceAge < consentMaxAge
-          ) {
-            preference = storedPreference;
-          } else {
-            window.localStorage.removeItem(storageKey);
-          }
-        } catch (error) {
-          preference = null;
+        for (var index = 0; index < storages.length && !preference; index += 1) {
+          var storage = storages[index];
           try {
-            window.localStorage.removeItem(storageKey);
-          } catch (storageError) {
-            // Storage can be unavailable in restricted browser contexts.
+            var rawPreference = storage.getItem(storageKey);
+            if (!rawPreference) continue;
+            var storedPreference = JSON.parse(rawPreference);
+            var isCurrent =
+              storedPreference &&
+              storedPreference.version === consentVersion &&
+              storedPreference.textVersion === textVersion &&
+              storedPreference.necessary === true &&
+              ['IT', 'EN', 'ES'].indexOf(storedPreference.language) !== -1 &&
+              typeof storedPreference.analytics === 'boolean' &&
+              typeof storedPreference.timestamp === 'string';
+            var storedAt = isCurrent
+              ? Date.parse(storedPreference.timestamp)
+              : NaN;
+            var preferenceAge = Date.now() - storedAt;
+
+            if (
+              isCurrent &&
+              Number.isFinite(storedAt) &&
+              preferenceAge >= 0 &&
+              preferenceAge < consentMaxAge
+            ) {
+              preference = storedPreference;
+            } else {
+              storage.removeItem(storageKey);
+            }
+          } catch (error) {
+            try {
+              storage.removeItem(storageKey);
+            } catch (storageError) {
+              // Storage can be unavailable in restricted browser contexts.
+            }
           }
         }
 
@@ -116,13 +122,6 @@
     <meta name="application-name" content="Gipi Visconti" />
 
     <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon.png" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
-      rel="stylesheet"
-    />
 
     <!-- Open Graph -->
     <meta property="og:locale" content="it_IT" />
