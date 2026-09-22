@@ -1007,6 +1007,62 @@ const posts = [
       },
     },
   },
+  {
+    id: 16,
+    slug: 'rafael-nadal-forza-non-smette-di-provarci',
+    date: '2026-09-22',
+    type: 'character',
+    content: {
+      IT: {
+        title: 'Rafael Nadal: la forza di chi non smette di provarci',
+        excerpt:
+          'Ci sono campioni che ricordiamo per le vittorie, e altri che ci restano dentro per il modo in cui hanno affrontato ogni sfida. Rafael Nadal appartiene a entrambi.',
+        body: `<p>Quando entrava in campo, il suo sguardo raccontava quanto quella partita fosse importante. Non importava se si trovasse davanti a una finale o a un incontro meno prestigioso: correva su ogni palla con la stessa intensità, come se nessun punto fosse già perduto.</p>
+
+<p>Nadal è cresciuto a Manacor, sull’isola di Maiorca, dove ha iniziato a giocare a tennis da bambino sotto la guida dello zio Toni. Il suo talento era evidente, ma a renderlo speciale è stato il lavoro quotidiano, portato avanti anche quando migliorare richiedeva fatica e pazienza.</p>
+
+<p>E la terra rossa è diventata il luogo in cui questa forza si è mostrata più chiaramente. Al Roland Garros ha conquistato quattordici titoli, senza mai perdere una finale, stabilendo un primato che racconta soltanto una parte della sua grandezza.</p>
+
+<p>Dietro quei trofei ci sono anche momenti difficili. Gli infortuni lo hanno costretto più volte a fermarsi, mentre il suo corpo gli chiedeva di rinunciare; lui ha imparato ad aspettare e poi a ricominciare, accettando che il coraggio non consiste nel non avere paura, ma nel tornare in campo sapendo quanto potrebbe essere dura.</p>
+
+<p>Nadal ha concluso la carriera nel 2024, dopo aver vinto ventidue titoli del Grande Slam. Eppure, ciò che rimane non si conta soltanto nelle coppe: rimane il rispetto mostrato agli avversari, rimane quel pugno chiuso dopo un punto combattuto, rimane la sensazione che valga sempre la pena tentare ancora.</p>
+
+<p>È questa la storia che ho voluto raccontare nel libro <em>Rafael Nadal, il re della terra rossa</em>, della collana <em>Piccoli Grandi Eroi</em>: la storia vera di un campione che ha saputo vincere, perdere e ricominciare, senza dimenticare l’umiltà con cui aveva impugnato la sua prima racchetta.</p>`,
+      },
+      EN: {
+        title: 'Rafael Nadal: The Strength of Someone Who Never Stops Trying',
+        excerpt:
+          'Some champions are remembered for their victories, while others stay with us because of the way they faced every challenge. Rafael Nadal belongs to both.',
+        body: `<p>Whenever he stepped onto the court, his eyes showed how much the match mattered to him. It made no difference whether he was playing a final or a less prestigious match: he chased every ball with the same intensity, as if no point were already lost.</p>
+
+<p>Nadal grew up in Manacor, on the island of Mallorca, where he began playing tennis as a child under the guidance of his uncle Toni. His talent was clear, but what made him special was his daily commitment, which continued even when improving required hard work and patience.</p>
+
+<p>And clay became the surface where that strength could be seen most clearly. At Roland-Garros, he won fourteen titles without ever losing a final, setting a record that tells only part of his greatness.</p>
+
+<p>Behind those trophies, there were difficult moments too. Injuries forced him to stop several times, when his body seemed to be asking him to give up; he learned to wait and then begin again, accepting that courage does not mean feeling no fear, but returning to the court while knowing how hard it might be.</p>
+
+<p>Nadal ended his career in 2024, after winning twenty-two Grand Slam titles. Yet what remains cannot be measured only in trophies: we remember the respect he showed his opponents, his clenched fist after a hard-fought point and the feeling that trying one more time is always worthwhile.</p>
+
+<p>This is the story I wanted to tell in <em>Rafael Nadal, the King of Clay</em>, part of <em>The Great Heroes</em> series: the true story of a champion who learned how to win, lose and begin again, without forgetting the humility with which he held his first racket.</p>`,
+      },
+      ES: {
+        title: 'Rafael Nadal: la fuerza de quien nunca deja de intentarlo',
+        excerpt:
+          'Hay campeones a los que recordamos por sus victorias, mientras que otros permanecen dentro de nosotros por la manera en que afrontaron cada desafío. Rafael Nadal pertenece a ambos.',
+        body: `<p>Cuando entraba en la pista, su mirada mostraba cuánto significaba para él aquel partido. No importaba si se encontraba ante una final o un encuentro menos prestigioso: corría detrás de cada pelota con la misma intensidad, como si ningún punto estuviera perdido.</p>
+
+<p>Nadal creció en Manacor, en la isla de Mallorca, donde comenzó a jugar al tenis de niño bajo la guía de su tío Toni. Su talento era evidente, pero lo que lo hizo especial fue el trabajo diario, que continuó incluso cuando mejorar exigía esfuerzo y paciencia.</p>
+
+<p>Y la tierra batida se convirtió en el lugar donde esa fuerza se mostró con mayor claridad. En Roland Garros conquistó catorce títulos sin perder jamás una final, estableciendo un récord que solo cuenta una parte de su grandeza.</p>
+
+<p>Detrás de esos trofeos también hubo momentos difíciles. Las lesiones lo obligaron a detenerse en varias ocasiones, cuando su cuerpo parecía pedirle que renunciara; él aprendió a esperar y después a comenzar de nuevo, aceptando que el valor no consiste en no sentir miedo, sino en regresar a la pista sabiendo lo difícil que podría ser.</p>
+
+<p>Nadal puso fin a su carrera en 2024, después de ganar veintidós títulos de Grand Slam. Sin embargo, lo que permanece no se mide únicamente en trofeos: permanece el respeto que mostró hacia sus rivales, permanece aquel puño cerrado después de un punto disputado y permanece la sensación de que siempre merece la pena volver a intentarlo.</p>
+
+<p>Esta es la historia que quise contar en <em>Rafael Nadal, el rey de la tierra batida</em>, de la colección <em>Pequeños Grandes Valientes</em>: la historia real de un campeón que supo ganar, perder y comenzar de nuevo, sin olvidar la humildad con la que sostuvo su primera raqueta.</p>`,
+      },
+    },
+  },
 ];
 
 export const getAllPosts = () =>
