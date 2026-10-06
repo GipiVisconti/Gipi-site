@@ -1063,6 +1063,68 @@ const posts = [
       },
     },
   },
+  {
+    id: 17,
+    slug: 'la-lettura-e-un-viaggio-anche-per-chi-fa-piu-fatica',
+    date: '2026-10-06',
+    type: 'project',
+    content: {
+      IT: {
+        title: 'La lettura è un viaggio: perché ho scritto Piccoli Grandi Eroi anche per chi fa più fatica ad arrivarci',
+        excerpt:
+          'Quando un bambino apre uno dei libri di Piccoli Grandi Eroi e comincia a leggere, il suo cervello si mette in cammino, riga dopo riga, dentro un mondo che prima di quel momento non esisteva.',
+        body: `<p>Quando un bambino apre uno dei libri di Piccoli Grandi Eroi e comincia a leggere, il suo cervello si mette in cammino, riga dopo riga, dentro un mondo che prima di quel momento non esisteva. Non è soltanto un modo di dire: è quello che succede, in modo concreto, ogni volta che una storia viene letta invece che raccontata. La pagina diventa una strada, e chi legge la percorre da solo, un passo dopo l'altro, fino a un posto in cui non era mai stato.</p>
+
+<p>E in quei libri il mondo che si attraversa non è mai inventato apposta per far sognare chi legge. Chi cammina dentro quelle pagine incontra qualcuno che ha vissuto esattamente quello che il libro racconta, e che ha lasciato dietro di sé una strada reale da poter seguire, non un sentiero disegnato per l'occasione. È un dettaglio che sembra piccolo, ma cambia la natura del viaggio: non si esplora un luogo di fantasia, si ripercorre un luogo che è esistito.</p>
+
+<p>E quel cammino non si fa mai da soli. C'è la relazione con chi ha scritto quelle pagine, con la scelta di ogni parola pensata per arrivare a chi le leggerà. Ma c'è anche un'altra relazione, più silenziosa: quella con chi condivide la stessa storia nello stesso momento in cui viene letta, un bambino che entra da solo in una pagina, e un adulto, che gli sta accanto mentre lo fa, magari senza aggiungere una parola, aspettando solo di sapere come va a finire.</p>
+
+<p>C'è però un punto a cui penso spesso, mentre scrivo per bambini che stanno imparando a leggere: la lettura è un diritto, ma non è un diritto che si esercita allo stesso modo per tutti. Ci sono bambini che aprono un libro e ci entrano senza sforzo, e ci sono bambini per cui ogni riga è una salita, non perché manchi la voglia o l'intelligenza, ma perché decifrare quei segni sulla pagina richiede loro un lavoro che ad altri non serve nemmeno immaginare. E se un testo non tiene conto di questo, il viaggio di cui parlavo all'inizio, quello che il cervello dovrebbe percorrere leggendo, per loro non comincia nemmeno.</p>
+
+<p>È su questo margine che ho lavorato scrivendo Piccoli Grandi Eroi. Ogni frase è costruita per reggersi da sola, senza subordinate che si arrampicano una sull'altra, così che chi fa più fatica non debba fermarsi due volte nella stessa riga. Il contenuto non si semplifica: la storia resta quella vera, con tutta la sua complessità, e quello che cambia è la strada per arrivarci, resa più percorribile per chi normalmente ne resta fuori.</p>
+
+<p>E questo non riguarda solo le frasi. Riguarda anche il momento in cui, accanto al bambino, c'è qualcuno che lo accompagna: un adulto che, senza correggere ogni parola pronunciata a fatica, resta lì, presente, mentre la pagina viene conquistata una riga alla volta. Quella presenza fa parte del libro quanto le frasi stampate, e un testo pensato per essere letto insieme a qualcuno deve lasciare spazio anche a quello, non solo alle parole.</p>
+
+<p>C'è un momento che mi capita di vedere, ed è quello in cui un bambino che di solito si ferma dopo due righe arriva fino in fondo alla pagina. È lo stesso viaggio di cui parlavo all'inizio: un cervello che cammina in un mondo mai esistito prima, questa volta senza restare indietro rispetto a chi cammina più veloce.</p>`,
+      },
+      EN: {
+        title: 'Reading is a journey: why I wrote The Great Heroes for those who find it harder to get there, too',
+        excerpt:
+          'When a child opens one of the books in The Great Heroes series and begins to read, their brain sets off on a journey, line after line, through a world that did not exist before that moment.',
+        body: `<p>When a child opens one of the books in The Great Heroes series and begins to read, their brain sets off on a journey, line after line, through a world that did not exist before that moment. It is more than a figure of speech: it is what happens, in a very real way, every time a story is read rather than told. The page becomes a road, and the reader travels along it on their own, one step after another, until they reach a place they have never been.</p>
+
+<p>And in those books, the world the reader travels through is never one invented simply to let them dream. Whoever walks through those pages meets someone who lived through exactly what the book describes, and who left behind a real path to follow, rather than a trail drawn for the occasion. It is a detail that may seem small, but it changes the nature of the journey: we are not exploring a place of fantasy, but revisiting a place that once existed.</p>
+
+<p>And that journey is never made alone. There is the relationship with the person who wrote those pages, with the choice of every word intended to reach the person who will read it. But there is another relationship too, a quieter one: the bond with someone sharing the same story at the very moment it is being read, a child stepping into a page on their own, and an adult beside them as they do so, perhaps without adding a word, simply waiting to find out how it ends.</p>
+
+<p>There is one point, though, that I often think about when writing for children who are learning to read: reading is a right, but it is not a right that everyone can exercise in the same way. There are children who open a book and step into it effortlessly, and there are children for whom every line is an uphill climb, not because they lack the desire or the intelligence, but because deciphering those marks on the page requires work that others do not even need to imagine. And if a text does not take this into account, the journey I spoke of at the beginning, the one the brain should take when reading, never even begins for them.</p>
+
+<p>It was at this boundary that I worked when writing The Great Heroes. Each sentence is built to stand on its own, without subordinate clauses climbing over one another, so that those who find reading harder do not have to stop twice on the same line. The content is not simplified: the true story keeps all its complexity, and what changes is the path towards it, made easier to follow for those who would normally be left out.</p>
+
+<p>And this is not just about sentences. It is also about the moment when someone is there beside the child, accompanying them: an adult who stays there, present, without correcting every word that is a struggle to say, as the page is conquered one line at a time. That presence is as much a part of the book as the printed sentences, and a text meant to be read with someone must leave room for that too, not just for the words.</p>
+
+<p>There is a moment I sometimes see: a child who usually stops after two lines reaches the bottom of the page. It is the same journey I spoke of at the beginning: a brain walking through a world that has never existed before, this time without being left behind by those who walk faster.</p>`,
+      },
+      ES: {
+        title: 'La lectura es un viaje: por qué escribí Pequeños Grandes Valientes también para quienes encuentran más dificultades para llegar hasta allí',
+        excerpt:
+          'Cuando un niño abre uno de los libros de Pequeños Grandes Valientes y empieza a leer, su cerebro se pone en camino, línea tras línea, por un mundo que no existía antes de ese momento.',
+        body: `<p>Cuando un niño abre uno de los libros de Pequeños Grandes Valientes y empieza a leer, su cerebro se pone en camino, línea tras línea, por un mundo que no existía antes de ese momento. No es solo una forma de hablar: es lo que sucede, de manera concreta, cada vez que una historia se lee en lugar de ser contada. La página se convierte en un camino, y quien lee lo recorre por su cuenta, un paso tras otro, hasta llegar a un lugar en el que nunca había estado.</p>
+
+<p>Y en esos libros, el mundo que se atraviesa nunca se ha inventado expresamente para hacer soñar a quien lee. Quien camina por esas páginas se encuentra con alguien que vivió exactamente lo que cuenta el libro, y que dejó tras de sí un camino real que se puede seguir, no un sendero trazado para la ocasión. Es un detalle que parece pequeño, pero cambia la naturaleza del viaje: no se explora un lugar de fantasía, se recorre de nuevo un lugar que existió.</p>
+
+<p>Y ese camino nunca se recorre a solas. Está la relación con quien escribió esas páginas, con la elección de cada palabra pensada para llegar a quien la leerá. Pero también hay otra relación, más silenciosa: la que se establece con quien comparte la misma historia en el mismo momento en que se lee, un niño que entra solo en una página, y un adulto que permanece a su lado mientras lo hace, quizá sin añadir una palabra, esperando únicamente a saber cómo acaba.</p>
+
+<p>Sin embargo, hay algo en lo que pienso a menudo mientras escribo para niños que están aprendiendo a leer: la lectura es un derecho, pero no es un derecho que todos puedan ejercer de la misma manera. Hay niños que abren un libro y entran en él sin esfuerzo, y hay niños para quienes cada línea se hace cuesta arriba, no porque les falten ganas o inteligencia, sino porque descifrar esos signos en la página les exige un trabajo que otros ni siquiera necesitan imaginar. Y si un texto no tiene en cuenta esto, el viaje del que hablaba al principio, ese que el cerebro debería recorrer al leer, para ellos ni siquiera comienza.</p>
+
+<p>Es en ese límite donde trabajé al escribir Pequeños Grandes Valientes. Cada frase está construida para sostenerse por sí sola, sin subordinadas que se encaramen unas sobre otras, de modo que quienes encuentran más dificultades no tengan que detenerse dos veces en la misma línea. El contenido no se simplifica: la historia sigue siendo la verdadera, con toda su complejidad, y lo que cambia es el camino para llegar a ella, que se hace más transitable para quienes normalmente se quedan fuera.</p>
+
+<p>Y esto no tiene que ver solo con las frases. También tiene que ver con ese momento en el que, al lado del niño, hay alguien que lo acompaña: un adulto que, sin corregir cada palabra pronunciada con esfuerzo, permanece ahí, presente, mientras se conquista la página línea a línea. Esa presencia forma parte del libro tanto como las frases impresas, y un texto pensado para leerse junto a alguien debe dejar espacio también para eso, no solo para las palabras.</p>
+
+<p>Hay un momento que a veces presencio: aquel en el que un niño que suele detenerse después de dos líneas llega hasta el final de la página. Es el mismo viaje del que hablaba al principio: un cerebro que camina por un mundo que nunca había existido antes, esta vez sin quedarse atrás respecto a quienes caminan más deprisa.</p>`,
+      },
+    },
+  },
 ];
 
 export const getAllPosts = () =>
