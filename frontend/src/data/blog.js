@@ -1125,6 +1125,68 @@ const posts = [
       },
     },
   },
+  {
+    id: 18,
+    slug: 'hedy-lamarr-donna-piu-bella-del-mondo',
+    date: '2026-10-20',
+    type: 'character',
+    content: {
+      IT: {
+        title: 'Hedy Lamarr, la donna più bella del mondo che sognava di inventare',
+        excerpt:
+          'C\'è un\'immagine di Hedy Lamarr che i giornali di Hollywood ripetevano più di ogni altra: il volto illuminato per le riprese, la didascalia che la incoronava la donna più bella del mondo.',
+        body: `<p>C'è un'immagine di Hedy Lamarr che i giornali di Hollywood ripetevano più di ogni altra: il volto illuminato per le riprese, la didascalia che la incoronava la donna più bella del mondo. Quella fotografia ha attraversato i decenni, ma ha sempre nascosto l'altra metà della sua vita: le notti passate china su un tavolo da disegno, i fogli coperti di schemi e calcoli, mentre il mondo la guardava solo come un viso.</p>
+
+<p>Da piccola, a Vienna, Hedy smontava gli oggetti per capire come funzionassero. Un carillon, in particolare, la ossessionò per giorni: lo aprì, ne studiò ogni ingranaggio, lo rimontò da sola, solo per il piacere di sapere cosa lo faceva suonare. Suo padre, che lavorava in banca ma amava la meccanica quanto lei, la portava a passeggio per la città spiegandole come nascevano i tram e i giornali. Fu probabilmente lì che imparò a guardare il mondo come un meccanismo da capire, non solo da ammirare.</p>
+
+<p>Crebbe bella, e il mondo si affrettò a ridurla a quello. Lasciò l'Austria e un matrimonio che la soffocava, e arrivò a Hollywood con un nome nuovo e una carriera da costruire da zero. Diventò una delle attrici più desiderate del cinema americano, il volto di film che ancora oggi si guardano. E mentre le luci dei riflettori la trasformavano in un'icona, lei continuava a pensare da ingegnera, in silenzio, quasi di nascosto.</p>
+
+<p>Con la guerra arrivò un problema che la toccò da vicino: i siluri delle navi alleate viaggiavano su un'unica frequenza radio, facile da intercettare e disturbare per il nemico. Hedy si mise a studiarlo con la stessa ostinazione con cui da bambina smontava i carillon. Trovò un alleato inaspettato in George Antheil, un compositore che conosceva a fondo il funzionamento dei pianoli automatici, e insieme immaginarono un modo per far saltare il segnale radio da una frequenza all'altra, in modo sincronizzato e imprevedibile, così veloce da rendere quasi impossibile intercettarlo.</p>
+
+<p>Il loro sistema venne brevettato, ma la Marina americana lo lasciò chiuso in un cassetto per anni, senza mai utilizzarlo mentre lei era in vita. Hedy non vide mai un centesimo per quella sua invenzione, e visse gran parte della vita senza il riconoscimento che avrebbe meritato. Solo molto tempo dopo, quando ormai non poteva più saperlo, il principio alla base del suo brevetto tornò a galla: la tecnica dello spettro diffuso a salti di frequenza divenne la base di tecnologie che oggi diamo per scontate ogni giorno, dal Wi-Fi al Bluetooth, fino al GPS.</p>
+
+<p>Hedy Lamarr morì pensando, forse, che nessuno avrebbe mai saputo cosa si nascondeva dietro il suo volto più fotografato. Solo dopo la sua morte il mondo ha cominciato a chiamarla per quello che era: un'inventrice, prima ancora che un'attrice. Chissà quante altre storie come la sua restano ancora nascoste dietro un'etichetta che sembra dire tutto su una persona, e invece non dice quasi niente.</p>
+
+<p>La storia di Hedy Lamarr è una delle vicende raccontate nella collana Piccoli Grandi Eroi, per bambini curiosi di scoprire cosa si nasconde dietro un volto famoso.</p>`,
+      },
+      EN: {
+        title: 'Hedy Lamarr, the Most Beautiful Woman in the World Who Dreamed of Inventing',
+        excerpt:
+          'There is an image of Hedy Lamarr that Hollywood magazines repeated more often than any other: her face lit for the cameras, the caption crowning her the most beautiful woman in the world.',
+        body: `<p>There is an image of Hedy Lamarr that Hollywood magazines repeated more often than any other: her face lit for the cameras, the caption crowning her the most beautiful woman in the world. That photograph travelled through the decades, yet it always hid the other half of her life: the nights spent bent over a drawing table, sheets covered in diagrams and calculations, while the world saw only a face.</p>
+
+<p>As a child in Vienna, Hedy used to take objects apart to understand how they worked. A music box, in particular, obsessed her for days: she opened it, studied every gear, and put it back together herself, purely for the pleasure of knowing what made it play. Her father, who worked in a bank but loved mechanics as much as she did, took her on walks around the city, explaining how trams and newspapers came into being. It was probably there that she learned to look at the world as a mechanism to be understood, not merely admired.</p>
+
+<p>She grew up beautiful, and the world hastened to reduce her to that. She left Austria and a marriage that suffocated her, arriving in Hollywood with a new name and a career to build from nothing. She became one of the most desired actresses in American cinema, the face of films still watched today. And while the spotlight turned her into an icon, she carried on thinking like an engineer, quietly, almost in secret.</p>
+
+<p>The war brought a problem that touched her directly: Allied torpedoes travelled on a single radio frequency, easy for the enemy to intercept and jam. Hedy set about studying it with the same stubbornness with which, as a child, she had taken music boxes apart. She found an unexpected ally in George Antheil, a composer who understood the workings of player pianos inside out, and together they devised a way to make the radio signal hop from one frequency to another, synchronised and unpredictable, so fast that intercepting it became almost impossible.</p>
+
+<p>Their system was patented, but the US Navy left it shut in a drawer for years, never putting it to use while she was alive. Hedy never saw a penny for her invention, and spent much of her life without the recognition she deserved. Only much later, when she could no longer know it, did the principle behind her patent resurface: frequency-hopping spread spectrum became the foundation of technologies we now take for granted every day, from Wi-Fi to Bluetooth, right through to GPS.</p>
+
+<p>Hedy Lamarr died perhaps believing that no one would ever know what lay behind her most photographed face. Only after her death did the world begin to call her what she truly was: an inventor, before she was ever an actress. One wonders how many other stories like hers still lie hidden behind a label that seems to say everything about a person, yet says almost nothing.</p>
+
+<p>Hedy Lamarr's story is one of those told in The Great Heroes collection, for children curious to discover what lies behind a famous face.</p>`,
+      },
+      ES: {
+        title: 'Hedy Lamarr, la mujer más bella del mundo que soñaba con inventar',
+        excerpt:
+          'Hay una imagen de Hedy Lamarr que las revistas de Hollywood repetían más que ninguna otra: el rostro iluminado para las cámaras, el pie de foto que la coronaba como la mujer más bella del mundo.',
+        body: `<p>Hay una imagen de Hedy Lamarr que las revistas de Hollywood repetían más que ninguna otra: el rostro iluminado para las cámaras, el pie de foto que la coronaba como la mujer más bella del mundo. Esa fotografía atravesó las décadas, pero siempre escondió la otra mitad de su vida: las noches pasadas inclinada sobre una mesa de dibujo, los papeles cubiertos de esquemas y cálculos, mientras el mundo solo veía un rostro.</p>
+
+<p>De pequeña, en Viena, Hedy desmontaba los objetos para entender cómo funcionaban. Una caja de música, en particular, la obsesionó durante días: la abrió, estudió cada engranaje y la volvió a montar ella sola, solo por el placer de saber qué la hacía sonar. Su padre, que trabajaba en un banco pero amaba la mecánica tanto como ella, la llevaba a pasear por la ciudad explicándole cómo nacían los tranvías y los periódicos. Fue probablemente allí donde aprendió a mirar el mundo como un mecanismo que había que entender, no solo admirar.</p>
+
+<p>Creció hermosa, y el mundo se apresuró a reducirla a eso. Dejó Austria y un matrimonio que la asfixiaba, y llegó a Hollywood con un nombre nuevo y una carrera por construir desde cero. Se convirtió en una de las actrices más deseadas del cine americano, el rostro de películas que todavía hoy se ven. Y mientras las luces de los focos la transformaban en un icono, ella seguía pensando como ingeniera, en silencio, casi a escondidas.</p>
+
+<p>Con la guerra llegó un problema que la tocó de cerca: los torpedos de los barcos aliados viajaban en una única frecuencia de radio, fácil de interceptar y bloquear para el enemigo. Hedy se puso a estudiarlo con la misma obstinación con la que, de niña, desmontaba las cajas de música. Encontró un aliado inesperado en George Antheil, un compositor que conocía a fondo el funcionamiento de las pianolas automáticas, y juntos idearon una manera de hacer saltar la señal de radio de una frecuencia a otra, de forma sincronizada e imprevisible, tan rápido que interceptarla resultaba casi imposible.</p>
+
+<p>Su sistema fue patentado, pero la Marina estadounidense lo dejó guardado en un cajón durante años, sin llegar a utilizarlo nunca mientras ella vivía. Hedy jamás vio un céntimo por su invención, y vivió gran parte de su vida sin el reconocimiento que merecía. Solo mucho tiempo después, cuando ya no podía saberlo, el principio en el que se basaba su patente volvió a salir a la luz: la técnica del espectro ensanchado por salto de frecuencia se convirtió en la base de tecnologías que hoy damos por sentadas cada día, desde el Wi-Fi hasta el Bluetooth, pasando por el GPS.</p>
+
+<p>Hedy Lamarr murió pensando, quizá, que nadie sabría jamás qué se escondía detrás de su rostro más fotografiado. Solo después de su muerte el mundo empezó a llamarla por lo que era: una inventora, antes incluso que una actriz. Quién sabe cuántas otras historias como la suya siguen todavía escondidas detrás de una etiqueta que parece decirlo todo sobre una persona, y sin embargo no dice casi nada.</p>
+
+<p>La historia de Hedy Lamarr es una de las que se cuentan en la colección Pequeños Grandes Valientes, para niños curiosos por descubrir qué se esconde detrás de un rostro famoso.</p>`,
+      },
+    },
+  },
 ];
 
 export const getAllPosts = () =>
