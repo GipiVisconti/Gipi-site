@@ -1187,6 +1187,62 @@ const posts = [
       },
     },
   },
+  {
+    id: 19,
+    slug: 'chi-e-bebe-vio-campionessa-paralimpica-scherma',
+    date: '2026-11-03',
+    type: 'character',
+    content: {
+      IT: {
+        title: 'Chi è Bebe Vio e come è diventata una campionessa paralimpica',
+        excerpt:
+          'Bebe Vio aveva undici anni e tirava di scherma da quando ne aveva cinque, con la stessa naturalezza con cui altre bambine corrono in cortile.',
+        body: `<p>Bebe Vio aveva undici anni e tirava di scherma da quando ne aveva cinque, con la stessa naturalezza con cui altre bambine corrono in cortile. Poi una meningite fulminante ha stravolto tutto in poche ore, e i medici, per salvarle la vita, hanno dovuto amputarle le gambe e gli avambracci.</p>
+
+<p>Quello che è successo dopo è la parte della storia che colpisce di più. Bebe non si è fermata a piangere quello che aveva perso: è tornata a scuola, ha ripreso ad allenarsi, ha imparato a tenere il fioretto con un corpo che non era più lo stesso di prima. Non perché non abbia avuto paura, ma perché ha scelto di continuare a essere se stessa, con gli strumenti che aveva in quel momento.</p>
+
+<p>E quella scelta l'ha portata lontano. Bebe è diventata una delle schermitrici più forti al mondo, ha vinto ori e bronzi alle Paralimpiadi, ha conquistato titoli mondiali ed europei. Ma chi la guarda in pedana non vede solo una campionessa: vede una ragazza che ride, che scherza con le avversarie prima e dopo gli assalti, che parla di sé senza mai chiedere compassione.</p>
+
+<p>C'è un'altra cosa che Bebe ha fatto, forse ancora più importante delle medaglie. Insieme alla sua famiglia ha fondato art4sport, un'associazione che aiuta altri bambini amputati ad avere protesi sportive e a tornare a correre, nuotare, tirare di scherma. Perché lei sa cosa vuol dire perdere qualcosa e ritrovare un modo per continuare a vivere come prima, e non voleva tenere quella possibilità solo per sé.</p>
+
+<p>La sua storia arriva ai bambini senza bisogno di tante spiegazioni. Basta vederla muoversi in pedana, veloce e sicura, per capire che un corpo può cambiare e restare comunque capace di grandi cose. È una lezione che non serve spiegare con le parole giuste: si vede, e basta.</p>
+
+<p>È da qui che nasce "Bebe Vio", il libro della collana Piccoli Grandi Eroi dedicato a lei, per raccontare ai bambini la sua storia con le illustrazioni e il ritmo narrativo pensati apposta per loro.</p>`,
+      },
+      EN: {
+        title: 'Who is Bebe Vio and how she became a Paralympic champion',
+        excerpt:
+          'Bebe Vio was eleven years old and had been fencing since she was five, with the same ease other girls run about in the playground.',
+        body: `<p>Bebe Vio was eleven years old and had been fencing since she was five, with the same ease other girls run about in the playground. Then a fulminant meningitis turned everything upside down within hours, and doctors, in order to save her life, had to amputate her legs and forearms.</p>
+
+<p>What happened afterwards is the part of the story that strikes hardest. Bebe didn't stop to mourn what she'd lost: she went back to school, took up training again, learned to hold a foil with a body that was no longer the same as before. Not because she wasn't afraid, but because she chose to keep being herself, with whatever she had at that moment.</p>
+
+<p>And that choice took her far. Bebe became one of the strongest fencers in the world, winning gold and bronze medals at the Paralympics, along with world and European titles. But anyone watching her on the piste doesn't just see a champion: they see a young woman who laughs, who jokes with her opponents before and after bouts, who talks about herself without ever asking for pity.</p>
+
+<p>There's something else Bebe has done, perhaps even more important than the medals. Together with her family, she founded art4sport, an association that helps other amputee children get sports prostheses and get back to running, swimming, fencing. Because she knows what it means to lose something and find a way to carry on living as before, and she didn't want to keep that chance to herself.</p>
+
+<p>Her story reaches children without needing much explaining. Watching her move on the piste, quick and sure, is enough to understand that a body can change and still be capable of great things. It's a lesson that doesn't need the right words to explain it: you just see it.</p>
+
+<p>This is where "Bebe Vio" comes from, the book from The Great Heroes collection dedicated to her, telling children her story with illustrations and a narrative rhythm made just for them.</p>`,
+      },
+      ES: {
+        title: 'Quién es Bebe Vio y cómo se convirtió en campeona paralímpica',
+        excerpt:
+          'Bebe Vio tenía once años y practicaba esgrima desde los cinco, con la misma naturalidad con que otras niñas corren por el patio.',
+        body: `<p>Bebe Vio tenía once años y practicaba esgrima desde los cinco, con la misma naturalidad con que otras niñas corren por el patio. Entonces una meningitis fulminante lo cambió todo en cuestión de horas, y los médicos, para salvarle la vida, tuvieron que amputarle las piernas y los antebrazos.</p>
+
+<p>Lo que ocurrió después es la parte de la historia que más impresiona. Bebe no se detuvo a llorar lo que había perdido: volvió al colegio, retomó los entrenamientos, aprendió a sostener el florete con un cuerpo que ya no era el mismo de antes. No porque no sintiera miedo, sino porque eligió seguir siendo ella misma, con lo que tenía en ese momento.</p>
+
+<p>Y esa elección la llevó lejos. Bebe se convirtió en una de las mejores esgrimistas del mundo, ganó oros y bronces en los Juegos Paralímpicos, además de títulos mundiales y europeos. Pero quien la ve en la pista no ve solo a una campeona: ve a una joven que ríe, que bromea con sus rivales antes y después de los asaltos, que habla de sí misma sin pedir nunca compasión.</p>
+
+<p>Hay otra cosa que Bebe ha hecho, quizá más importante todavía que las medallas. Junto con su familia, fundó art4sport, una asociación que ayuda a otros niños amputados a conseguir prótesis deportivas y a volver a correr, nadar, practicar esgrima. Porque ella sabe lo que significa perder algo y encontrar la manera de seguir viviendo como antes, y no quiso guardarse esa posibilidad solo para ella.</p>
+
+<p>Su historia llega a los niños sin necesidad de muchas explicaciones. Basta con verla moverse en la pista, rápida y segura, para entender que un cuerpo puede cambiar y seguir siendo capaz de grandes cosas. Es una lección que no necesita las palabras adecuadas para explicarse: se ve, y basta.</p>
+
+<p>De ahí nace "Bebe Vio", el libro de la colección Pequeños Grandes Valientes dedicado a ella, para contar a los niños su historia con las ilustraciones y el ritmo narrativo pensados especialmente para ellos.</p>`,
+      },
+    },
+  },
 ];
 
 export const getAllPosts = () =>
