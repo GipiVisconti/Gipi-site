@@ -1243,6 +1243,62 @@ const posts = [
       },
     },
   },
+  {
+    id: 20,
+    slug: 'perche-bambini-rileggono-sempre-stesso-libro',
+    date: '2026-11-17',
+    type: 'advice',
+    content: {
+      IT: {
+        title: 'Perché i bambini vogliono rileggere sempre lo stesso libro',
+        excerpt:
+          'C\'è un libro che torna ogni sera sul comodino, anche se in casa ce ne sono altri dieci ad aspettare il loro turno.',
+        body: `<p>C'è un libro che torna ogni sera sul comodino, anche se in casa ce ne sono altri dieci ad aspettare il loro turno. Il bambino lo sceglie di nuovo, indica la stessa pagina, e chi lo mette a letto comincia a chiedersi se dietro quella scelta ci sia pigrizia, oppure la paura di qualcosa di nuovo.</p>
+
+<p>Non è né l'una né l'altra cosa. Quando un bambino torna sullo stesso libro, sa già come va a finire, e questa certezza gli lascia lo spazio per notare quello che la prima lettura aveva lasciato indietro: il modo in cui viene pronunciata una frase, oppure una parola che adesso riconosce da solo. La rilettura non è una scorciatoia: è un modo per entrare più a fondo in una storia che conosce abbastanza bene da poterla abitare.</p>
+
+<p>C'è anche una ragione più semplice, legata alla fiducia. Un bambino piccolo si muove in un mondo che gli sfugge continuamente di mano: le cose cambiano, gli orari cambiano, le persone intorno a lui cambiano umore senza preavviso. Un libro che finisce sempre allo stesso modo è uno dei pochi punti fermi che può controllare del tutto. E tornarci, sera dopo sera, è anche un modo per sentirsi al sicuro prima di addormentarsi.</p>
+
+<p>Per i bambini che stanno imparando a leggere, in particolare, tornare su un testo conosciuto ha anche una funzione pratica precisa. Non devono fermarsi a decifrare ogni parola, possono lasciarsi andare al ritmo della frase, alla storia, alla voce che si sta formando mentre leggono. Uno studio ha messo a confronto bambini di tre anni a cui venivano lette storie sempre diverse con bambini a cui venivano lette le stesse storie più volte nella stessa settimana. A distanza di sette giorni, solo i bambini esposti alle storie ripetute ricordavano le parole nuove incontrate nei racconti, mentre gli altri non le ricordavano più di quanto avrebbero fatto per caso. La ripetizione, più della varietà, è quello che permette al cervello di fissare ciò che ha incontrato.</p>
+
+<p>C'è poi un aspetto meno tecnico, ma altrettanto rilevante. Rileggere significa costruire un rapporto personale con un libro, prendersene cura, tornarci come si torna in un posto che si conosce. È lo stesso gesto che facciamo da adulti quando riapriamo un romanzo rimasto addosso, non per scoprire come va a finire, ma per ritrovarci dentro qualcosa che sappiamo già, e che continua a parlarci.</p>
+
+<p>Forse il consiglio giusto non è spingere verso un libro nuovo. È lasciare che quello vecchio resti ancora un po' lì, sul comodino, pronto per l'ennesima sera. E chissà quale libro, tra quelli riletti da adulti, ha avuto ogni volta un sapore diverso.</p>`,
+      },
+      EN: {
+        title: 'Why Children Want to Read the Same Book Again and Again',
+        excerpt:
+          'There is a book that turns up on the bedside table every single evening, even when there are ten others in the house waiting for their turn.',
+        body: `<p>There is a book that turns up on the bedside table every single evening, even when there are ten others in the house waiting for their turn. The child picks it again, points to the same page, and whoever is putting them to bed starts to wonder whether this is laziness, or a reluctance to try something new.</p>
+
+<p>It is neither. When a child returns to the same book, they already know how it ends, and that certainty leaves room for noticing everything the first reading left behind: the way a particular line is spoken, or a word they can now recognise on their own. Rereading is not a shortcut; it is a way of going deeper into a story they know well enough to properly live inside.</p>
+
+<p>There is also a simpler reason, one rooted in trust. A small child moves through a world that keeps slipping out of their grasp: things change, schedules change, the people around them change mood without warning. A book that always ends the same way is one of the few things a child can fully control. Returning to it, evening after evening, is also a way of feeling safe before falling asleep.</p>
+
+<p>For children who are learning to read, going back to a familiar text serves a particularly practical purpose. They do not have to stop and decode every word; they can simply give in to the rhythm of the sentence, the story, the voice taking shape as they read. A study compared three-year-olds who were read different stories with children who were read the same stories several times within the same week. A week later, only the children exposed to the repeated stories remembered the new words they had encountered in the tales; the others recalled them no better than chance. Repetition, more than variety, is what allows the brain to properly fix what it has come across.</p>
+
+<p>There is also a less technical point, but just as relevant. Rereading means building a personal relationship with a book, looking after it, returning to it the way one returns to a familiar place. It is the same gesture we make as adults when we reopen a novel that has stayed with us, not to find out how it ends, but to find ourselves again inside something we already know, and that keeps speaking to us regardless.</p>
+
+<p>Perhaps the right thing to do is not to steer a child towards something new. It might simply be to let the old book stay there a little longer, on the bedside table, ready for one more evening. And who knows which book, among those you have reread as an adult, has tasted different every single time.</p>`,
+      },
+      ES: {
+        title: 'Por qué los niños quieren releer siempre el mismo libro',
+        excerpt:
+          'Hay un libro que vuelve cada noche a la mesilla, aunque en casa haya otros diez esperando su turno.',
+        body: `<p>Hay un libro que vuelve cada noche a la mesilla, aunque en casa haya otros diez esperando su turno. El niño lo elige de nuevo, señala la misma página, y quien lo acuesta empieza a preguntarse si detrás de esa elección hay pereza, o miedo a algo nuevo.</p>
+
+<p>No es ni una cosa ni la otra. Cuando un niño vuelve al mismo libro, ya sabe cómo termina, y esa certeza le deja espacio para fijarse en lo que la primera lectura había dejado atrás: el modo en que se pronuncia una frase, o una palabra que ahora reconoce solo. Releer no es un atajo: es una forma de entrar más a fondo en una historia que conoce lo bastante bien como para habitarla.</p>
+
+<p>Hay también una razón más sencilla, ligada a la confianza. Un niño pequeño se mueve en un mundo que se le escapa constantemente de las manos: las cosas cambian, los horarios cambian, las personas que lo rodean cambian de humor sin avisar. Un libro que siempre termina igual es uno de los pocos puntos fijos que puede controlar por completo. Y volver a él, noche tras noche, es también una manera de sentirse a salvo antes de dormirse.</p>
+
+<p>Para los niños que están aprendiendo a leer, volver sobre un texto conocido tiene además una función práctica muy concreta. No tienen que detenerse a descifrar cada palabra: pueden dejarse llevar por el ritmo de la frase, por la historia, por la voz que se va formando mientras leen. Un estudio comparó a niños de tres años a quienes se les leían cuentos distintos con niños a quienes se les leían los mismos cuentos varias veces durante la misma semana. Una semana después, solo los niños expuestos a los cuentos repetidos recordaban las palabras nuevas que habían encontrado en los relatos, mientras que los demás no las recordaban mejor de lo que lo habría hecho el azar. La repetición, más que la variedad, es lo que permite al cerebro fijar aquello que ha encontrado.</p>
+
+<p>Hay además un aspecto menos técnico, pero igual de relevante. Releer significa construir una relación personal con un libro, cuidarlo, volver a él como se vuelve a un lugar conocido. Es el mismo gesto que hacemos de adultos cuando reabrimos una novela que se nos ha quedado dentro, no para descubrir cómo termina, sino para reencontrarnos con algo que ya sabemos, y que sigue hablándonos.</p>
+
+<p>Quizás el consejo acertado no sea empujar hacia un libro nuevo. Quizás sea dejar que el viejo se quede un poco más ahí, en la mesilla, listo para una noche más. Y quién sabe qué libro, de los que habéis releído de adultos, ha tenido cada vez un sabor distinto.</p>`,
+      },
+    },
+  },
 ];
 
 export const getAllPosts = () =>
